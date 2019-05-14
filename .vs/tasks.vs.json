@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "задача-CrossxZeros",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskName": "задача-StartMenu",
+      "appliesTo": "CrossxZeros/StartMenu.cs",
+      "type": "launch"
+    }
+  ]
+}

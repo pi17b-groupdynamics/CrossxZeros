@@ -1,0 +1,13 @@
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Release\CrossxZeros.exe.config
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Release\CrossxZeros.exe
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Release\CrossxZeros.pdb
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.Properties.Resources.resources
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.StartMenu.resources
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.csproj.GenerateResource.cache
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.csproj.CoreCompileInputs.cache
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.exe
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.pdb
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.Form1.resources
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.GameSettings.resources
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.csprojAssemblyReference.cache
+D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Release\CrossxZeros.GameScreen.resources
