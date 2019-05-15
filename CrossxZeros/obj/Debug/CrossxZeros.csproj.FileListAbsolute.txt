@@ -7,8 +7,6 @@ D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CoreCompileInputs.cache
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.exe
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.pdb
-D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Debug\CrossxZeros.exe.CodeAnalysisLog.xml
-D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Debug\CrossxZeros.exe.lastcodeanalysissucceeded
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.Form1.resources
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.GameSettings.resources
 D:\рабочий стол\ООП\C#\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csprojAssemblyReference.cache

@@ -49,12 +49,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(410, 114);
+            this.groupBox1.Location = new System.Drawing.Point(400, 130);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 124);
+            this.groupBox1.Size = new System.Drawing.Size(200, 110);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Первым ходит:";
@@ -63,7 +64,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(28, 60);
+            this.radioButton2.Location = new System.Drawing.Point(20, 50);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(76, 21);
             this.radioButton2.TabIndex = 17;
@@ -75,7 +76,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(28, 31);
+            this.radioButton1.Location = new System.Drawing.Point(20, 25);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(76, 21);
             this.radioButton1.TabIndex = 16;
@@ -87,7 +88,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(28, 87);
+            this.radioButton3.Location = new System.Drawing.Point(20, 75);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(176, 21);
             this.radioButton3.TabIndex = 15;
@@ -116,44 +117,44 @@
             // 
             // button6
             // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(410, 486);
+            this.button6.Location = new System.Drawing.Point(400, 500);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(186, 55);
+            this.button6.Size = new System.Drawing.Size(200, 60);
             this.button6.TabIndex = 20;
             this.button6.Text = "Назад";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(410, 415);
+            this.button5.Location = new System.Drawing.Point(400, 420);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 55);
+            this.button5.Size = new System.Drawing.Size(200, 60);
             this.button5.TabIndex = 19;
             this.button5.Text = "До 5 побед";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(410, 337);
+            this.button4.Location = new System.Drawing.Point(400, 340);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 55);
+            this.button4.Size = new System.Drawing.Size(200, 60);
             this.button4.TabIndex = 18;
             this.button4.Text = "До 3 побед";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(410, 260);
+            this.button3.Location = new System.Drawing.Point(400, 260);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 55);
+            this.button3.Size = new System.Drawing.Size(200, 60);
             this.button3.TabIndex = 17;
             this.button3.Text = "До 1 победы";
             this.button3.UseVisualStyleBackColor = true;
@@ -194,6 +195,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.People);
             this.groupBox3.Controls.Add(this.Bot);

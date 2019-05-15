@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace CrossxZeros
@@ -21,5 +22,10 @@ namespace CrossxZeros
         {
 
         }
+
+        private void startMenu1_Load_1(object sender, EventArgs e)
+        {
+        }
     }
+
 }
