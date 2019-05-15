@@ -1,5 +1,5 @@
 ﻿namespace CrossxZeros
-{
+{ 
     partial class GameScreen
     {
         /// <summary> 
