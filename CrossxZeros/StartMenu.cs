@@ -32,5 +32,14 @@ namespace CrossxZeros
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            if (GV1.Visible != false)
+                GV1.Visible = false;
+            else
+                GV1.Visible = true;
+        }
     }
 }
