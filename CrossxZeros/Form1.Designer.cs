@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.startMenu = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.P4 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -50,8 +52,6 @@
             this.Ник = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Побед = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Поражений = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.gameSettings = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -129,6 +129,29 @@
             this.startMenu.Name = "startMenu";
             this.startMenu.Size = new System.Drawing.Size(1600, 900);
             this.startMenu.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(670, 373);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(260, 60);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Играть";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(670, 463);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(260, 60);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Справка";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -345,29 +368,6 @@
             this.Поражений.Name = "Поражений";
             this.Поражений.ReadOnly = true;
             this.Поражений.Width = 75;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(670, 463);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(260, 60);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "Справка";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(670, 373);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 60);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Играть";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // gameSettings
             // 
@@ -630,6 +630,7 @@
             this.Battlefield.Name = "Battlefield";
             this.Battlefield.Size = new System.Drawing.Size(402, 402);
             this.Battlefield.TabIndex = 30;
+            this.Battlefield.SizeChanged += new System.EventHandler(this.Battlefield_SizeChanged);
             // 
             // p11
             // 
