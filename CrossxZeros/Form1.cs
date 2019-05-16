@@ -19,7 +19,7 @@ namespace CrossxZeros
         }
 
         private void startMenu1_Load(object sender, EventArgs e)
-        {
+        { 
 
         }
 
