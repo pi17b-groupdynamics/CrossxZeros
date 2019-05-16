@@ -73,16 +73,16 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button10 = new System.Windows.Forms.Button();
             this.gameScreen = new System.Windows.Forms.Panel();
-            this.Battlefield = new System.Windows.Forms.TableLayoutPanel();
-            this.p33 = new System.Windows.Forms.PictureBox();
-            this.p32 = new System.Windows.Forms.PictureBox();
-            this.p31 = new System.Windows.Forms.PictureBox();
-            this.p23 = new System.Windows.Forms.PictureBox();
-            this.p22 = new System.Windows.Forms.PictureBox();
-            this.p21 = new System.Windows.Forms.PictureBox();
-            this.p13 = new System.Windows.Forms.PictureBox();
-            this.p12 = new System.Windows.Forms.PictureBox();
+            this.Battlefield = new System.Windows.Forms.Panel();
             this.p11 = new System.Windows.Forms.PictureBox();
+            this.p12 = new System.Windows.Forms.PictureBox();
+            this.p13 = new System.Windows.Forms.PictureBox();
+            this.p21 = new System.Windows.Forms.PictureBox();
+            this.p22 = new System.Windows.Forms.PictureBox();
+            this.p23 = new System.Windows.Forms.PictureBox();
+            this.p31 = new System.Windows.Forms.PictureBox();
+            this.p32 = new System.Windows.Forms.PictureBox();
+            this.p33 = new System.Windows.Forms.PictureBox();
             this.startMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.P4.SuspendLayout();
@@ -103,15 +103,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.gameScreen.SuspendLayout();
             this.Battlefield.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.p33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p33)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
@@ -615,132 +615,102 @@
             // 
             // Battlefield
             // 
-            this.Battlefield.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.Battlefield.AutoSize = true;
-            this.Battlefield.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Battlefield.BackColor = System.Drawing.Color.White;
-            this.Battlefield.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
-            this.Battlefield.ColumnCount = 3;
-            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.Controls.Add(this.p33, 2, 2);
-            this.Battlefield.Controls.Add(this.p32, 1, 2);
-            this.Battlefield.Controls.Add(this.p31, 0, 2);
-            this.Battlefield.Controls.Add(this.p23, 2, 1);
-            this.Battlefield.Controls.Add(this.p22, 1, 1);
-            this.Battlefield.Controls.Add(this.p21, 0, 1);
-            this.Battlefield.Controls.Add(this.p13, 2, 0);
-            this.Battlefield.Controls.Add(this.p12, 1, 0);
-            this.Battlefield.Controls.Add(this.p11, 0, 0);
-            this.Battlefield.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.Battlefield.Location = new System.Drawing.Point(589, 243);
+            this.Battlefield.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Battlefield.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Battlefield.Controls.Add(this.p11);
+            this.Battlefield.Controls.Add(this.p12);
+            this.Battlefield.Controls.Add(this.p13);
+            this.Battlefield.Controls.Add(this.p21);
+            this.Battlefield.Controls.Add(this.p22);
+            this.Battlefield.Controls.Add(this.p23);
+            this.Battlefield.Controls.Add(this.p31);
+            this.Battlefield.Controls.Add(this.p32);
+            this.Battlefield.Controls.Add(this.p33);
+            this.Battlefield.Location = new System.Drawing.Point(599, 249);
             this.Battlefield.Name = "Battlefield";
-            this.Battlefield.RowCount = 3;
-            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Battlefield.Size = new System.Drawing.Size(414, 411);
-            this.Battlefield.TabIndex = 28;
-            // 
-            // p33
-            // 
-            this.p33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p33.Location = new System.Drawing.Point(278, 276);
-            this.p33.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p33.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p33.Name = "p33";
-            this.p33.Size = new System.Drawing.Size(128, 128);
-            this.p33.TabIndex = 8;
-            this.p33.TabStop = false;
-            // 
-            // p32
-            // 
-            this.p32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p32.Location = new System.Drawing.Point(142, 276);
-            this.p32.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p32.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p32.Name = "p32";
-            this.p32.Size = new System.Drawing.Size(128, 128);
-            this.p32.TabIndex = 7;
-            this.p32.TabStop = false;
-            // 
-            // p31
-            // 
-            this.p31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p31.Location = new System.Drawing.Point(6, 276);
-            this.p31.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p31.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p31.Name = "p31";
-            this.p31.Size = new System.Drawing.Size(128, 128);
-            this.p31.TabIndex = 6;
-            this.p31.TabStop = false;
-            // 
-            // p23
-            // 
-            this.p23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p23.Location = new System.Drawing.Point(278, 141);
-            this.p23.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p23.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p23.Name = "p23";
-            this.p23.Size = new System.Drawing.Size(128, 128);
-            this.p23.TabIndex = 5;
-            this.p23.TabStop = false;
-            // 
-            // p22
-            // 
-            this.p22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p22.Location = new System.Drawing.Point(142, 141);
-            this.p22.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p22.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p22.Name = "p22";
-            this.p22.Size = new System.Drawing.Size(128, 128);
-            this.p22.TabIndex = 4;
-            this.p22.TabStop = false;
-            // 
-            // p21
-            // 
-            this.p21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p21.Location = new System.Drawing.Point(6, 141);
-            this.p21.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p21.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p21.Name = "p21";
-            this.p21.Size = new System.Drawing.Size(128, 128);
-            this.p21.TabIndex = 3;
-            this.p21.TabStop = false;
-            // 
-            // p13
-            // 
-            this.p13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p13.Location = new System.Drawing.Point(278, 6);
-            this.p13.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p13.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p13.Name = "p13";
-            this.p13.Size = new System.Drawing.Size(128, 128);
-            this.p13.TabIndex = 2;
-            this.p13.TabStop = false;
-            // 
-            // p12
-            // 
-            this.p12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p12.Location = new System.Drawing.Point(142, 6);
-            this.p12.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p12.MinimumSize = new System.Drawing.Size(128, 128);
-            this.p12.Name = "p12";
-            this.p12.Size = new System.Drawing.Size(128, 128);
-            this.p12.TabIndex = 1;
-            this.p12.TabStop = false;
+            this.Battlefield.Size = new System.Drawing.Size(402, 402);
+            this.Battlefield.TabIndex = 30;
             // 
             // p11
             // 
-            this.p11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p11.Location = new System.Drawing.Point(6, 6);
-            this.p11.MaximumSize = new System.Drawing.Size(128, 128);
-            this.p11.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p11.Location = new System.Drawing.Point(2, 2);
             this.p11.Name = "p11";
-            this.p11.Size = new System.Drawing.Size(128, 128);
+            this.p11.Size = new System.Drawing.Size(130, 130);
             this.p11.TabIndex = 0;
             this.p11.TabStop = false;
+            // 
+            // p12
+            // 
+            this.p12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p12.Location = new System.Drawing.Point(135, 2);
+            this.p12.Name = "p12";
+            this.p12.Size = new System.Drawing.Size(130, 130);
+            this.p12.TabIndex = 1;
+            this.p12.TabStop = false;
+            // 
+            // p13
+            // 
+            this.p13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p13.Location = new System.Drawing.Point(268, 2);
+            this.p13.Name = "p13";
+            this.p13.Size = new System.Drawing.Size(130, 130);
+            this.p13.TabIndex = 2;
+            this.p13.TabStop = false;
+            // 
+            // p21
+            // 
+            this.p21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p21.Location = new System.Drawing.Point(2, 135);
+            this.p21.Name = "p21";
+            this.p21.Size = new System.Drawing.Size(130, 130);
+            this.p21.TabIndex = 4;
+            this.p21.TabStop = false;
+            // 
+            // p22
+            // 
+            this.p22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p22.Location = new System.Drawing.Point(135, 135);
+            this.p22.Name = "p22";
+            this.p22.Size = new System.Drawing.Size(130, 130);
+            this.p22.TabIndex = 8;
+            this.p22.TabStop = false;
+            // 
+            // p23
+            // 
+            this.p23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p23.Location = new System.Drawing.Point(268, 135);
+            this.p23.Name = "p23";
+            this.p23.Size = new System.Drawing.Size(130, 130);
+            this.p23.TabIndex = 5;
+            this.p23.TabStop = false;
+            // 
+            // p31
+            // 
+            this.p31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p31.Location = new System.Drawing.Point(2, 268);
+            this.p31.Name = "p31";
+            this.p31.Size = new System.Drawing.Size(130, 130);
+            this.p31.TabIndex = 7;
+            this.p31.TabStop = false;
+            // 
+            // p32
+            // 
+            this.p32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p32.Location = new System.Drawing.Point(135, 268);
+            this.p32.Name = "p32";
+            this.p32.Size = new System.Drawing.Size(130, 130);
+            this.p32.TabIndex = 3;
+            this.p32.TabStop = false;
+            // 
+            // p33
+            // 
+            this.p33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.p33.Location = new System.Drawing.Point(268, 268);
+            this.p33.Name = "p33";
+            this.p33.Size = new System.Drawing.Size(130, 130);
+            this.p33.TabIndex = 6;
+            this.p33.TabStop = false;
             // 
             // Form1
             // 
@@ -779,15 +749,15 @@
             this.gameScreen.ResumeLayout(false);
             this.gameScreen.PerformLayout();
             this.Battlefield.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.p33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p33)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -839,16 +809,16 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel gameScreen;
-        private System.Windows.Forms.TableLayoutPanel Battlefield;
-        private System.Windows.Forms.PictureBox p33;
-        private System.Windows.Forms.PictureBox p32;
-        private System.Windows.Forms.PictureBox p31;
-        private System.Windows.Forms.PictureBox p23;
-        private System.Windows.Forms.PictureBox p22;
-        private System.Windows.Forms.PictureBox p21;
-        private System.Windows.Forms.PictureBox p13;
-        private System.Windows.Forms.PictureBox p12;
+        private System.Windows.Forms.Panel Battlefield;
         private System.Windows.Forms.PictureBox p11;
+        private System.Windows.Forms.PictureBox p12;
+        private System.Windows.Forms.PictureBox p13;
+        private System.Windows.Forms.PictureBox p21;
+        private System.Windows.Forms.PictureBox p22;
+        private System.Windows.Forms.PictureBox p23;
+        private System.Windows.Forms.PictureBox p31;
+        private System.Windows.Forms.PictureBox p32;
+        private System.Windows.Forms.PictureBox p33;
     }
 }
 
