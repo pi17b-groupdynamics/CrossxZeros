@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.startMenu = new System.Windows.Forms.Panel();
             this.startMenu1 = new CrossxZeros.StartMenu();
+            this.gameSettings = new System.Windows.Forms.Panel();
             this.gameSettings1 = new CrossxZeros.GameSettings();
+            this.gameScreen = new System.Windows.Forms.Panel();
             this.gameScreen1 = new CrossxZeros.GameScreen();
-            this.panel1.SuspendLayout();
+            this.startMenu.SuspendLayout();
+            this.gameSettings.SuspendLayout();
+            this.gameScreen.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // startMenu
             // 
-            this.panel1.Controls.Add(this.startMenu1);
-            this.panel1.Controls.Add(this.gameSettings1);
-            this.panel1.Controls.Add(this.gameScreen1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1064, 611);
-            this.panel1.TabIndex = 0;
+            this.startMenu.Controls.Add(this.startMenu1);
+            this.startMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.startMenu.Location = new System.Drawing.Point(0, 0);
+            this.startMenu.Name = "startMenu";
+            this.startMenu.Size = new System.Drawing.Size(1064, 611);
+            this.startMenu.TabIndex = 0;
             // 
             // startMenu1
             // 
@@ -55,13 +57,31 @@
             this.startMenu1.TabIndex = 2;
             this.startMenu1.Load += new System.EventHandler(this.startMenu1_Load_1);
             // 
+            // gameSettings
+            // 
+            this.gameSettings.Controls.Add(this.gameSettings1);
+            this.gameSettings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gameSettings.Location = new System.Drawing.Point(0, 0);
+            this.gameSettings.Name = "gameSettings";
+            this.gameSettings.Size = new System.Drawing.Size(1064, 611);
+            this.gameSettings.TabIndex = 3;
+            // 
             // gameSettings1
             // 
             this.gameSettings1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gameSettings1.Location = new System.Drawing.Point(0, 0);
             this.gameSettings1.Name = "gameSettings1";
             this.gameSettings1.Size = new System.Drawing.Size(1064, 611);
-            this.gameSettings1.TabIndex = 1;
+            this.gameSettings1.TabIndex = 0;
+            // 
+            // gameScreen
+            // 
+            this.gameScreen.Controls.Add(this.gameScreen1);
+            this.gameScreen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gameScreen.Location = new System.Drawing.Point(0, 0);
+            this.gameScreen.Name = "gameScreen";
+            this.gameScreen.Size = new System.Drawing.Size(1064, 611);
+            this.gameScreen.TabIndex = 1;
             // 
             // gameScreen1
             // 
@@ -76,20 +96,26 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 611);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.gameSettings);
+            this.Controls.Add(this.startMenu);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.startMenu.ResumeLayout(false);
+            this.gameSettings.ResumeLayout(false);
+            this.gameScreen.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        public StartMenu startMenu1;
-        public GameSettings gameSettings1;
-        public GameScreen gameScreen1;
+        public System.Windows.Forms.Panel startMenu;
+        private StartMenu startMenu1;
+        public System.Windows.Forms.Panel gameSettings;
+        private GameSettings gameSettings1;
+        public System.Windows.Forms.Panel gameScreen;
+        private GameScreen gameScreen1;
     }
 }
 
