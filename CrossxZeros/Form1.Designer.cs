@@ -67,22 +67,22 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.gameScreen = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.gameScreen = new System.Windows.Forms.Panel();
+            this.Battlefield = new System.Windows.Forms.TableLayoutPanel();
+            this.p33 = new System.Windows.Forms.PictureBox();
+            this.p32 = new System.Windows.Forms.PictureBox();
+            this.p31 = new System.Windows.Forms.PictureBox();
+            this.p23 = new System.Windows.Forms.PictureBox();
+            this.p22 = new System.Windows.Forms.PictureBox();
+            this.p21 = new System.Windows.Forms.PictureBox();
+            this.p13 = new System.Windows.Forms.PictureBox();
+            this.p12 = new System.Windows.Forms.PictureBox();
+            this.p11 = new System.Windows.Forms.PictureBox();
             this.startMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.P4.SuspendLayout();
@@ -99,35 +99,35 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.gameScreen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.gameScreen.SuspendLayout();
+            this.Battlefield.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.p33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
             // 
+            this.startMenu.Controls.Add(this.button1);
+            this.startMenu.Controls.Add(this.button5);
             this.startMenu.Controls.Add(this.panel3);
             this.startMenu.Controls.Add(this.pictureBox1);
             this.startMenu.Controls.Add(this.trackBar1);
             this.startMenu.Controls.Add(this.comboBox1);
             this.startMenu.Controls.Add(this.panel2);
             this.startMenu.Controls.Add(this.panel1);
-            this.startMenu.Controls.Add(this.button5);
-            this.startMenu.Controls.Add(this.button1);
             this.startMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startMenu.Location = new System.Drawing.Point(0, 0);
             this.startMenu.Name = "startMenu";
-            this.startMenu.Size = new System.Drawing.Size(1074, 625);
+            this.startMenu.Size = new System.Drawing.Size(1600, 900);
             this.startMenu.TabIndex = 0;
             // 
             // panel3
@@ -135,7 +135,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.P4);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Location = new System.Drawing.Point(752, 3);
+            this.panel3.Location = new System.Drawing.Point(1278, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(318, 254);
             this.panel3.TabIndex = 29;
@@ -223,7 +223,7 @@
             this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.GV2);
-            this.panel2.Location = new System.Drawing.Point(752, 302);
+            this.panel2.Location = new System.Drawing.Point(1278, 577);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(318, 320);
             this.panel2.TabIndex = 25;
@@ -288,7 +288,7 @@
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.GV1);
-            this.panel1.Location = new System.Drawing.Point(5, 299);
+            this.panel1.Location = new System.Drawing.Point(5, 574);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(321, 323);
             this.panel1.TabIndex = 24;
@@ -350,7 +350,7 @@
             // 
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(407, 325);
+            this.button5.Location = new System.Drawing.Point(670, 463);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(260, 60);
             this.button5.TabIndex = 23;
@@ -361,7 +361,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(407, 235);
+            this.button1.Location = new System.Drawing.Point(670, 373);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(260, 60);
             this.button1.TabIndex = 22;
@@ -381,7 +381,7 @@
             this.gameSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gameSettings.Location = new System.Drawing.Point(0, 0);
             this.gameSettings.Name = "gameSettings";
-            this.gameSettings.Size = new System.Drawing.Size(1074, 625);
+            this.gameSettings.Size = new System.Drawing.Size(1600, 900);
             this.gameSettings.TabIndex = 30;
             // 
             // groupBox3
@@ -391,7 +391,7 @@
             this.groupBox3.Controls.Add(this.People);
             this.groupBox3.Controls.Add(this.Bot);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox3.Location = new System.Drawing.Point(845, 64);
+            this.groupBox3.Location = new System.Drawing.Point(1390, 25);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(185, 125);
             this.groupBox3.TabIndex = 37;
@@ -411,7 +411,7 @@
             // People
             // 
             this.People.AutoSize = true;
-            this.People.Location = new System.Drawing.Point(40, 70);
+            this.People.Location = new System.Drawing.Point(25, 70);
             this.People.Name = "People";
             this.People.Size = new System.Drawing.Size(93, 24);
             this.People.TabIndex = 27;
@@ -422,7 +422,7 @@
             // Bot
             // 
             this.Bot.AutoSize = true;
-            this.Bot.Location = new System.Drawing.Point(40, 95);
+            this.Bot.Location = new System.Drawing.Point(25, 95);
             this.Bot.Name = "Bot";
             this.Bot.Size = new System.Drawing.Size(114, 24);
             this.Bot.TabIndex = 28;
@@ -434,7 +434,7 @@
             // 
             this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(45, 64);
+            this.groupBox2.Location = new System.Drawing.Point(25, 25);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(185, 75);
             this.groupBox2.TabIndex = 36;
@@ -456,7 +456,7 @@
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Location = new System.Drawing.Point(444, 131);
+            this.groupBox1.Location = new System.Drawing.Point(707, 269);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 110);
             this.groupBox1.TabIndex = 35;
@@ -503,7 +503,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(444, 501);
+            this.button2.Location = new System.Drawing.Point(707, 639);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 60);
             this.button2.TabIndex = 34;
@@ -515,7 +515,7 @@
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(444, 421);
+            this.button4.Location = new System.Drawing.Point(707, 559);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(200, 60);
             this.button4.TabIndex = 33;
@@ -526,7 +526,7 @@
             // 
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(444, 341);
+            this.button8.Location = new System.Drawing.Point(707, 479);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(200, 60);
             this.button8.TabIndex = 32;
@@ -537,71 +537,13 @@
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(444, 261);
+            this.button9.Location = new System.Drawing.Point(707, 399);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(200, 60);
             this.button9.TabIndex = 31;
             this.button9.Text = "До 1 победы";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // gameScreen
-            // 
-            this.gameScreen.Controls.Add(this.button10);
-            this.gameScreen.Controls.Add(this.pictureBox11);
-            this.gameScreen.Controls.Add(this.pictureBox10);
-            this.gameScreen.Controls.Add(this.label2);
-            this.gameScreen.Controls.Add(this.label1);
-            this.gameScreen.Controls.Add(this.tableLayoutPanel1);
-            this.gameScreen.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gameScreen.Location = new System.Drawing.Point(0, 0);
-            this.gameScreen.Name = "gameScreen";
-            this.gameScreen.Size = new System.Drawing.Size(1074, 625);
-            this.gameScreen.TabIndex = 38;
-            // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.Location = new System.Drawing.Point(911, 552);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(146, 55);
-            this.button10.TabIndex = 27;
-            this.button10.Text = "Меню";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox11.Location = new System.Drawing.Point(929, 53);
-            this.pictureBox11.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox11.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox11.TabIndex = 26;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(17, 53);
-            this.pictureBox10.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox10.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox10.TabIndex = 25;
-            this.pictureBox10.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(942, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 22);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Игрок 2(ник)";
             // 
             // label1
             // 
@@ -613,135 +555,205 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "Игрок 1(ник)";
             // 
-            // tableLayoutPanel1
+            // label2
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox8, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox7, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox5, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox12, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox13, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox14, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox15, 0, 0);
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(327, 93);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 134F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(414, 414);
-            this.tableLayoutPanel1.TabIndex = 22;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(1468, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 22);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Игрок 2(ник)";
             // 
-            // pictureBox9
+            // pictureBox10
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(280, 280);
-            this.pictureBox9.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox9.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
+            this.pictureBox10.Location = new System.Drawing.Point(17, 53);
+            this.pictureBox10.MaximumSize = new System.Drawing.Size(128, 128);
+            this.pictureBox10.MinimumSize = new System.Drawing.Size(128, 128);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox10.TabIndex = 25;
+            this.pictureBox10.TabStop = false;
             // 
-            // pictureBox8
+            // pictureBox11
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(143, 280);
-            this.pictureBox8.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox8.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
+            this.pictureBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox11.Location = new System.Drawing.Point(1455, 53);
+            this.pictureBox11.MaximumSize = new System.Drawing.Size(128, 128);
+            this.pictureBox11.MinimumSize = new System.Drawing.Size(128, 128);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox11.TabIndex = 26;
+            this.pictureBox11.TabStop = false;
             // 
-            // pictureBox7
+            // button10
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(6, 280);
-            this.pictureBox7.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox7.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button10.Location = new System.Drawing.Point(1437, 827);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(146, 55);
+            this.button10.TabIndex = 27;
+            this.button10.Text = "Меню";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
-            // pictureBox6
+            // gameScreen
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(280, 143);
-            this.pictureBox6.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox6.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.gameScreen.Controls.Add(this.Battlefield);
+            this.gameScreen.Controls.Add(this.button10);
+            this.gameScreen.Controls.Add(this.pictureBox11);
+            this.gameScreen.Controls.Add(this.pictureBox10);
+            this.gameScreen.Controls.Add(this.label2);
+            this.gameScreen.Controls.Add(this.label1);
+            this.gameScreen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gameScreen.Location = new System.Drawing.Point(0, 0);
+            this.gameScreen.Name = "gameScreen";
+            this.gameScreen.Size = new System.Drawing.Size(1600, 900);
+            this.gameScreen.TabIndex = 38;
             // 
-            // pictureBox5
+            // Battlefield
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(143, 143);
-            this.pictureBox5.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox5.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.Battlefield.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.Battlefield.AutoSize = true;
+            this.Battlefield.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Battlefield.BackColor = System.Drawing.Color.White;
+            this.Battlefield.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.OutsetPartial;
+            this.Battlefield.ColumnCount = 3;
+            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.Controls.Add(this.p33, 2, 2);
+            this.Battlefield.Controls.Add(this.p32, 1, 2);
+            this.Battlefield.Controls.Add(this.p31, 0, 2);
+            this.Battlefield.Controls.Add(this.p23, 2, 1);
+            this.Battlefield.Controls.Add(this.p22, 1, 1);
+            this.Battlefield.Controls.Add(this.p21, 0, 1);
+            this.Battlefield.Controls.Add(this.p13, 2, 0);
+            this.Battlefield.Controls.Add(this.p12, 1, 0);
+            this.Battlefield.Controls.Add(this.p11, 0, 0);
+            this.Battlefield.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
+            this.Battlefield.Location = new System.Drawing.Point(589, 243);
+            this.Battlefield.Name = "Battlefield";
+            this.Battlefield.RowCount = 3;
+            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.Battlefield.Size = new System.Drawing.Size(414, 411);
+            this.Battlefield.TabIndex = 28;
             // 
-            // pictureBox12
+            // p33
             // 
-            this.pictureBox12.Location = new System.Drawing.Point(6, 143);
-            this.pictureBox12.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox12.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox12.TabIndex = 3;
-            this.pictureBox12.TabStop = false;
+            this.p33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p33.Location = new System.Drawing.Point(278, 276);
+            this.p33.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p33.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p33.Name = "p33";
+            this.p33.Size = new System.Drawing.Size(128, 128);
+            this.p33.TabIndex = 8;
+            this.p33.TabStop = false;
             // 
-            // pictureBox13
+            // p32
             // 
-            this.pictureBox13.Location = new System.Drawing.Point(280, 6);
-            this.pictureBox13.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox13.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox13.TabIndex = 2;
-            this.pictureBox13.TabStop = false;
+            this.p32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p32.Location = new System.Drawing.Point(142, 276);
+            this.p32.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p32.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p32.Name = "p32";
+            this.p32.Size = new System.Drawing.Size(128, 128);
+            this.p32.TabIndex = 7;
+            this.p32.TabStop = false;
             // 
-            // pictureBox14
+            // p31
             // 
-            this.pictureBox14.Location = new System.Drawing.Point(143, 6);
-            this.pictureBox14.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox14.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox14.TabIndex = 1;
-            this.pictureBox14.TabStop = false;
+            this.p31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p31.Location = new System.Drawing.Point(6, 276);
+            this.p31.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p31.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p31.Name = "p31";
+            this.p31.Size = new System.Drawing.Size(128, 128);
+            this.p31.TabIndex = 6;
+            this.p31.TabStop = false;
             // 
-            // pictureBox15
+            // p23
             // 
-            this.pictureBox15.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox15.MaximumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox15.MinimumSize = new System.Drawing.Size(128, 128);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
+            this.p23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p23.Location = new System.Drawing.Point(278, 141);
+            this.p23.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p23.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p23.Name = "p23";
+            this.p23.Size = new System.Drawing.Size(128, 128);
+            this.p23.TabIndex = 5;
+            this.p23.TabStop = false;
+            // 
+            // p22
+            // 
+            this.p22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p22.Location = new System.Drawing.Point(142, 141);
+            this.p22.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p22.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p22.Name = "p22";
+            this.p22.Size = new System.Drawing.Size(128, 128);
+            this.p22.TabIndex = 4;
+            this.p22.TabStop = false;
+            // 
+            // p21
+            // 
+            this.p21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p21.Location = new System.Drawing.Point(6, 141);
+            this.p21.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p21.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p21.Name = "p21";
+            this.p21.Size = new System.Drawing.Size(128, 128);
+            this.p21.TabIndex = 3;
+            this.p21.TabStop = false;
+            // 
+            // p13
+            // 
+            this.p13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p13.Location = new System.Drawing.Point(278, 6);
+            this.p13.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p13.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p13.Name = "p13";
+            this.p13.Size = new System.Drawing.Size(128, 128);
+            this.p13.TabIndex = 2;
+            this.p13.TabStop = false;
+            // 
+            // p12
+            // 
+            this.p12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p12.Location = new System.Drawing.Point(142, 6);
+            this.p12.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p12.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p12.Name = "p12";
+            this.p12.Size = new System.Drawing.Size(128, 128);
+            this.p12.TabIndex = 1;
+            this.p12.TabStop = false;
+            // 
+            // p11
+            // 
+            this.p11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.p11.Location = new System.Drawing.Point(6, 6);
+            this.p11.MaximumSize = new System.Drawing.Size(128, 128);
+            this.p11.MinimumSize = new System.Drawing.Size(128, 128);
+            this.p11.Name = "p11";
+            this.p11.Size = new System.Drawing.Size(128, 128);
+            this.p11.TabIndex = 0;
+            this.p11.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 625);
+            this.ClientSize = new System.Drawing.Size(1600, 900);
+            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.startMenu);
             this.Controls.Add(this.gameSettings);
-            this.Controls.Add(this.gameScreen);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.startMenu.ResumeLayout(false);
             this.startMenu.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -761,20 +773,20 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.gameScreen.ResumeLayout(false);
             this.gameScreen.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.Battlefield.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.p33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -820,22 +832,22 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel gameScreen;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel gameScreen;
+        private System.Windows.Forms.TableLayoutPanel Battlefield;
+        private System.Windows.Forms.PictureBox p33;
+        private System.Windows.Forms.PictureBox p32;
+        private System.Windows.Forms.PictureBox p31;
+        private System.Windows.Forms.PictureBox p23;
+        private System.Windows.Forms.PictureBox p22;
+        private System.Windows.Forms.PictureBox p21;
+        private System.Windows.Forms.PictureBox p13;
+        private System.Windows.Forms.PictureBox p12;
+        private System.Windows.Forms.PictureBox p11;
     }
 }
 
