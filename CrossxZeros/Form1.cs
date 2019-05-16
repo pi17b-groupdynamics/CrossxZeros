@@ -64,6 +64,22 @@ namespace CrossxZeros
 
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (gameScreen.Height - 200 < gameScreen.Width - 900)
+            {
+                Battlefield.Width = gameScreen.Height - 200;
+                Battlefield.Height = gameScreen.Height - 200;
+            }
+            else
+            {
+                Battlefield.Width = gameScreen.Width - 900;
+                Battlefield.Height = gameScreen.Width - 900;
+            }
+            Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
+            Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
+        }
     }
 
 }
