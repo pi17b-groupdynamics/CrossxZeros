@@ -46,11 +46,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.GV1 = new System.Windows.Forms.DataGridView();
-            this.Ник = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Побед = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Поражений = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Поражений = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Побед = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ник = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3.SuspendLayout();
             this.P4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -222,21 +222,19 @@
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.GV1);
-            this.panel1.Location = new System.Drawing.Point(5, 302);
+            this.panel1.Location = new System.Drawing.Point(5, 299);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 320);
+            this.panel1.Size = new System.Drawing.Size(321, 323);
             this.panel1.TabIndex = 16;
             // 
             // button6
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button6.Location = new System.Drawing.Point(0, 291);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(318, 29);
             this.button6.TabIndex = 7;
             this.button6.Text = "Статистика одиночной игры";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // GV1
             // 
@@ -252,35 +250,9 @@
             this.GV1.Location = new System.Drawing.Point(0, 0);
             this.GV1.Name = "GV1";
             this.GV1.ReadOnly = true;
-            this.GV1.Size = new System.Drawing.Size(318, 291);
+            this.GV1.Size = new System.Drawing.Size(321, 291);
             this.GV1.TabIndex = 6;
             this.GV1.Visible = false;
-            // 
-            // Ник
-            // 
-            this.Ник.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Ник.Frozen = true;
-            this.Ник.HeaderText = "Ник";
-            this.Ник.MinimumWidth = 125;
-            this.Ник.Name = "Ник";
-            this.Ник.ReadOnly = true;
-            this.Ник.Width = 125;
-            // 
-            // Побед
-            // 
-            this.Побед.Frozen = true;
-            this.Побед.HeaderText = "Побед";
-            this.Побед.Name = "Побед";
-            this.Побед.ReadOnly = true;
-            this.Побед.Width = 75;
-            // 
-            // Поражений
-            // 
-            this.Поражений.Frozen = true;
-            this.Поражений.HeaderText = "Поражений";
-            this.Поражений.Name = "Поражений";
-            this.Поражений.ReadOnly = true;
-            this.Поражений.Width = 75;
             // 
             // button5
             // 
@@ -305,6 +277,32 @@
             this.button1.Text = "Играть";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Поражений
+            // 
+            this.Поражений.Frozen = true;
+            this.Поражений.HeaderText = "Поражений";
+            this.Поражений.Name = "Поражений";
+            this.Поражений.ReadOnly = true;
+            this.Поражений.Width = 75;
+            // 
+            // Побед
+            // 
+            this.Побед.Frozen = true;
+            this.Побед.HeaderText = "Побед";
+            this.Побед.Name = "Побед";
+            this.Побед.ReadOnly = true;
+            this.Побед.Width = 75;
+            // 
+            // Ник
+            // 
+            this.Ник.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Ник.Frozen = true;
+            this.Ник.HeaderText = "Ник";
+            this.Ник.MinimumWidth = 125;
+            this.Ник.Name = "Ник";
+            this.Ник.ReadOnly = true;
+            this.Ник.Width = 125;
             // 
             // StartMenu
             // 
@@ -357,10 +355,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.DataGridView GV1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ник;
         private System.Windows.Forms.DataGridViewTextBoxColumn Побед;
         private System.Windows.Forms.DataGridViewTextBoxColumn Поражений;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
     }
 }
