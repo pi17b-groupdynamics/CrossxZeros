@@ -26,6 +26,26 @@ namespace CrossxZeros
         private void startMenu1_Load_1(object sender, EventArgs e)
         {
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gameSettings.BringToFront();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            gameScreen.BringToFront();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            startMenu.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            startMenu.BringToFront();
+        }
     }
 
 }
