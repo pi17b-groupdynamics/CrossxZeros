@@ -8,14 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace CrossxZeros
 {
     public partial class Form1 : Form
     {
+        List<Color> colors = new List<Color>();
+        int currentColor = 0;
+        int a = 0;
         public Form1()
         {
             InitializeComponent();
+
+            colors.Add(Color.FromArgb(3, 169, 244));
+            colors.Add(Color.FromArgb(33, 150, 243));
+            colors.Add(Color.FromArgb(0, 150, 136));
+            colors.Add(Color.FromArgb(103, 58, 183));
+            colors.Add(Color.FromArgb(156, 39, 176));
+            colors.Add(Color.FromArgb(255, 87, 34));
+            colors.Add(Color.FromArgb(255, 193, 7));
+            colors.Add(Color.FromArgb(205, 220, 57));
+            colors.Add(Color.FromArgb(0, 255, 0));
+            colors.Add(Color.FromArgb(0, 100, 0));
+            colors.Add(Color.FromArgb(32, 178, 170));
         }
 
         private void startMenu1_Load(object sender, EventArgs e)
@@ -104,6 +120,50 @@ namespace CrossxZeros
             p33.Top = 2 * w + 8;
             p33.Left = 2 * w + 8;
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+            if(currentColor < colors.Count - 1)
+            {
+                this.BackColor = Bunifu.Framework.UI.BunifuColorTransition.getColorScale(a, colors[currentColor], colors[currentColor + 1]);
+
+                if(a < 100)
+                {
+                    a++;
+                }
+                else
+                {
+                    a = 0;
+                    currentColor++;
+                }
+                timer1.Enabled = true;
+            }
+            else 
+            {
+                currentColor = 0;
+                this.BackColor = Bunifu.Framework.UI.BunifuColorTransition.getColorScale(a, colors[currentColor], colors[currentColor + 1]);
+
+                if (a < 100)
+                {
+                    a++;
+                }
+                else
+                {
+                    a = 0;
+                    currentColor++;
+                }
+                timer1.Enabled = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+            else
+                WindowState = FormWindowState.Normal;
         }
     }
 
