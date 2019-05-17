@@ -161,9 +161,20 @@ namespace CrossxZeros
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
+            {
                 WindowState = FormWindowState.Maximized;
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            }
             else
+            {
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
                 WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
