@@ -52,11 +52,11 @@
             this.Поражений = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gameSettings = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.player2 = new System.Windows.Forms.ComboBox();
             this.People = new System.Windows.Forms.RadioButton();
             this.Bot = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.player1 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -364,7 +364,7 @@
             // groupBox3
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.Controls.Add(this.player2);
             this.groupBox3.Controls.Add(this.People);
             this.groupBox3.Controls.Add(this.Bot);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -375,19 +375,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Игрок 2";
             // 
-            // comboBox2
+            // player2
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(10, 30);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(165, 28);
-            this.comboBox2.TabIndex = 24;
+            this.player2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.player2.FormattingEnabled = true;
+            this.player2.Location = new System.Drawing.Point(10, 30);
+            this.player2.Name = "player2";
+            this.player2.Size = new System.Drawing.Size(165, 28);
+            this.player2.TabIndex = 24;
             // 
             // People
             // 
             this.People.AutoSize = true;
+            this.People.Checked = true;
             this.People.Location = new System.Drawing.Point(25, 70);
             this.People.Name = "People";
             this.People.Size = new System.Drawing.Size(86, 22);
@@ -395,6 +396,7 @@
             this.People.TabStop = true;
             this.People.Text = "Человек";
             this.People.UseVisualStyleBackColor = true;
+            this.People.CheckedChanged += new System.EventHandler(this.People_CheckedChanged);
             // 
             // Bot
             // 
@@ -403,13 +405,13 @@
             this.Bot.Name = "Bot";
             this.Bot.Size = new System.Drawing.Size(106, 22);
             this.Bot.TabIndex = 28;
-            this.Bot.TabStop = true;
             this.Bot.Text = "Компьютер";
             this.Bot.UseVisualStyleBackColor = true;
+            this.Bot.CheckedChanged += new System.EventHandler(this.Bot_CheckedChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.player1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.Location = new System.Drawing.Point(25, 25);
             this.groupBox2.Name = "groupBox2";
@@ -418,14 +420,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Игрок 1";
             // 
-            // comboBox3
+            // player1
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(10, 30);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(165, 28);
-            this.comboBox3.TabIndex = 23;
+            this.player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.player1.FormattingEnabled = true;
+            this.player1.Location = new System.Drawing.Point(10, 30);
+            this.player1.Name = "player1";
+            this.player1.Size = new System.Drawing.Size(165, 28);
+            this.player1.TabIndex = 23;
             // 
             // groupBox1
             // 
@@ -452,6 +454,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Игрок 2";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -461,13 +464,15 @@
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(76, 21);
             this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Игрок 1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
+            this.radioButton3.Checked = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton3.Location = new System.Drawing.Point(20, 75);
             this.radioButton3.Name = "radioButton3";
@@ -476,6 +481,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Определить рандомно";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // button2
             // 
@@ -499,6 +505,7 @@
             this.button4.TabIndex = 33;
             this.button4.Text = "До 5 побед";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button8
             // 
@@ -510,6 +517,7 @@
             this.button8.TabIndex = 32;
             this.button8.Text = "До 3 побед";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -618,6 +626,7 @@
             this.p11.Size = new System.Drawing.Size(130, 130);
             this.p11.TabIndex = 0;
             this.p11.TabStop = false;
+            this.p11.Click += new System.EventHandler(this.p11_Click);
             // 
             // p12
             // 
@@ -627,6 +636,7 @@
             this.p12.Size = new System.Drawing.Size(130, 130);
             this.p12.TabIndex = 1;
             this.p12.TabStop = false;
+            this.p12.Click += new System.EventHandler(this.p12_Click);
             // 
             // p13
             // 
@@ -636,6 +646,7 @@
             this.p13.Size = new System.Drawing.Size(130, 130);
             this.p13.TabIndex = 2;
             this.p13.TabStop = false;
+            this.p13.Click += new System.EventHandler(this.p13_Click);
             // 
             // p21
             // 
@@ -645,6 +656,7 @@
             this.p21.Size = new System.Drawing.Size(130, 130);
             this.p21.TabIndex = 4;
             this.p21.TabStop = false;
+            this.p21.Click += new System.EventHandler(this.p21_Click);
             // 
             // p22
             // 
@@ -654,6 +666,7 @@
             this.p22.Size = new System.Drawing.Size(130, 130);
             this.p22.TabIndex = 8;
             this.p22.TabStop = false;
+            this.p22.Click += new System.EventHandler(this.p22_Click);
             // 
             // p23
             // 
@@ -663,6 +676,7 @@
             this.p23.Size = new System.Drawing.Size(130, 130);
             this.p23.TabIndex = 5;
             this.p23.TabStop = false;
+            this.p23.Click += new System.EventHandler(this.p23_Click);
             // 
             // p31
             // 
@@ -672,6 +686,7 @@
             this.p31.Size = new System.Drawing.Size(130, 130);
             this.p31.TabIndex = 7;
             this.p31.TabStop = false;
+            this.p31.Click += new System.EventHandler(this.p31_Click);
             // 
             // p32
             // 
@@ -681,6 +696,7 @@
             this.p32.Size = new System.Drawing.Size(130, 130);
             this.p32.TabIndex = 3;
             this.p32.TabStop = false;
+            this.p32.Click += new System.EventHandler(this.p32_Click);
             // 
             // p33
             // 
@@ -688,8 +704,10 @@
             this.p33.Location = new System.Drawing.Point(268, 268);
             this.p33.Name = "p33";
             this.p33.Size = new System.Drawing.Size(130, 130);
+            this.p33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.p33.TabIndex = 6;
             this.p33.TabStop = false;
+            this.p33.Click += new System.EventHandler(this.p33_Click);
             // 
             // timer1
             // 
@@ -858,8 +876,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.startMenu);
-            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MinimumSize = new System.Drawing.Size(1280, 720);
@@ -927,11 +945,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel gameSettings;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox player2;
         private System.Windows.Forms.RadioButton People;
         private System.Windows.Forms.RadioButton Bot;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox player1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
