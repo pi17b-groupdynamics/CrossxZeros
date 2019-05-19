@@ -403,6 +403,11 @@ namespace CrossxZeros
             check_victory();
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         private void p32_Click(object sender, EventArgs e)
         {
             p32.Enabled = false;
