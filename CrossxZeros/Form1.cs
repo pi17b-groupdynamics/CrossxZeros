@@ -21,7 +21,8 @@ namespace CrossxZeros
         int language = 0;
         private bool isCollapsed;
         private bool SoundSt;
-        int count_of_wins = 0;
+        int count_of_wins;
+        bool human = true;
         int side = 0;
         public Form1()
         {
@@ -74,6 +75,7 @@ namespace CrossxZeros
 
         private void button1_Click(object sender, EventArgs e)
         {
+            gameSettings.BringToFront();
             if (!isCollapsed)
             {
                 timer2.Start();
@@ -88,7 +90,21 @@ namespace CrossxZeros
         {
             if(player1.Text == "")
             {
-
+                player1.Text = "Player_1";
+                label1.Text = player1.Text;
+            }
+            else
+            {
+                label1.Text = player1.Text;
+            }
+            if (player2.Text == "" && human == true)
+            {
+                player2.Text = "Player_2";
+                label2.Text = player2.Text;
+            }
+            else
+            {
+                label2.Text = player2.Text;
             }
             count_of_wins = 1;
             gameScreen.BringToFront();
@@ -101,6 +117,24 @@ namespace CrossxZeros
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (player1.Text == "")
+            {
+                player1.Text = "Player_1";
+                label1.Text = player1.Text;
+            }
+            else
+            {
+                label1.Text = player1.Text;
+            }
+            if (player2.Text == "")
+            {
+                player2.Text = "Player_2";
+                label2.Text = player2.Text;
+            }
+            else
+            {
+                label2.Text = player2.Text;
+            }
             count_of_wins = 3;
             gameScreen.BringToFront();
             sound.BringToFront();
@@ -112,6 +146,24 @@ namespace CrossxZeros
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (player1.Text == "")
+            {
+                player1.Text = "Player_1";
+                label1.Text = player1.Text;
+            }
+            else
+            {
+                label1.Text = player1.Text;
+            }
+            if (player2.Text == "")
+            {
+                player2.Text = "Player_2";
+                label2.Text = player2.Text;
+            }
+            else
+            {
+                label2.Text = player2.Text;
+            }
             count_of_wins = 5;
             gameScreen.BringToFront();
             sound.BringToFront();
@@ -264,6 +316,9 @@ namespace CrossxZeros
 
         private void Bot_CheckedChanged(object sender, EventArgs e) // компьютер панель справа
         {
+            human = false;
+            player2.Text = "Bot";
+            player2.Enabled = false;
             if (!SoundSt)
             {
                 timer3.Start();
@@ -272,6 +327,9 @@ namespace CrossxZeros
 
         private void People_CheckedChanged(object sender, EventArgs e)
         {
+            human = true;
+            player2.Enabled = true;
+            player2.Text = "";
             if (!SoundSt)
             {
                 timer3.Start();

@@ -1065,9 +1065,9 @@
             this.ClientSize = new System.Drawing.Size(1707, 886);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.style);
-            this.Controls.Add(this.gameSettings);
-            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.startMenu);
+            this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
