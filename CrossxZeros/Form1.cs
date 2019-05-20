@@ -877,60 +877,9 @@ namespace CrossxZeros
             int result = 15 - timer;
             label3.Text = result.ToString();
             timer = timer + 1;
-            if(timer < 16)
+            if(timer == 15)
             {
-                int first_numb;
-                int second_numb;
-                string lane;
-                Random random = new Random();
-                first_numb = random.Next(2) + 1;
-                second_numb = random.Next(2) + 1;
-                lane = first_numb.ToString() + second_numb.ToString();
-                if ((Convert.ToInt32(lane) == 11) && (p11.Enabled == true))
-                {
-                    if (timer == 15)
-                        p11_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 12) && (p12.Enabled == true))
-                {
-                    if (timer == 15)
-                        p12_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 13) && (p13.Enabled == true))
-                {
-                    if (timer == 15)
-                        p13_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 21) && (p21.Enabled == true))
-                {
-                    if (timer == 15)
-                        p21_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 22) && (p22.Enabled == true))
-                {
-                    if (timer == 15)
-                        p22_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 23) && (p23.Enabled == true))
-                {
-                    if (timer == 15)
-                        p23_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 31) && (p31.Enabled == true))
-                {
-                    if (timer == 15)
-                        p31_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 32) && (p32.Enabled == true))
-                {
-                    if (timer == 15)
-                        p32_Click(sender, e);
-                }
-                else if ((Convert.ToInt32(lane) == 33) && (p33.Enabled == true))
-                {
-                    if (timer == 15)
-                        p33_Click(sender, e);
-                }
+
             }
             
         }
