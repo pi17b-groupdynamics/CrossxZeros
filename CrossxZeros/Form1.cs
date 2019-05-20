@@ -17,10 +17,12 @@ namespace CrossxZeros
         List<Color> colors = new List<Color>();
         int currentColor = 0;
         int a = 0;
+        int p1_wins, p2_wins;
         int first_player = 0,col_wins; //кто первый ходит; количество побед
         int num_step, active_player;
         bool playr_enemy = false;
         bool p1_cross, p2_cross; //Кто крестик(false - ноль)
+        int language = 0;
         public Form1()
         {
             InitializeComponent();
@@ -403,9 +405,67 @@ namespace CrossxZeros
             check_victory();
         }
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (language == 0)
+            {
+                button1.Text = "Play";
+                button11.Text = "Exit";
+                button7.Text = "Multiplayer stats";
+                dataGridViewTextBoxColumn1.HeaderText = "Nick";
+                dataGridViewTextBoxColumn2.HeaderText = "Wins";
+                dataGridViewTextBoxColumn3.HeaderText = "Loses";
+                Побед.HeaderText = "Wins";
+                Ник.HeaderText = "Nick";
+                Поражений.HeaderText = "Loses";
+                button6.Text = "Solo game stats";
+                groupBox2.Text = "Player 1";
+                groupBox3.Text = "Player 2";
+                People.Text = "Human";
+                Bot.Text = "Bot";
+                groupBox1.Text = "Walks First:";
+                radioButton1.Text = "Player 1";
+                radioButton2.Text = "Player 2";
+                radioButton3.Text = "Random";
+                button9.Text = "Before the 1 victory";
+                button8.Text = "Before the 3 victory";
+                button4.Text = "Before the 5 victory";
+                button2.Text = "Back";
+                button10.Text = "Menu";
+                language = 1;
+            }
+            else if(language == 1)
+            {
+                button1.Text = "Играть";
+                button11.Text = "Выход";
+                button7.Text = "Статистика многопользовательской игры";
+                dataGridViewTextBoxColumn1.HeaderText = "Ник";
+                dataGridViewTextBoxColumn2.HeaderText = "Побед";
+                dataGridViewTextBoxColumn3.HeaderText = "Поражений";
+                Побед.HeaderText = "Побед";
+                Ник.HeaderText = "Ник";
+                Поражений.HeaderText = "Поражений";
+                button6.Text = "Статистика одиночной игры";
+                groupBox2.Text = "Игрок 1";
+                groupBox3.Text = "Игрок 2";
+                People.Text = "Человек";
+                Bot.Text = "Бот";
+                groupBox1.Text = "Ходит первым:";
+                radioButton1.Text = "Игрок 1";
+                radioButton2.Text = "Игрок 2";
+                radioButton3.Text = "Определить рандомно";
+                button9.Text = "До 1 победы";
+                button8.Text = "До 3 побед";
+                button4.Text = "До 5 побед";
+                button2.Text = "Назад";
+                button10.Text = "Меню";
+                language = 0;
+            }
+        }
+
         private void button11_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void p32_Click(object sender, EventArgs e)
