@@ -24,6 +24,7 @@ namespace CrossxZeros
         int count_of_wins;
         bool human = true;
         int side = 0;
+        int timer = 0;
         public Form1()
         {
             InitializeComponent();
@@ -88,6 +89,7 @@ namespace CrossxZeros
 
         private void button9_Click(object sender, EventArgs e)
         {
+            timer4.Enabled = true;
             if(player1.Text == "")
             {
                 player1.Text = "Player_1";
@@ -117,6 +119,7 @@ namespace CrossxZeros
 
         private void button8_Click(object sender, EventArgs e)
         {
+            timer4.Enabled = true;
             if (player1.Text == "")
             {
                 player1.Text = "Player_1";
@@ -146,6 +149,7 @@ namespace CrossxZeros
 
         private void button4_Click(object sender, EventArgs e)
         {
+            timer4.Enabled = true;
             if (player1.Text == "")
             {
                 player1.Text = "Player_1";
@@ -574,6 +578,13 @@ namespace CrossxZeros
 
         private void timer4_Tick(object sender, EventArgs e)
         {
+            int result = 15 - timer;
+            label3.Text = result.ToString();
+            timer = timer + 1;
+            if(timer == 15)
+            {
+
+            }
             
         }
     }

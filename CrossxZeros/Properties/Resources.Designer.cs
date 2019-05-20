@@ -93,6 +93,26 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap letter_o_png_letter_o_icon_068645_512 {
+            get {
+                object obj = ResourceManager.GetObject("letter-o-png-letter-o-icon-068645-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LTK5AdoTa {
+            get {
+                object obj = ResourceManager.GetObject("LTK5AdoTa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap up_512__1_ {
             get {
                 object obj = ResourceManager.GetObject("up-512 (1)", resourceCulture);

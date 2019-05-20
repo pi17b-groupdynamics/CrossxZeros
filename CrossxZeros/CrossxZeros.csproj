@@ -124,5 +124,11 @@
   <ItemGroup>
     <None Include="Resources\Expand Arrow_20px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letter-o-png-letter-o-icon-068645-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LTK5AdoTa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
