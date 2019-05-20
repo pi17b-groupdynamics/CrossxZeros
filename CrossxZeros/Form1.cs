@@ -26,6 +26,7 @@ namespace CrossxZeros
         int side = 0;
         int timer = 0;
         int turn = 1; // 1- крестик, 0 - нолик; череда хода
+        int one, two, three, four, five, six, seven, eight, nine;
         public Form1()
         {
             InitializeComponent();
@@ -345,6 +346,14 @@ namespace CrossxZeros
             }
         }
 
+        void wins()
+        {
+            if (one == 1 && two == 1 && three == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+            }
+        }
+
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
             if(turn == 1)
@@ -352,6 +361,7 @@ namespace CrossxZeros
                 p11.Image = Resources.cross;
                 p11.Enabled = false;
                 turn = 0;
+                one = 1;
                 timer = 0;
             }
             else
@@ -359,9 +369,12 @@ namespace CrossxZeros
                 p11.Image = Resources.zero;
                 turn = 1;
                 timer = 0;
+                one = 0;
                 p11.Enabled = false;
             }
+            wins();
         }
+
         private void p12_Click(object sender, EventArgs e)
         {
             if (turn == 1)
@@ -369,6 +382,7 @@ namespace CrossxZeros
                 p12.Image = Resources.cross;
                 p12.Enabled = false;
                 timer = 0;
+                two = 1;
                 turn = 0;
             }
             else
@@ -376,8 +390,10 @@ namespace CrossxZeros
                 p12.Image = Resources.zero;
                 turn = 1;
                 timer = 0;
+                two = 0;
                 p12.Enabled = false;
             }
+            wins();
         }
 
         private void p13_Click(object sender, EventArgs e)
@@ -387,6 +403,7 @@ namespace CrossxZeros
                 p13.Image = Resources.cross;
                 p13.Enabled = false;
                 turn = 0;
+                three = 1;
                 timer = 0;
             }
             else
@@ -394,8 +411,10 @@ namespace CrossxZeros
                 p13.Image = Resources.zero;
                 turn = 1;
                 timer = 0;
+                three = 0;
                 p13.Enabled = false;
             }
+            wins();
         }
 
         private void p21_Click(object sender, EventArgs e)
@@ -405,15 +424,18 @@ namespace CrossxZeros
                 p21.Image = Resources.cross;
                 p21.Enabled = false;
                 timer = 0;
+                four = 1;
                 turn = 0;
             }
             else
             {
                 p21.Image = Resources.zero;
                 turn = 1;
+                four = 0;
                 timer = 0;
                 p21.Enabled = false;
             }
+            wins();
         }
 
         private void p22_Click(object sender, EventArgs e)
@@ -422,6 +444,7 @@ namespace CrossxZeros
             {
                 p22.Image = Resources.cross;
                 p22.Enabled = false;
+                five = 1;
                 timer = 0;
                 turn = 0;
             }
@@ -429,9 +452,11 @@ namespace CrossxZeros
             {
                 p22.Image = Resources.zero;
                 turn = 1;
+                five = 0;
                 timer = 0;
                 p22.Enabled = false;
             }
+            wins();
         }
 
         private void p23_Click(object sender, EventArgs e)
@@ -440,6 +465,7 @@ namespace CrossxZeros
             {
                 p23.Image = Resources.cross;
                 p23.Enabled = false;
+                six = 1;
                 timer = 0;
                 turn = 0;
             }
@@ -447,9 +473,11 @@ namespace CrossxZeros
             {
                 p23.Image = Resources.zero;
                 turn = 1;
+                six = 0;
                 timer = 0;
                 p23.Enabled = false;
             }
+            wins();
         }
 
         private void p31_Click(object sender, EventArgs e)
@@ -459,15 +487,18 @@ namespace CrossxZeros
                 p31.Image = Resources.cross;
                 p31.Enabled = false;
                 timer = 0;
+                seven = 1;
                 turn = 0;
             }
             else
             {
                 p31.Image = Resources.zero;
                 turn = 1;
+                seven = 0;
                 timer = 0;
                 p31.Enabled = false;
             }
+            wins();
         }
 
         private void p32_Click(object sender, EventArgs e)
@@ -476,6 +507,7 @@ namespace CrossxZeros
             {
                 p32.Image = Resources.cross;
                 p32.Enabled = false;
+                eight = 1;
                 timer = 0;
                 turn = 0;
             }
@@ -483,9 +515,11 @@ namespace CrossxZeros
             {
                 p32.Image = Resources.zero;
                 turn = 1;
+                eight = 0;
                 timer = 0;
                 p32.Enabled = false;
             }
+            wins();
         }
 
         private void p33_Click(object sender, EventArgs e)
@@ -495,15 +529,18 @@ namespace CrossxZeros
                 p33.Image = Resources.cross;
                 p33.Enabled = false;
                 timer = 0;
+                nine = 1;
                 turn = 0;
             }
             else
             {
                 p33.Image = Resources.zero;
                 turn = 1;
+                nine = 0;
                 timer = 0;
                 p33.Enabled = false;
             }
+            wins();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
