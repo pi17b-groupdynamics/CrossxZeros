@@ -25,8 +25,9 @@ namespace CrossxZeros
         bool human = true;
         int side = 0;
         int timer = 0;
+        int timer_2 = 0;
         int turn = 1; // 1- крестик, 0 - нолик; череда хода
-        int one, two, three, four, five, six, seven, eight, nine;
+        int one=2, two=2, three=2, four=2, five=2, six=2, seven=2, eight=2, nine = 2;
         public Form1()
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace CrossxZeros
         }
         void start_battle() // Чистка поля после боя
         {
-            p11.Enabled = true;
+          /*  p11.Enabled = true;
             p11.Image = null;
             // Включаем кнопку и удаляем изборажение
             p12.Enabled = true;
@@ -63,7 +64,14 @@ namespace CrossxZeros
             p32.Enabled = true;
             p32.Image = null;
             p33.Enabled = true;
-            p33.Image = null;
+            p33.Image = null;*/
+
+           
+            turn = 1;
+            one = 2; two = 2; three = 2; four = 2; five = 2; six = 2; seven = 2; eight = 2; nine = 2;
+            timer5.Enabled = true;
+
+            
         }
 
     
@@ -351,6 +359,94 @@ namespace CrossxZeros
             if (one == 1 && two == 1 && three == 1)
             {
                 label4.Text = "Победил 1 игрок";
+                start_battle();
+               
+            }
+            else if(one == 0 && two == 0 && three == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+
+                start_battle();
+            }
+           else if(one == 1 && five == 1 && nine == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (one == 0 && five == 0 && nine == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (three == 1 && six == 1 && nine == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (three == 0 && six == 0 && nine == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (one == 1 && four == 1 && seven == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (one == 0 && four == 0 && seven == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (seven == 1 && eight == 1 && nine == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (seven == 0 && eight == 0 && nine == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (three == 1 && five == 1 && seven == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (three == 0 && five == 0 && seven == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (three == 1 && six == 1 && nine == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (three == 0 && six == 0 && nine == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (four == 1 && five == 1 && six == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (four == 0 && five == 0 && six == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
+            }
+            else if (two == 1 && five == 1 && eight == 1)
+            {
+                label4.Text = "Победил 1 игрок";
+                start_battle();
+            }
+            else if (two == 0 && five == 0 && eight == 0)
+            {
+                label4.Text = "Победил 2 игрок";
+                start_battle();
             }
         }
 
@@ -679,6 +775,38 @@ namespace CrossxZeros
                     SoundSt = true;
                 }
             }
+        }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            timer_2 = timer_2 + 1;
+            if(timer_2 == 2)
+            {
+                p11.Enabled = true;
+            p11.Image = null;
+            // Включаем кнопку и удаляем изборажение
+            p12.Enabled = true;
+            p12.Image = null;
+            p13.Enabled = true;
+            p13.Image = null;
+            p21.Enabled = true;
+            p21.Image = null;
+            p22.Enabled = true;
+            p22.Image = null;
+            p23.Enabled = true;
+            p23.Image = null;
+            p31.Enabled = true;
+            p31.Image = null;
+            p32.Enabled = true;
+            p32.Image = null;
+            p33.Enabled = true;
+            p33.Image = null;
+                label4.Text = "";
+                timer_2 = 0;
+                timer5.Enabled = false;
+            }
+          
+
         }
 
         private void Form1_Click(object sender, EventArgs e)
