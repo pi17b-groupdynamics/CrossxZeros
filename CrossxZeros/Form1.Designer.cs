@@ -105,6 +105,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.startMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
@@ -1057,6 +1058,10 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1065,9 +1070,9 @@
             this.ClientSize = new System.Drawing.Size(1707, 886);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.style);
-            this.Controls.Add(this.startMenu);
-            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.gameSettings);
+            this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1205,6 +1210,7 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer4;
     }
 }
 
