@@ -183,6 +183,10 @@ namespace CrossxZeros
             style.BringToFront();
             sound.BringToFront();
             style.Show();
+            timer4.Enabled = false;
+            timer = 0;
+            label3.Text = "";
+            start_battle();
             if (!SoundSt)
             {
                 timer3.Start();
@@ -346,44 +350,160 @@ namespace CrossxZeros
             if(turn == 1)
             {
                 p11.Image = Resources.cross;
+                p11.Enabled = false;
                 turn = 0;
+                timer = 0;
             }
-            else if(turn == 0)
+            else
             {
                 p11.Image = Resources.zero;
                 turn = 1;
+                timer = 0;
+                p11.Enabled = false;
             }
         }
         private void p12_Click(object sender, EventArgs e)
-        {  
+        {
+            if (turn == 1)
+            {
+                p12.Image = Resources.cross;
+                p12.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p12.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p12.Enabled = false;
+            }
         }
 
         private void p13_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p13.Image = Resources.cross;
+                p13.Enabled = false;
+                turn = 0;
+                timer = 0;
+            }
+            else
+            {
+                p13.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p13.Enabled = false;
+            }
         }
 
         private void p21_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p21.Image = Resources.cross;
+                p21.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p21.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p21.Enabled = false;
+            }
         }
 
         private void p22_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p22.Image = Resources.cross;
+                p22.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p22.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p22.Enabled = false;
+            }
         }
 
         private void p23_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p23.Image = Resources.cross;
+                p23.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p23.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p23.Enabled = false;
+            }
         }
 
         private void p31_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p31.Image = Resources.cross;
+                p31.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p31.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p31.Enabled = false;
+            }
         }
 
         private void p32_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p32.Image = Resources.cross;
+                p32.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else if (turn == 0)
+            {
+                p32.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p32.Enabled = false;
+            }
         }
 
         private void p33_Click(object sender, EventArgs e)
         {
+            if (turn == 1)
+            {
+                p33.Image = Resources.cross;
+                p33.Enabled = false;
+                timer = 0;
+                turn = 0;
+            }
+            else
+            {
+                p33.Image = Resources.zero;
+                turn = 1;
+                timer = 0;
+                p33.Enabled = false;
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
