@@ -18,14 +18,11 @@ namespace CrossxZeros
         List<Color> colors = new List<Color>();
         int currentColor = 0;
         int a = 0;
-        int p1_wins, p2_wins;
-        int first_player = 0,col_wins; //кто первый ходит; количество побед
-        int num_step, active_player;
-        bool playr_enemy = false;
-        bool p1_cross, p2_cross; //Кто крестик(false - ноль)
         int language = 0;
         private bool isCollapsed;
         private bool SoundSt;
+        int count_of_wins = 0;
+        int side = 0;
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +41,6 @@ namespace CrossxZeros
         }
         void start_battle() // Чистка поля после боя
         {
-            num_step = 1; // номер хода
             p11.Enabled = true;
             p11.Image = null;
             // Включаем кнопку и удаляем изборажение
@@ -65,50 +61,6 @@ namespace CrossxZeros
             p33.Enabled = true;
             p33.Image = null;
         }
-        void AI_step()
-        {
-            if(num_step ==1)
-            {
-                
-            }
-            else if(num_step == 2)
-            {
-
-            }
-            else if(num_step == 3)
-            {
-
-            }
-            else if (num_step == 4)
-            {
-
-            }
-            else if (num_step == 5)
-            {
-
-            }
-            else if (num_step == 6)
-            {
-
-            }
-            else if (num_step == 7)
-            {
-
-            }
-            else if (num_step == 8)
-            {
-
-            }
-            else if (num_step == 9)
-            {
-
-            }
-
-        }
-        void check_victory() // проверка победы
-        {
-
-        }
 
     
         private void startMenu1_Load(object sender, EventArgs e)
@@ -122,33 +74,74 @@ namespace CrossxZeros
 
         private void button1_Click(object sender, EventArgs e)
         {
-            gameSettings.BringToFront();
-            style.Hide();
             if (!isCollapsed)
             {
                 timer2.Start();
+            }
+            if (!SoundSt)
+            {
+                timer3.Start();
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if(player1.Text == "")
+            {
+
+            }
+            count_of_wins = 1;
             gameScreen.BringToFront();
-            col_wins = 1;
-            start_battle();
+            sound.BringToFront();
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
+        private void button8_Click(object sender, EventArgs e)
+        {
+            count_of_wins = 3;
+            gameScreen.BringToFront();
+            sound.BringToFront();
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            count_of_wins = 5;
+            gameScreen.BringToFront();
+            sound.BringToFront();
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
+        }
         private void button10_Click(object sender, EventArgs e)
         {
             startMenu.BringToFront();
             style.BringToFront();
+            sound.BringToFront();
             style.Show();
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             startMenu.BringToFront();
             style.BringToFront();
+            sound.BringToFront();
             style.Show();
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -266,157 +259,58 @@ namespace CrossxZeros
         {
 
         }
-
-    
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            first_player = 0;
-        }
-
         private void radioButton1_Click(object sender, EventArgs e) { }
-
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            first_player = 2;
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            gameScreen.BringToFront();
-            col_wins = 3;
-            start_battle();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            gameScreen.BringToFront();
-            col_wins = 5;
-            start_battle();
-        }
+                 
 
         private void Bot_CheckedChanged(object sender, EventArgs e) // компьютер панель справа
         {
-            playr_enemy = true;
-            player2.Enabled = false;
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
         private void People_CheckedChanged(object sender, EventArgs e)
         {
-            playr_enemy = false;
-            player2.Enabled = true;
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
-            p11.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
         }
         private void p12_Click(object sender, EventArgs e)
-        {
-            p12.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
+        {  
         }
 
         private void p13_Click(object sender, EventArgs e)
         {
-            p13.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
         }
 
         private void p21_Click(object sender, EventArgs e)
         {
-            p21.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
         }
 
         private void p22_Click(object sender, EventArgs e)
         {
-            p22.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
         }
 
         private void p23_Click(object sender, EventArgs e)
         {
-            p23.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
         }
 
         private void p31_Click(object sender, EventArgs e)
         {
-            p31.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
+        }
+
+        private void p32_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void p33_Click(object sender, EventArgs e)
+        {
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -519,6 +413,10 @@ namespace CrossxZeros
             {
                 timer2.Start();
             }
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -529,8 +427,11 @@ namespace CrossxZeros
 
         private void timer3_Tick(object sender, EventArgs e)
         {
+            if(!sound.Visible)
+                sound.Show();
             if (SoundSt)
             {
+                
                 sound.Height += 20;
                 if (sound.Size == sound.MaximumSize)
                 {
@@ -544,8 +445,39 @@ namespace CrossxZeros
                 if (sound.Size == sound.MinimumSize)
                 {
                     timer3.Stop();
+                    sound.Hide();
                     SoundSt = true;
                 }
+            }
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if(GV2.Visible)
+            {
+                GV2.Hide();
+            }
+            else
+            {
+                GV2.Show();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            if (GV1.Visible)
+            {
+                GV1.Hide();
+            }
+            else
+            {
+                GV1.Show();
             }
         }
 
@@ -554,41 +486,32 @@ namespace CrossxZeros
             this.Close();
         }
 
-        private void p32_Click(object sender, EventArgs e)
-        {
-            p32.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
-        }
-
-        private void p33_Click(object sender, EventArgs e)
-        {
-            p33.Enabled = false;
-            //меняем картинку на Х или О
-            num_step++;
-            if (playr_enemy)
-            {
-                AI_step();
-            }
-            else
-            {
-                // передача хода другому игроку
-            }
-            check_victory();
-        }
+       
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            first_player = 1;
+            side = 1;
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
+        }
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            side = 2;
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
+        }
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            side = random.Next(1) + 1;
+            if (!SoundSt)
+            {
+                timer3.Start();
+            }
         }
     }
 

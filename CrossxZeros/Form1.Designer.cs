@@ -45,6 +45,13 @@
             this.Ник = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Побед = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Поражений = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sound = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.gameSettings = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.player2 = new System.Windows.Forms.ComboBox();
@@ -65,22 +72,6 @@
             this.button10 = new System.Windows.Forms.Button();
             this.gameScreen = new System.Windows.Forms.Panel();
             this.Battlefield = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.topPanel = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.style = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.p11 = new System.Windows.Forms.PictureBox();
             this.p12 = new System.Windows.Forms.PictureBox();
             this.p13 = new System.Windows.Forms.PictureBox();
@@ -92,37 +83,46 @@
             this.p33 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.sound = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.style = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.startMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).BeginInit();
+            this.sound.SuspendLayout();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.gameSettings.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gameScreen.SuspendLayout();
             this.Battlefield.SuspendLayout();
-            this.topPanel.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.style.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
@@ -134,23 +134,22 @@
             ((System.ComponentModel.ISupportInitialize)(this.p33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.topPanel.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.sound.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.style.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
             // 
             this.startMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.startMenu.Controls.Add(this.sound);
             this.startMenu.Controls.Add(this.button11);
             this.startMenu.Controls.Add(this.button1);
             this.startMenu.Controls.Add(this.panel2);
@@ -197,10 +196,10 @@
             this.panel2.AutoSize = true;
             this.panel2.Controls.Add(this.GV2);
             this.panel2.Controls.Add(this.button7);
-            this.panel2.Location = new System.Drawing.Point(1277, 400);
+            this.panel2.Location = new System.Drawing.Point(1272, 422);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(424, 394);
+            this.panel2.Size = new System.Drawing.Size(424, 398);
             this.panel2.TabIndex = 25;
             // 
             // GV2
@@ -213,13 +212,14 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            this.GV2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GV2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GV2.Location = new System.Drawing.Point(0, 0);
             this.GV2.Margin = new System.Windows.Forms.Padding(4);
             this.GV2.Name = "GV2";
             this.GV2.ReadOnly = true;
-            this.GV2.Size = new System.Drawing.Size(424, 358);
+            this.GV2.Size = new System.Drawing.Size(424, 362);
             this.GV2.TabIndex = 6;
+            this.GV2.Visible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -250,13 +250,15 @@
             // button7
             // 
             this.button7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button7.Location = new System.Drawing.Point(0, 358);
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(0, 362);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(424, 36);
             this.button7.TabIndex = 7;
             this.button7.Text = "Статистика многопользовательского режима";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel1
             // 
@@ -264,7 +266,7 @@
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.GV1);
-            this.panel1.Location = new System.Drawing.Point(10, 426);
+            this.panel1.Location = new System.Drawing.Point(10, 422);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(428, 398);
@@ -272,13 +274,16 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(0, 358);
+            this.button6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(0, 362);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(424, 36);
+            this.button6.Size = new System.Drawing.Size(428, 36);
             this.button6.TabIndex = 7;
             this.button6.Text = "Статистика одиночной игры";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // GV1
             // 
@@ -290,13 +295,14 @@
             this.Ник,
             this.Побед,
             this.Поражений});
-            this.GV1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GV1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GV1.Location = new System.Drawing.Point(0, 0);
             this.GV1.Margin = new System.Windows.Forms.Padding(4);
             this.GV1.Name = "GV1";
             this.GV1.ReadOnly = true;
-            this.GV1.Size = new System.Drawing.Size(428, 358);
+            this.GV1.Size = new System.Drawing.Size(428, 398);
             this.GV1.TabIndex = 6;
+            this.GV1.Visible = false;
             // 
             // Ник
             // 
@@ -324,6 +330,87 @@
             this.Поражений.ReadOnly = true;
             this.Поражений.Width = 75;
             // 
+            // sound
+            // 
+            this.sound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.sound.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sound.Controls.Add(this.panel12);
+            this.sound.Controls.Add(this.panel11);
+            this.sound.Location = new System.Drawing.Point(1290, 60);
+            this.sound.MaximumSize = new System.Drawing.Size(240, 90);
+            this.sound.MinimumSize = new System.Drawing.Size(240, 2);
+            this.sound.Name = "sound";
+            this.sound.Size = new System.Drawing.Size(240, 2);
+            this.sound.TabIndex = 28;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.trackBar2);
+            this.panel12.Controls.Add(this.pictureBox8);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel12.Location = new System.Drawing.Point(0, -88);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(238, 44);
+            this.panel12.TabIndex = 44;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.trackBar2.Location = new System.Drawing.Point(48, 0);
+            this.trackBar2.MaximumSize = new System.Drawing.Size(0, 44);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(190, 44);
+            this.trackBar2.TabIndex = 44;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 7, 2);
+            this.pictureBox8.MaximumSize = new System.Drawing.Size(48, 44);
+            this.pictureBox8.MinimumSize = new System.Drawing.Size(48, 44);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.pictureBox8.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 42;
+            this.pictureBox8.TabStop = false;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.trackBar1);
+            this.panel11.Controls.Add(this.pictureBox9);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel11.Location = new System.Drawing.Point(0, -44);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(238, 44);
+            this.panel11.TabIndex = 43;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.trackBar1.Location = new System.Drawing.Point(48, 0);
+            this.trackBar1.MaximumSize = new System.Drawing.Size(0, 44);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(190, 44);
+            this.trackBar1.TabIndex = 44;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 7, 2);
+            this.pictureBox9.MaximumSize = new System.Drawing.Size(48, 44);
+            this.pictureBox9.MinimumSize = new System.Drawing.Size(48, 44);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.pictureBox9.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 42;
+            this.pictureBox9.TabStop = false;
+            // 
             // gameSettings
             // 
             this.gameSettings.Controls.Add(this.groupBox3);
@@ -347,7 +434,7 @@
             this.groupBox3.Controls.Add(this.People);
             this.groupBox3.Controls.Add(this.Bot);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox3.Location = new System.Drawing.Point(1427, 31);
+            this.groupBox3.Location = new System.Drawing.Point(1365, 190);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -397,7 +484,7 @@
             // 
             this.groupBox2.Controls.Add(this.player1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox2.Location = new System.Drawing.Point(33, 31);
+            this.groupBox2.Location = new System.Drawing.Point(127, 184);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -478,6 +565,7 @@
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(731, 645);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -491,6 +579,7 @@
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(731, 548);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
@@ -504,6 +593,7 @@
             // button8
             // 
             this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button8.Location = new System.Drawing.Point(731, 448);
             this.button8.Margin = new System.Windows.Forms.Padding(4);
@@ -517,6 +607,7 @@
             // button9
             // 
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.Location = new System.Drawing.Point(731, 350);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
@@ -553,6 +644,7 @@
             // button10
             // 
             this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button10.Location = new System.Drawing.Point(1489, 736);
             this.button10.Margin = new System.Windows.Forms.Padding(4);
@@ -597,175 +689,6 @@
             this.Battlefield.Size = new System.Drawing.Size(535, 494);
             this.Battlefield.TabIndex = 30;
             this.Battlefield.SizeChanged += new System.EventHandler(this.Battlefield_SizeChanged);
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // topPanel
-            // 
-            this.topPanel.AutoSize = true;
-            this.topPanel.Controls.Add(this.panel5);
-            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.topPanel.Location = new System.Drawing.Point(0, 0);
-            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
-            this.topPanel.MinimumSize = new System.Drawing.Size(0, 60);
-            this.topPanel.Name = "topPanel";
-            this.topPanel.Size = new System.Drawing.Size(1707, 60);
-            this.topPanel.TabIndex = 43;
-            // 
-            // panel5
-            // 
-            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(1440, 0);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(267, 60);
-            this.panel5.TabIndex = 43;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Controls.Add(this.panel9);
-            this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Controls.Add(this.panel3);
-            this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Controls.Add(this.panel10);
-            this.panel6.Controls.Add(this.pictureBox1);
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(0, 15);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
-            this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
-            this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(267, 44);
-            this.panel6.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(68, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4);
-            this.panel9.MinimumSize = new System.Drawing.Size(13, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(13, 44);
-            this.panel9.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(129, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.MinimumSize = new System.Drawing.Size(13, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(13, 44);
-            this.panel3.TabIndex = 43;
-            // 
-            // panel10
-            // 
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(190, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4);
-            this.panel10.MinimumSize = new System.Drawing.Size(13, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(13, 44);
-            this.panel10.TabIndex = 2;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(251, 0);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
-            this.panel7.MinimumSize = new System.Drawing.Size(13, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(16, 44);
-            this.panel7.TabIndex = 1;
-            // 
-            // panel8
-            // 
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4);
-            this.panel8.MinimumSize = new System.Drawing.Size(0, 15);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(267, 15);
-            this.panel8.TabIndex = 2;
-            // 
-            // timer2
-            // 
-            this.timer2.Interval = 15;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-            // 
-            // style
-            // 
-            this.style.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.style.Controls.Add(this.pictureBox7);
-            this.style.Controls.Add(this.pictureBox6);
-            this.style.Controls.Add(this.pictureBox5);
-            this.style.Controls.Add(this.button3);
-            this.style.Location = new System.Drawing.Point(10, 5);
-            this.style.MaximumSize = new System.Drawing.Size(237, 364);
-            this.style.MinimumSize = new System.Drawing.Size(237, 60);
-            this.style.Name = "style";
-            this.style.Size = new System.Drawing.Size(237, 60);
-            this.style.TabIndex = 44;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox7.Location = new System.Drawing.Point(0, 262);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(235, 101);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 161);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(235, 101);
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 60);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(235, 101);
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Image = global::CrossxZeros.Properties.Resources.Expand_Arrow_20px;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(235, 60);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Стиль";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // p11
             // 
@@ -890,6 +813,64 @@
             this.pictureBox10.TabIndex = 25;
             this.pictureBox10.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // topPanel
+            // 
+            this.topPanel.AutoSize = true;
+            this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.topPanel.Controls.Add(this.panel5);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.topPanel.MinimumSize = new System.Drawing.Size(2, 60);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(1707, 60);
+            this.topPanel.TabIndex = 43;
+            // 
+            // panel5
+            // 
+            this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel8);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel5.Location = new System.Drawing.Point(1438, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(267, 58);
+            this.panel5.TabIndex = 43;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox4);
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.pictureBox3);
+            this.panel6.Controls.Add(this.panel3);
+            this.panel6.Controls.Add(this.pictureBox2);
+            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Controls.Add(this.pictureBox1);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(0, 15);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
+            this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(267, 44);
+            this.panel6.TabIndex = 0;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
@@ -904,6 +885,16 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 42;
             this.pictureBox4.TabStop = false;
+            // 
+            // panel9
+            // 
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(68, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
+            this.panel9.MinimumSize = new System.Drawing.Size(13, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(13, 44);
+            this.panel9.TabIndex = 2;
             // 
             // pictureBox3
             // 
@@ -921,6 +912,16 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(129, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.MinimumSize = new System.Drawing.Size(13, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(13, 44);
+            this.panel3.TabIndex = 43;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -936,6 +937,16 @@
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(190, 0);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
+            this.panel10.MinimumSize = new System.Drawing.Size(13, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(13, 44);
+            this.panel10.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -953,91 +964,94 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // sound
+            // panel7
             // 
-            this.sound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.sound.Controls.Add(this.panel12);
-            this.sound.Controls.Add(this.panel11);
-            this.sound.Location = new System.Drawing.Point(1460, 0);
-            this.sound.MaximumSize = new System.Drawing.Size(240, 90);
-            this.sound.MinimumSize = new System.Drawing.Size(240, 0);
-            this.sound.Name = "sound";
-            this.sound.Size = new System.Drawing.Size(240, 0);
-            this.sound.TabIndex = 28;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(251, 0);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.MinimumSize = new System.Drawing.Size(13, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(16, 44);
+            this.panel7.TabIndex = 1;
             // 
-            // pictureBox9
+            // panel8
             // 
-            this.pictureBox9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 7, 2);
-            this.pictureBox9.MaximumSize = new System.Drawing.Size(48, 44);
-            this.pictureBox9.MinimumSize = new System.Drawing.Size(48, 44);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.pictureBox9.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 42;
-            this.pictureBox9.TabStop = false;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
+            this.panel8.MinimumSize = new System.Drawing.Size(0, 15);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(267, 15);
+            this.panel8.TabIndex = 2;
             // 
-            // panel11
+            // timer2
             // 
-            this.panel11.Controls.Add(this.trackBar1);
-            this.panel11.Controls.Add(this.pictureBox9);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel11.Location = new System.Drawing.Point(0, -44);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(240, 44);
-            this.panel11.TabIndex = 43;
+            this.timer2.Interval = 15;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // trackBar1
+            // style
             // 
-            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBar1.Location = new System.Drawing.Point(48, 0);
-            this.trackBar1.MaximumSize = new System.Drawing.Size(0, 44);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(192, 44);
-            this.trackBar1.TabIndex = 44;
+            this.style.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.style.Controls.Add(this.pictureBox7);
+            this.style.Controls.Add(this.pictureBox6);
+            this.style.Controls.Add(this.pictureBox5);
+            this.style.Controls.Add(this.button3);
+            this.style.Location = new System.Drawing.Point(10, 5);
+            this.style.MaximumSize = new System.Drawing.Size(237, 358);
+            this.style.MinimumSize = new System.Drawing.Size(237, 54);
+            this.style.Name = "style";
+            this.style.Size = new System.Drawing.Size(237, 54);
+            this.style.TabIndex = 44;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox7.Location = new System.Drawing.Point(0, 260);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(235, 101);
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 159);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(235, 101);
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 58);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(235, 101);
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Image = global::CrossxZeros.Properties.Resources.Expand_Arrow_20px;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(235, 58);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "Стиль";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.trackBar2);
-            this.panel12.Controls.Add(this.pictureBox8);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel12.Location = new System.Drawing.Point(0, -88);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(240, 44);
-            this.panel12.TabIndex = 44;
-            // 
-            // trackBar2
-            // 
-            this.trackBar2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.trackBar2.Location = new System.Drawing.Point(48, 0);
-            this.trackBar2.MaximumSize = new System.Drawing.Size(0, 44);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(192, 44);
-            this.trackBar2.TabIndex = 44;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 7, 2);
-            this.pictureBox8.MaximumSize = new System.Drawing.Size(48, 44);
-            this.pictureBox8.MinimumSize = new System.Drawing.Size(48, 44);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.pictureBox8.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 42;
-            this.pictureBox8.TabStop = false;
             // 
             // timer3
             // 
@@ -1049,10 +1063,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1707, 886);
+            this.Controls.Add(this.sound);
             this.Controls.Add(this.style);
-            this.Controls.Add(this.startMenu);
-            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.gameSettings);
+            this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -1061,12 +1076,22 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
+            this.Click += new System.EventHandler(this.Form1_Click);
             this.startMenu.ResumeLayout(false);
             this.startMenu.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).EndInit();
+            this.sound.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.gameSettings.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
@@ -1076,13 +1101,6 @@
             this.gameScreen.ResumeLayout(false);
             this.gameScreen.PerformLayout();
             this.Battlefield.ResumeLayout(false);
-            this.topPanel.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.style.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
@@ -1094,19 +1112,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.p33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            this.topPanel.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.sound.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.style.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
