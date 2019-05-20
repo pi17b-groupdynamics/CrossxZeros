@@ -25,6 +25,7 @@ namespace CrossxZeros
         bool p1_cross, p2_cross; //Кто крестик(false - ноль)
         int language = 0;
         private bool isCollapsed;
+        private bool SoundSt;
         public Form1()
         {
             InitializeComponent();
@@ -181,6 +182,7 @@ namespace CrossxZeros
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
             timer2.Start();
+            timer3.Start();
         }
 
         private void Battlefield_SizeChanged(object sender, EventArgs e)
@@ -516,6 +518,34 @@ namespace CrossxZeros
             if(!isCollapsed)
             {
                 timer2.Start();
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            timer3.Start();
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (SoundSt)
+            {
+                sound.Height += 20;
+                if (sound.Size == sound.MaximumSize)
+                {
+                    timer3.Stop();
+                    SoundSt = false;
+                }
+            }
+            else
+            {
+                sound.Height -= 20;
+                if (sound.Size == sound.MinimumSize)
+                {
+                    timer3.Stop();
+                    SoundSt = true;
+                }
             }
         }
 
