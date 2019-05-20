@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Globalization;
 using System.Windows.Forms;
 using System.Threading;
+using CrossxZeros.Properties;
 
 namespace CrossxZeros
 {
@@ -23,6 +24,7 @@ namespace CrossxZeros
         bool playr_enemy = false;
         bool p1_cross, p2_cross; //Кто крестик(false - ноль)
         int language = 0;
+        private bool isCollapsed;
         public Form1()
         {
             InitializeComponent();
@@ -120,6 +122,11 @@ namespace CrossxZeros
         private void button1_Click(object sender, EventArgs e)
         {
             gameSettings.BringToFront();
+            style.Hide();
+            if (!isCollapsed)
+            {
+                timer2.Start();
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -132,11 +139,15 @@ namespace CrossxZeros
         private void button10_Click(object sender, EventArgs e)
         {
             startMenu.BringToFront();
+            style.BringToFront();
+            style.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             startMenu.BringToFront();
+            style.BringToFront();
+            style.Show();
         }
 
         private void Form1_SizeChanged(object sender, EventArgs e)
@@ -169,6 +180,7 @@ namespace CrossxZeros
             }
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
+            timer2.Start();
         }
 
         private void Battlefield_SizeChanged(object sender, EventArgs e)
@@ -432,6 +444,7 @@ namespace CrossxZeros
                 button4.Text = "Before the 5 victory";
                 button2.Text = "Back";
                 button10.Text = "Menu";
+                button3.Text = "Style";
                 language = 1;
             }
             else if(language == 1)
@@ -459,7 +472,50 @@ namespace CrossxZeros
                 button4.Text = "До 5 побед";
                 button2.Text = "Назад";
                 button10.Text = "Меню";
+                button3.Text = "Стиль";
                 language = 0;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                button3.Image = Resources.Collapse_Arrow_20px;
+                style.Height += 20;
+                if (style.Size == style.MaximumSize)
+                {
+                    timer2.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                button3.Image = Resources.Expand_Arrow_20px;
+                style.Height -= 20;
+                if (style.Size == style.MinimumSize)
+                {
+                    timer2.Stop();
+                    isCollapsed = true;
+                }
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void startMenu_Click(object sender, EventArgs e)
+        {
+            if(!isCollapsed)
+            {
+                timer2.Start();
             }
         }
 
