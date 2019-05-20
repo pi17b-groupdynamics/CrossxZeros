@@ -25,6 +25,7 @@ namespace CrossxZeros
         bool human = true;
         int side = 0;
         int timer = 0;
+        int turn = 1; // 1- крестик, 0 - нолик; череда хода
         public Form1()
         {
             InitializeComponent();
@@ -342,6 +343,16 @@ namespace CrossxZeros
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
+            if(turn == 1)
+            {
+                p11.Image = Resources.cross;
+                turn = 0;
+            }
+            else if(turn == 0)
+            {
+                p11.Image = Resources.zero;
+                turn = 1;
+            }
         }
         private void p12_Click(object sender, EventArgs e)
         {  
