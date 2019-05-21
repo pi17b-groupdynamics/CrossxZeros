@@ -26,7 +26,7 @@ namespace CrossxZeros
         int winner_cross = 0;
         int winner_zero = 0;
         bool human = true;
-        int side = 0;
+        int side = 1;
         int timer = 0;
         int timer_2 = 0;
         int turn = 1; // 1- крестик, 0 - нолик; череда хода
@@ -869,6 +869,8 @@ namespace CrossxZeros
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if(turn == 1)
             {
                 p11.Image = Resources.cross;
@@ -890,6 +892,8 @@ namespace CrossxZeros
 
         private void p12_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p12.Image = Resources.cross;
@@ -911,6 +915,8 @@ namespace CrossxZeros
 
         private void p13_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p13.Image = Resources.cross;
@@ -932,6 +938,8 @@ namespace CrossxZeros
 
         private void p21_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p21.Image = Resources.cross;
@@ -953,6 +961,8 @@ namespace CrossxZeros
 
         private void p22_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p22.Image = Resources.cross;
@@ -974,6 +984,8 @@ namespace CrossxZeros
 
         private void p23_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p23.Image = Resources.cross;
@@ -995,6 +1007,8 @@ namespace CrossxZeros
 
         private void p31_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p31.Image = Resources.cross;
@@ -1016,6 +1030,8 @@ namespace CrossxZeros
 
         private void p32_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p32.Image = Resources.cross;
@@ -1037,6 +1053,8 @@ namespace CrossxZeros
 
         private void p33_Click(object sender, EventArgs e)
         {
+            pictureBox10.BorderStyle = BorderStyle.None;
+            pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p33.Image = Resources.cross;
@@ -1058,6 +1076,7 @@ namespace CrossxZeros
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+
             if (language == 0)
             {
                 button1.Text = "Play";
@@ -1302,6 +1321,22 @@ namespace CrossxZeros
         {
             int result = 15 - timer;
             label3.Text = result.ToString();
+            if(turn == 1 && side == 1)
+            {
+                pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            }
+            else if (turn == 1 && side == 2)
+            {
+                pictureBox11.BorderStyle = BorderStyle.Fixed3D;
+            }
+            else if (turn == 0 && side == 1)
+            {
+                pictureBox11.BorderStyle = BorderStyle.Fixed3D;
+            }
+            else if(turn == 0 && side == 2)
+            {
+                pictureBox10.BorderStyle = BorderStyle.Fixed3D;
+            }
             timer = timer + 1;
             if (timer < 17)
             {
