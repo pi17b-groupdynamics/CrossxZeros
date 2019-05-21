@@ -83,3 +83,8 @@ C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj
 C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CopyComplete
 C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.exe
 C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.pdb
+C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\bin\Debug\Interop.WMPLib.dll
+C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\Interop.WMPLib.dll
+C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.ResolveComReference.cache

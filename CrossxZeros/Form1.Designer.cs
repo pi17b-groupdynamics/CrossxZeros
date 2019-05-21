@@ -113,6 +113,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.startMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
@@ -155,6 +156,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
@@ -373,7 +375,7 @@
             this.trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar2.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(0, 44);
+            this.trackBar2.Size = new System.Drawing.Size(189, 44);
             this.trackBar2.TabIndex = 44;
             // 
             // panel11
@@ -394,7 +396,7 @@
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar1.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(0, 44);
+            this.trackBar1.Size = new System.Drawing.Size(189, 44);
             this.trackBar1.TabIndex = 44;
             // 
             // gameSettings
@@ -752,7 +754,7 @@
             this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
             this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 44);
+            this.panel6.Size = new System.Drawing.Size(267, 44);
             this.panel6.TabIndex = 0;
             // 
             // panel9
@@ -1164,6 +1166,18 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 60);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1436, 818);
+            this.axWindowsMediaPlayer1.TabIndex = 29;
+            this.axWindowsMediaPlayer1.Visible = false;
+            this.axWindowsMediaPlayer1.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.axWindowsMediaPlayer1_PlayStateChange);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1176,6 +1190,7 @@
             this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1234,6 +1249,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1324,6 +1340,7 @@
         private System.Windows.Forms.Label congratulation;
         private System.Windows.Forms.Timer timer6;
         private System.Windows.Forms.PictureBox pictureBox12;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }
 

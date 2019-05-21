@@ -1839,7 +1839,16 @@ namespace CrossxZeros
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            axWindowsMediaPlayer1.BringToFront();
+            axWindowsMediaPlayer1.Visible = true;
+        }
 
+        private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            if(e.newState == 8)
+            {
+                this.axWindowsMediaPlayer1.close();
+            }
         }
 
         private void Form1_Click(object sender, EventArgs e)
