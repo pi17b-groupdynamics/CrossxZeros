@@ -751,9 +751,18 @@ namespace CrossxZeros
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        {
+        { 
             timer3.Start();
-            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            if (border_check == false)
+            {
+                pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+                border_check = true;
+            }
+            else
+            {
+                pictureBox2.BorderStyle = BorderStyle.None;
+                border_check = false;
+            }
         }
 
         private void timer3_Tick(object sender, EventArgs e)
