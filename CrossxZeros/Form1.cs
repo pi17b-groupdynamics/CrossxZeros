@@ -35,6 +35,7 @@ namespace CrossxZeros
         int first_numb = 1;
         int second_numb = 1;
         int another_timer = 0;
+        bool jedi_style = false;
         bool border_check = false;
         bool check_win_or_not = false;
         object sender = null;
@@ -43,7 +44,9 @@ namespace CrossxZeros
         public Form1()
         {
             InitializeComponent();
-            
+
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+
             colors.Add(Color.FromArgb(3, 169, 244));
             colors.Add(Color.FromArgb(33, 150, 243));
             colors.Add(Color.FromArgb(0, 150, 136));
@@ -1839,6 +1842,7 @@ namespace CrossxZeros
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            jedi_style = true;
             axWindowsMediaPlayer1.BringToFront();
             style.BringToFront();
             sound.BringToFront();
@@ -1852,6 +1856,19 @@ namespace CrossxZeros
             if(e.newState == 8)
             {
                 this.axWindowsMediaPlayer1.close();
+                startMenu.BringToFront();
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                if (e.KeyData == Keys.Escape)
+                {
+                    this.axWindowsMediaPlayer1.close();
+                    startMenu.BringToFront();
+                }
             }
         }
 
