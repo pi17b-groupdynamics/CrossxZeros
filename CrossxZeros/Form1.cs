@@ -109,6 +109,16 @@ namespace CrossxZeros
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if(side == 1)
+            {
+                pictureBox10.Image = Resources.LTK5AdoTa;
+                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+            }
+            else
+            {
+                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                pictureBox11.Image = Resources.LTK5AdoTa;
+            }
             timer4.Enabled = true;
             if(player1.Text == "")
             {
@@ -139,6 +149,16 @@ namespace CrossxZeros
 
         private void button8_Click(object sender, EventArgs e)
         {
+            if (side == 1)
+            {
+                pictureBox10.Image = Resources.LTK5AdoTa;
+                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+            }
+            else
+            {
+                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                pictureBox11.Image = Resources.LTK5AdoTa;
+            }
             timer4.Enabled = true;
             if (player1.Text == "")
             {
@@ -169,6 +189,16 @@ namespace CrossxZeros
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (side == 1)
+            {
+                pictureBox10.Image = Resources.LTK5AdoTa;
+                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+            }
+            else
+            {
+                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                pictureBox11.Image = Resources.LTK5AdoTa;
+            }
             timer4.Enabled = true;
             if (player1.Text == "")
             {
