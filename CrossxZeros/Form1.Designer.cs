@@ -90,6 +90,7 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.congratulation = new System.Windows.Forms.Label();
+            this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -111,7 +112,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.startMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
@@ -370,7 +370,7 @@
             this.trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar2.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(189, 44);
+            this.trackBar2.Size = new System.Drawing.Size(0, 44);
             this.trackBar2.TabIndex = 44;
             // 
             // panel11
@@ -391,7 +391,7 @@
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar1.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(189, 44);
+            this.trackBar1.Size = new System.Drawing.Size(0, 44);
             this.trackBar1.TabIndex = 44;
             // 
             // gameSettings
@@ -749,7 +749,7 @@
             this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
             this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(267, 44);
+            this.panel6.Size = new System.Drawing.Size(233, 44);
             this.panel6.TabIndex = 0;
             // 
             // panel9
@@ -864,6 +864,11 @@
             this.congratulation.Size = new System.Drawing.Size(500, 300);
             this.congratulation.TabIndex = 0;
             this.congratulation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timer6
+            // 
+            this.timer6.Interval = 1000;
+            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
             // 
             // pictureBox7
             // 
@@ -1093,7 +1098,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::CrossxZeros.Properties.Resources.ru_eng;
             this.pictureBox3.Location = new System.Drawing.Point(81, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 7, 2);
             this.pictureBox3.MaximumSize = new System.Drawing.Size(48, 44);
@@ -1137,11 +1142,6 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // timer6
-            // 
-            this.timer6.Interval = 1000;
-            this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
             // 
             // Form1
             // 

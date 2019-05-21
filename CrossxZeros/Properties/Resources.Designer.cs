@@ -93,6 +93,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap eng_ru {
+            get {
+                object obj = ResourceManager.GetObject("eng_ru", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Expand_Arrow_20px {
             get {
                 object obj = ResourceManager.GetObject("Expand Arrow_20px", resourceCulture);
@@ -116,6 +126,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap LTK5AdoTa {
             get {
                 object obj = ResourceManager.GetObject("LTK5AdoTa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ru_eng {
+            get {
+                object obj = ResourceManager.GetObject("ru_eng", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
