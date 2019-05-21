@@ -97,6 +97,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.p11 = new System.Windows.Forms.PictureBox();
             this.p12 = new System.Windows.Forms.PictureBox();
             this.p13 = new System.Windows.Forms.PictureBox();
@@ -138,6 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p13)).BeginInit();
@@ -162,6 +164,7 @@
             this.startMenu.Controls.Add(this.button1);
             this.startMenu.Controls.Add(this.panel2);
             this.startMenu.Controls.Add(this.panel1);
+            this.startMenu.Controls.Add(this.pictureBox12);
             this.startMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.startMenu.Location = new System.Drawing.Point(0, 60);
             this.startMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -947,6 +950,18 @@
             this.pictureBox9.TabIndex = 42;
             this.pictureBox9.TabStop = false;
             // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox12.Image = global::CrossxZeros.Properties.Resources.crossXzeroes1;
+            this.pictureBox12.Location = new System.Drawing.Point(298, -60);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(841, 621);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 28;
+            this.pictureBox12.TabStop = false;
+            // 
             // p11
             // 
             this.p11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1151,9 +1166,9 @@
             this.ClientSize = new System.Drawing.Size(1436, 878);
             this.Controls.Add(this.style);
             this.Controls.Add(this.sound);
+            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
-            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -1196,6 +1211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p13)).EndInit();
@@ -1300,6 +1316,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label congratulation;
         private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.PictureBox pictureBox12;
     }
 }
 
