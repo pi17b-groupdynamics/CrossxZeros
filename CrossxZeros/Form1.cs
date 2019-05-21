@@ -932,6 +932,7 @@ namespace CrossxZeros
                 && (p22.Enabled == false) && (p23.Enabled == false) && (p31.Enabled == false) && (p32.Enabled == false)
                 && (p33.Enabled == false))
             {
+                check_win_or_not = true;
                 timer4.Stop();
                 congratulation.Text = "Dead hit!";
                 panel4.BringToFront();
