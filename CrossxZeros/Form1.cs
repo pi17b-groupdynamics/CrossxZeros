@@ -34,7 +34,9 @@ namespace CrossxZeros
         bool checkpoint = false;
         int first_numb = 1;
         int second_numb = 1;
+        int another_timer = 0;
         bool border_check = false;
+        bool check_win_or_not = false;
         object sender = null;
         EventArgs e = null;
         string lane = "11";
@@ -56,7 +58,7 @@ namespace CrossxZeros
         }
         void start_battle() // Чистка поля после боя
         {
-          /*  p11.Enabled = true;
+          /*p11.Enabled = true;
             p11.Image = null;
             // Включаем кнопку и удаляем изборажение
             p12.Enabled = true;
@@ -84,6 +86,30 @@ namespace CrossxZeros
             
         }
 
+        void start_battle_menu()
+        {
+            turn = 1;
+            one = 2; two = 2; three = 2; four = 2; five = 2; six = 2; seven = 2; eight = 2; nine = 2;
+            p11.Enabled = true;
+            p11.Image = null;
+            // Включаем кнопку и удаляем изборажение
+            p12.Enabled = true;
+            p12.Image = null;
+            p13.Enabled = true;
+            p13.Image = null;
+            p21.Enabled = true;
+            p21.Image = null;
+            p22.Enabled = true;
+            p22.Image = null;
+            p23.Enabled = true;
+            p23.Image = null;
+            p31.Enabled = true;
+            p31.Image = null;
+            p32.Enabled = true;
+            p32.Image = null;
+            p33.Enabled = true;
+            p33.Image = null;
+        }
     
         private void startMenu1_Load(object sender, EventArgs e)
         { 
@@ -235,7 +261,7 @@ namespace CrossxZeros
             timer4.Enabled = false;
             timer = 0;
             label3.Text = "";
-            start_battle();
+            start_battle_menu();
             if (!SoundSt)
             {
                 timer3.Start();
@@ -403,24 +429,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();  
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }                
             }
             else if(one == 0 && two == 0 && three == 0)
@@ -429,24 +457,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
            else if(one == 1 && five == 1 && nine == 1)
@@ -455,24 +485,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (one == 0 && five == 0 && nine == 0)
@@ -481,24 +513,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 1 && six == 1 && nine == 1)
@@ -507,24 +541,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 0 && six == 0 && nine == 0)
@@ -533,24 +569,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Enabled = true;
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (one == 1 && four == 1 && seven == 1)
@@ -559,24 +597,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (one == 0 && four == 0 && seven == 0)
@@ -585,24 +625,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (seven == 1 && eight == 1 && nine == 1)
@@ -611,24 +653,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (seven == 0 && eight == 0 && nine == 0)
@@ -637,24 +681,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 1 && five == 1 && seven == 1)
@@ -663,24 +709,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 0 && five == 0 && seven == 0)
@@ -689,24 +737,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 1 && six == 1 && nine == 1)
@@ -715,24 +765,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (three == 0 && six == 0 && nine == 0)
@@ -741,24 +793,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (four == 1 && five == 1 && six == 1)
@@ -767,24 +821,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (four == 0 && five == 0 && six == 0)
@@ -793,24 +849,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (two == 1 && five == 1 && eight == 1)
@@ -819,24 +877,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Первый игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
             }
             else if (two == 0 && five == 0 && eight == 0)
@@ -845,24 +905,26 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
-                    label4.Text = "Победил 1 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
-                    label4.Text = "Победил 2 игрок";
-                    winner_zero = 0;
-                    winner_cross = 0;
-                    check_on_wins = 0;
-                    button10_Click(sender, e);
+                    timer4.Stop();
+                    congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else
                 {
-                    label4.Text = "Второй игрок выиграл раунд";
-                    start_battle();
+                    check_win_or_not = true;
+                    timer4.Stop();
+                    congratulation.Text = player1.Text + " won this match!";
+                    panel4.BringToFront();
+                    start_battle_menu();
+                    timer6.Start();
                 }
               
             }
@@ -870,8 +932,10 @@ namespace CrossxZeros
                 && (p22.Enabled == false) && (p23.Enabled == false) && (p31.Enabled == false) && (p32.Enabled == false)
                 && (p33.Enabled == false))
             {
-                label4.Text = "Ничья";
-                start_battle();
+                timer4.Stop();
+                congratulation.Text = "Dead hit!";
+                panel4.BringToFront();
+                timer6.Start(); ;
             }
         }
 
@@ -1259,6 +1323,36 @@ namespace CrossxZeros
                 timer5.Enabled = false;
             }
           
+
+        }
+
+        private void timer6_Tick(object sender, EventArgs e)
+        {
+            another_timer = another_timer + 1;
+            if (another_timer == 4 && check_win_or_not == false)
+            {
+                winner_zero = 0;
+                winner_cross = 0;
+                check_on_wins = 0;
+                another_timer = 0;
+                timer = 0;
+                button10_Click(sender, e);
+                congratulation.Text = "";
+                timer6.Stop();
+            }
+            else if(another_timer == 4 && check_win_or_not == true)
+            {
+                another_timer = 0;
+                timer = 0;
+                timer4.Start();
+                start_battle_menu();
+                gameScreen.BringToFront();
+                timer6.Stop();
+            }
+        }
+
+        private void player1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
