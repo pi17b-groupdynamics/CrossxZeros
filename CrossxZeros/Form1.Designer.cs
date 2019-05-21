@@ -344,7 +344,7 @@
             this.sound.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sound.Controls.Add(this.panel12);
             this.sound.Controls.Add(this.panel11);
-            this.sound.Location = new System.Drawing.Point(1200, 60);
+            this.sound.Location = new System.Drawing.Point(1195, 60);
             this.sound.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sound.MaximumSize = new System.Drawing.Size(239, 91);
             this.sound.MinimumSize = new System.Drawing.Size(239, 2);
@@ -370,7 +370,7 @@
             this.trackBar2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar2.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(0, 44);
+            this.trackBar2.Size = new System.Drawing.Size(189, 44);
             this.trackBar2.TabIndex = 44;
             // 
             // panel11
@@ -391,7 +391,7 @@
             this.trackBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.trackBar1.MaximumSize = new System.Drawing.Size(0, 44);
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(0, 44);
+            this.trackBar1.Size = new System.Drawing.Size(189, 44);
             this.trackBar1.TabIndex = 44;
             // 
             // gameSettings
@@ -666,12 +666,11 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(636, 0);
+            this.label3.Location = new System.Drawing.Point(640, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 161);
+            this.label3.Size = new System.Drawing.Size(165, 93);
             this.label3.TabIndex = 31;
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -750,7 +749,7 @@
             this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
             this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 44);
+            this.panel6.Size = new System.Drawing.Size(267, 44);
             this.panel6.TabIndex = 0;
             // 
             // panel9
@@ -845,6 +844,9 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel4.Controls.Add(this.congratulation);
             this.panel4.Location = new System.Drawing.Point(470, 325);

@@ -282,15 +282,15 @@ namespace CrossxZeros
 
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
-            if (gameScreen.Height - 200<gameScreen.Width-900)
+            if (gameScreen.Height - 200<gameScreen.Width-800)
             {
                 Battlefield.Width = gameScreen.Height - 198;
                 Battlefield.Height = gameScreen.Height - 198;
             }
             else
             {
-                Battlefield.Width = gameScreen.Width - 898;
-                Battlefield.Height = gameScreen.Width - 898;
+                Battlefield.Width = gameScreen.Width - 798;
+                Battlefield.Height = gameScreen.Width - 798;
             }
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
@@ -298,15 +298,15 @@ namespace CrossxZeros
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (gameScreen.Height - 200 < gameScreen.Width - 900)
+            if (gameScreen.Height - 200 < gameScreen.Width - 800)
             {
                 Battlefield.Width = gameScreen.Height - 198;
                 Battlefield.Height = gameScreen.Height - 198;
             }
             else
             {
-                Battlefield.Width = gameScreen.Width - 898;
-                Battlefield.Height = gameScreen.Width - 898;
+                Battlefield.Width = gameScreen.Width - 798;
+                Battlefield.Height = gameScreen.Width - 798;
             }
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
@@ -429,6 +429,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -437,6 +438,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -445,6 +447,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -459,6 +462,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -467,6 +471,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -475,9 +480,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -489,6 +495,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -497,6 +504,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -505,6 +513,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -519,6 +528,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -527,6 +537,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -535,9 +546,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -549,6 +561,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -557,6 +570,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -565,6 +579,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -579,6 +594,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -587,6 +603,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -595,9 +612,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -609,6 +627,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -617,6 +636,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -625,6 +645,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -639,6 +660,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -647,6 +669,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -655,9 +678,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -669,6 +693,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -677,6 +702,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -685,6 +711,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -699,6 +726,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -707,6 +735,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -715,9 +744,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -729,6 +759,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -737,6 +768,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -745,6 +777,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -759,6 +792,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -767,6 +801,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -775,9 +810,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -789,6 +825,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -797,6 +834,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -805,6 +843,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -819,6 +858,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -827,6 +867,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -835,9 +876,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -849,6 +891,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -857,6 +900,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -865,6 +909,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -879,6 +924,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -887,6 +933,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -895,9 +942,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -909,6 +957,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -917,6 +966,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -925,6 +975,7 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
                     congratulation.Text = player1.Text + " won this match!";
@@ -939,6 +990,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
@@ -947,6 +999,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    Battlefield.Hide();
                     check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
@@ -955,9 +1008,10 @@ namespace CrossxZeros
                 }
                 else
                 {
+                    Battlefield.Hide();
                     check_win_or_not = true;
                     timer4.Stop();
-                    congratulation.Text = player1.Text + " won this match!";
+                    congratulation.Text = player2.Text + " won this match!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -968,6 +1022,7 @@ namespace CrossxZeros
                 && (p22.Enabled == false) && (p23.Enabled == false) && (p31.Enabled == false) && (p32.Enabled == false)
                 && (p33.Enabled == false))
             {
+                Battlefield.Hide();
                 check_win_or_not = true;
                 timer4.Stop();
                 congratulation.Text = "Dead hit!";
@@ -1374,6 +1429,7 @@ namespace CrossxZeros
                 another_timer = 0;
                 timer = 0;
                 congratulation.Text = "";
+                Battlefield.Show();
                 timer6.Stop();
                 button10_Click(sender, e);
             }
@@ -1386,6 +1442,7 @@ namespace CrossxZeros
                 gameScreen.BringToFront();
                 timer6.Stop();
                 check_win_or_not = false;
+                Battlefield.Show();
             }
         }
 
