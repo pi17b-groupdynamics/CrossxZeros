@@ -429,6 +429,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -436,6 +437,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -457,6 +459,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -464,6 +467,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -485,6 +489,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -492,6 +497,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -513,6 +519,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -520,6 +527,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -541,6 +549,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -548,6 +557,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -569,6 +579,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -576,6 +587,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -597,6 +609,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -604,6 +617,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -625,6 +639,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -632,6 +647,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -653,6 +669,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -660,6 +677,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -681,6 +699,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -688,6 +707,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -709,6 +729,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -716,6 +737,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -737,6 +759,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -744,6 +767,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -765,6 +789,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -772,6 +797,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -793,6 +819,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -800,6 +827,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -821,6 +849,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -828,6 +857,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -849,6 +879,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -856,6 +887,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -877,6 +909,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -884,6 +917,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -905,6 +939,7 @@ namespace CrossxZeros
                 check_on_wins = check_on_wins + 1;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
                     panel4.BringToFront();
@@ -912,6 +947,7 @@ namespace CrossxZeros
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
+                    check_win_or_not = false;
                     timer4.Stop();
                     congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
                     panel4.BringToFront();
@@ -1337,9 +1373,9 @@ namespace CrossxZeros
                 check_on_wins = 0;
                 another_timer = 0;
                 timer = 0;
-                button10_Click(sender, e);
                 congratulation.Text = "";
                 timer6.Stop();
+                button10_Click(sender, e);
             }
             else if(another_timer == 4 && check_win_or_not == true)
             {
@@ -1349,6 +1385,7 @@ namespace CrossxZeros
                 start_battle_menu();
                 gameScreen.BringToFront();
                 timer6.Stop();
+                check_win_or_not = false;
             }
         }
 
