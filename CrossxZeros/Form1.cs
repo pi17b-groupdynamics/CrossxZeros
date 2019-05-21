@@ -1832,9 +1832,19 @@ namespace CrossxZeros
 
         }
 
-        private void Form1_Click(object sender, EventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
         }
 
         private void button7_Click(object sender, EventArgs e)

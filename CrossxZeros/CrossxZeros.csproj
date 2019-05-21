@@ -154,5 +154,20 @@
   <ItemGroup>
     <None Include="Resources\crossXzeroes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal_Style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_wars_style.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_wars_style1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_wars_style2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_wars_style3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
