@@ -340,7 +340,7 @@
             this.sound.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sound.Controls.Add(this.panel12);
             this.sound.Controls.Add(this.panel11);
-            this.sound.Location = new System.Drawing.Point(1291, 60);
+            this.sound.Location = new System.Drawing.Point(1200, 60);
             this.sound.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sound.MaximumSize = new System.Drawing.Size(239, 91);
             this.sound.MinimumSize = new System.Drawing.Size(239, 2);
@@ -1117,9 +1117,9 @@
             this.ClientSize = new System.Drawing.Size(1444, 886);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.style);
-            this.Controls.Add(this.startMenu);
-            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
+            this.Controls.Add(this.gameSettings);
+            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.topPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);

@@ -22,6 +22,9 @@ namespace CrossxZeros
         private bool isCollapsed;
         private bool SoundSt;
         int count_of_wins;
+        int check_on_wins = 0;
+        int winner_cross = 0;
+        int winner_zero = 0;
         bool human = true;
         int side = 0;
         int timer = 0;
@@ -32,6 +35,8 @@ namespace CrossxZeros
         int first_numb = 1;
         int second_numb = 1;
         bool border_check = false;
+        object sender = null;
+        EventArgs e = null;
         string lane = "11";
         public Form1()
         {
@@ -363,95 +368,472 @@ namespace CrossxZeros
         {
             if (one == 1 && two == 1 && three == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
-               
+
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();  
+                }                
             }
             else if(one == 0 && two == 0 && three == 0)
             {
-                label4.Text = "Победил 2 игрок";
-
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
            else if(one == 1 && five == 1 && nine == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (one == 0 && five == 0 && nine == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 1 && six == 1 && nine == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 0 && six == 0 && nine == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (one == 1 && four == 1 && seven == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (one == 0 && four == 0 && seven == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (seven == 1 && eight == 1 && nine == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (seven == 0 && eight == 0 && nine == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 1 && five == 1 && seven == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 0 && five == 0 && seven == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 1 && six == 1 && nine == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (three == 0 && six == 0 && nine == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (four == 1 && five == 1 && six == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (four == 0 && five == 0 && six == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (two == 1 && five == 1 && eight == 1)
             {
-                label4.Text = "Победил 1 игрок";
-                start_battle();
+                winner_cross = winner_cross + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Первый игрок выиграл раунд";
+                    start_battle();
+                }
             }
             else if (two == 0 && five == 0 && eight == 0)
             {
-                label4.Text = "Победил 2 игрок";
-                start_battle();
+                winner_zero = winner_zero + 1;
+                check_on_wins = check_on_wins + 1;
+                if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
+                {
+                    label4.Text = "Победил 1 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
+                {
+                    label4.Text = "Победил 2 игрок";
+                    winner_zero = 0;
+                    winner_cross = 0;
+                    check_on_wins = 0;
+                    button10_Click(sender, e);
+                }
+                else
+                {
+                    label4.Text = "Второй игрок выиграл раунд";
+                    start_battle();
+                }
             }
         }
 
