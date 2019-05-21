@@ -28,6 +28,11 @@ namespace CrossxZeros
         int timer_2 = 0;
         int turn = 1; // 1- крестик, 0 - нолик; череда хода
         int one=2, two=2, three=2, four=2, five=2, six=2, seven=2, eight=2, nine = 2;
+        bool checkpoint = false;
+        int first_numb = 1;
+        int second_numb = 1;
+        bool border_check = false;
+        string lane = "11";
         public Form1()
         {
             InitializeComponent();
@@ -877,11 +882,115 @@ namespace CrossxZeros
             int result = 15 - timer;
             label3.Text = result.ToString();
             timer = timer + 1;
-            if(timer == 15)
+            if (timer < 17)
             {
+                if (checkpoint == false)
+                {
+                    Random random = new Random();
+                    first_numb = random.Next(3) + 1;
+                    second_numb = random.Next(3) + 1;
+                    lane = first_numb.ToString() + second_numb.ToString();
+                    checkpoint = true;
+                }
+                if ((Convert.ToInt32(lane) == 11) && (p11.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p11_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 12) && (p12.Enabled == true))
+                {
 
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p12_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 13) && (p13.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p13_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 21) && (p21.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p21_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 22) && (p22.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p22_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 23) && (p23.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p23_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 31) && (p31.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p31_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 32) && (p32.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p32_Click(sender, e);
+                    }
+                }
+                else if ((Convert.ToInt32(lane) == 33) && (p33.Enabled == true))
+                {
+                    if (timer == 16)
+                    {
+                        checkpoint = false;
+                        p33_Click(sender, e);
+                    }
+                }
+                else if (checkpoint == true)
+                {
+                    checkpoint = false;
+                }
             }
-            
+            else
+            {
+                if (p11.Enabled == true)
+                    p11_Click(sender, e);
+                if (p12.Enabled == true)
+                    p12_Click(sender, e);
+                if (p13.Enabled == true)
+                    p13_Click(sender, e);
+                if (p21.Enabled == true)
+                    p21_Click(sender, e);
+                if (p22.Enabled == true)
+                    p22_Click(sender, e);
+                if (p23.Enabled == true)
+                    p23_Click(sender, e);
+                if (p31.Enabled == true)
+                    p31_Click(sender, e);
+                if (p32.Enabled == true)
+                    p32_Click(sender, e);
+                if (p33.Enabled == true)
+                    p33_Click(sender, e);
+            }
         }
     }
 
