@@ -69,3 +69,17 @@ C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CoreC
 C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CopyComplete
 C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.exe
 C:\Users\Acer\Desktop\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.pdb
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Debug\CrossxZeros.exe.config
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Debug\CrossxZeros.exe
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\bin\Debug\CrossxZeros.pdb
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csprojAssemblyReference.cache
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.Form1.resources
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.GameScreen.resources
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.GameSettings.resources
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.Properties.Resources.resources
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.StartMenu.resources
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.GenerateResource.cache
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CoreCompileInputs.cache
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.csproj.CopyComplete
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.exe
+C:\Users\Денис\Source\Repos\pi17b-groupdynamics\CrossxZeros\CrossxZeros\obj\Debug\CrossxZeros.pdb

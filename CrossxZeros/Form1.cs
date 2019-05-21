@@ -864,6 +864,14 @@ namespace CrossxZeros
                     label4.Text = "Второй игрок выиграл раунд";
                     start_battle();
                 }
+              
+            }
+            else if((p11.Enabled == false) && (p12.Enabled == false) && (p13.Enabled == false) && (p21.Enabled == false) 
+                && (p22.Enabled == false) && (p23.Enabled == false) && (p31.Enabled == false) && (p32.Enabled == false)
+                && (p33.Enabled == false))
+            {
+                label4.Text = "Ничья";
+                start_battle();
             }
         }
 
