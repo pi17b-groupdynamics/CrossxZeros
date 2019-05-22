@@ -41,6 +41,16 @@ namespace CrossxZeros
         object sender = null;
         EventArgs e = null;
         string lane = "11";
+        int[,] P = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+        struct Puti_Win
+        {
+            public int X;
+            public int Y;
+
+
+        }
+        Puti_Win[,] PW = new Puti_Win[8, 3];
+
         public Form1()
         {
             InitializeComponent();
@@ -87,6 +97,11 @@ namespace CrossxZeros
             timer5.Enabled = true;
 
             
+        }
+
+        void bot_v2()
+        {
+            p11_Click(sender, e);
         }
 
         void start_battle_menu()
@@ -177,6 +192,10 @@ namespace CrossxZeros
             if (!SoundSt)
             {
                 timer3.Start();
+            }
+            if(human == false)
+            {
+                bot_v2();
             }
         }
 
@@ -325,6 +344,62 @@ namespace CrossxZeros
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
             timer2.Start();
             timer3.Start();
+            PW[0, 0].X = 0;
+            PW[0, 1].X = 0;
+            PW[0, 2].X = 0;
+            PW[0, 0].Y = 0;
+            PW[0, 1].Y = 1;
+            PW[0, 2].Y = 2;
+
+            PW[1, 0].X = 1;
+            PW[1, 1].X = 1;
+            PW[1, 2].X = 1;
+            PW[1, 0].Y = 0;
+            PW[1, 1].Y = 1;
+            PW[1, 2].Y = 2;
+
+            PW[2, 0].X = 2;
+            PW[2, 1].X = 2;
+            PW[2, 2].X = 2;
+            PW[2, 0].Y = 0;
+            PW[2, 1].Y = 1;
+            PW[2, 1].Y = 2;
+
+            PW[3, 0].X = 0;
+            PW[3, 1].X = 1;
+            PW[3, 2].X = 2;
+            PW[3, 0].Y = 0;
+            PW[3, 1].Y = 0;
+            PW[3, 2].Y = 0;
+
+            PW[4, 0].X = 0;
+            PW[4, 1].X = 1;
+            PW[4, 2].X = 2;
+            PW[4, 0].Y = 1;
+            PW[4, 1].Y = 1;
+            PW[4, 2].Y = 1;
+
+            PW[5, 0].X = 0;
+            PW[5, 1].X = 1;
+            PW[5, 2].X = 2;
+            PW[5, 0].Y = 2;
+            PW[5, 1].Y = 2;
+            PW[5, 2].Y = 2;
+
+            PW[6, 0].X = 0;
+            PW[6, 1].X = 1;
+            PW[6, 2].X = 2;
+            PW[6, 0].Y = 0;
+            PW[6, 1].Y = 1;
+            PW[6, 2].Y = 2;
+
+            PW[7, 0].X = 2;
+            PW[7, 1].X = 1;
+            PW[7, 2].X = 0;
+            PW[7, 0].Y = 0;
+            PW[7, 1].Y = 1;
+            PW[7, 2].Y = 2;
+
         }
 
         private void Battlefield_SizeChanged(object sender, EventArgs e)
@@ -1427,13 +1502,14 @@ namespace CrossxZeros
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
+            P[0, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if(turn == 1)
             {
                 p11.Image = Resources.cross;
                 p11.Enabled = false;
-                turn = 0;
+                turn = -1;
                 one = 1;
                 timer = 0;
             }
@@ -1446,10 +1522,16 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
+
         }
 
         private void p12_Click(object sender, EventArgs e)
         {
+            P[0, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1458,7 +1540,7 @@ namespace CrossxZeros
                 p12.Enabled = false;
                 timer = 0;
                 two = 1;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1469,17 +1551,22 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p13_Click(object sender, EventArgs e)
         {
+            P[0, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
                 p13.Image = Resources.cross;
                 p13.Enabled = false;
-                turn = 0;
+                turn = -1;
                 three = 1;
                 timer = 0;
             }
@@ -1492,10 +1579,15 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p21_Click(object sender, EventArgs e)
         {
+            P[1, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1504,7 +1596,7 @@ namespace CrossxZeros
                 p21.Enabled = false;
                 timer = 0;
                 four = 1;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1519,6 +1611,7 @@ namespace CrossxZeros
 
         private void p22_Click(object sender, EventArgs e)
         {
+            P[1, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1527,7 +1620,7 @@ namespace CrossxZeros
                 p22.Enabled = false;
                 five = 1;
                 timer = 0;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1538,10 +1631,15 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p23_Click(object sender, EventArgs e)
         {
+            P[1, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1550,7 +1648,7 @@ namespace CrossxZeros
                 p23.Enabled = false;
                 six = 1;
                 timer = 0;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1561,10 +1659,15 @@ namespace CrossxZeros
                 p23.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p31_Click(object sender, EventArgs e)
         {
+            P[2, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1573,7 +1676,7 @@ namespace CrossxZeros
                 p31.Enabled = false;
                 timer = 0;
                 seven = 1;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1584,10 +1687,15 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p32_Click(object sender, EventArgs e)
         {
+            P[2, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1596,9 +1704,9 @@ namespace CrossxZeros
                 p32.Enabled = false;
                 eight = 1;
                 timer = 0;
-                turn = 0;
+                turn = -1;
             }
-            else if (turn == 0)
+            else if (turn == -1)
             {
                 p32.Image = Resources.zero;
                 turn = 1;
@@ -1607,10 +1715,15 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void p33_Click(object sender, EventArgs e)
         {
+            P[2, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
@@ -1619,7 +1732,7 @@ namespace CrossxZeros
                 p33.Enabled = false;
                 timer = 0;
                 nine = 1;
-                turn = 0;
+                turn = -1;
             }
             else
             {
@@ -1630,6 +1743,10 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
+            if (turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -1969,11 +2086,11 @@ namespace CrossxZeros
             {
                 pictureBox11.BorderStyle = BorderStyle.Fixed3D;
             }
-            else if (turn == 0 && side == 1)
+            else if (turn == -1 && side == 1)
             {
                 pictureBox11.BorderStyle = BorderStyle.Fixed3D;
             }
-            else if(turn == 0 && side == 2)
+            else if(turn == -1 && side == 2)
             {
                 pictureBox10.BorderStyle = BorderStyle.Fixed3D;
             }
