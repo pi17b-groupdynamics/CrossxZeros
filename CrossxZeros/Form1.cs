@@ -661,6 +661,78 @@ namespace CrossxZeros
                 {
                     p22_Click(sender, e);
                 }
+                // 3 ход
+                else if ((one == 1) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 0) && (four == 0) && (five == 1) &&
+  (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p32_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+ (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p21_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+ (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p21_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+ (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p12_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+ (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p11_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 0) && (five == 1) &&
+   (six == 1) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p21_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 0))
+                {
+                    p12_Click(sender, e);
+                }
+                else if((one == 0) && (four == 2) && (seven == 0))
+                {
+                    p21_Click(sender, e);
+                }
+                else if ((three == 0) && (six == 2) && (nine == 0))
+                {
+                    p23_Click(sender, e);
+                }
+                else if ((seven == 0) && (eight == 2) && (nine == 0))
+                {
+                    p32_Click(sender, e);
+                }
+                else if ((one == 0) && (five ==2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (five == 0) && (nine == 0))
+                {
+                    p11_Click(sender, e);
+                }
+                else if ((one == 0) && (five == 0) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((seven == 2) && (eight == 0) && (nine == 0))
+                {
+                    p31_Click(sender, e);
+                }
+                else if ((seven == 0) && (eight == 0) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
             }
             else if (turn == -1)
             {
