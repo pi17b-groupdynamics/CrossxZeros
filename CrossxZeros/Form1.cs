@@ -1977,10 +1977,10 @@ namespace CrossxZeros
         {
             jedi_style = true;
             axWindowsMediaPlayer1.BringToFront();
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            axWindowsMediaPlayer1.Visible = true;
             style.BringToFront();
             sound.BringToFront();
-            axWindowsMediaPlayer1.Visible = true;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
             button3_Click_1(sender, e);
             timer1.Stop();
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -1991,7 +1991,15 @@ namespace CrossxZeros
             this.button11.ForeColor = Color.DarkRed;
             this.button6.ForeColor = Color.DarkRed;
             this.button7.ForeColor = Color.DarkRed;
-            startMenu.BackgroundImage = Resources.multifandom_ru_1597;
+            pictureBox13.Image = Resources.multifandom_ru_1597;
+            pictureBox4.BackColor = Color.White;
+            pictureBox3.BackColor = Color.White;
+            pictureBox2.BackColor = Color.White;
+            pictureBox1.BackColor = Color.White;
+            button3.ForeColor = Color.DarkRed;
+            pictureBox12.Hide();
+            style.BringToFront();
+            sound.BringToFront();
         }
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
