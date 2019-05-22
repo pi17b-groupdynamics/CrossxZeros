@@ -227,5 +227,29 @@
   <ItemGroup>
     <None Include="Resources\7Z6Q.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Справка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Справка_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse Arrow_20px_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_20px_jedi_style.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
