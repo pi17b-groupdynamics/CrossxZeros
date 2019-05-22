@@ -340,7 +340,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox12.Image = global::CrossxZeros.Properties.Resources.crossXzeroes1;
             this.pictureBox12.Location = new System.Drawing.Point(224, -49);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(631, 505);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +354,7 @@
             this.sound.Controls.Add(this.panel12);
             this.sound.Controls.Add(this.panel11);
             this.sound.Location = new System.Drawing.Point(896, 49);
-            this.sound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sound.Margin = new System.Windows.Forms.Padding(2);
             this.sound.MaximumSize = new System.Drawing.Size(180, 74);
             this.sound.MinimumSize = new System.Drawing.Size(180, 2);
             this.sound.Name = "sound";
@@ -367,7 +367,7 @@
             this.panel12.Controls.Add(this.pictureBox8);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel12.Location = new System.Drawing.Point(0, -72);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(178, 36);
             this.panel12.TabIndex = 44;
@@ -376,7 +376,7 @@
             // 
             this.trackBar2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBar2.Location = new System.Drawing.Point(36, 0);
-            this.trackBar2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar2.MaximumSize = new System.Drawing.Size(0, 36);
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(142, 36);
@@ -403,7 +403,7 @@
             this.panel11.Controls.Add(this.pictureBox9);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel11.Location = new System.Drawing.Point(0, -36);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(178, 36);
             this.panel11.TabIndex = 43;
@@ -412,7 +412,7 @@
             // 
             this.trackBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.trackBar1.Location = new System.Drawing.Point(36, 0);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(2);
             this.trackBar1.MaximumSize = new System.Drawing.Size(0, 36);
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(142, 36);
@@ -1010,7 +1010,7 @@
             this.style.Controls.Add(this.pictureBox5);
             this.style.Controls.Add(this.button3);
             this.style.Location = new System.Drawing.Point(8, 4);
-            this.style.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.style.Margin = new System.Windows.Forms.Padding(2);
             this.style.MaximumSize = new System.Drawing.Size(178, 291);
             this.style.MinimumSize = new System.Drawing.Size(178, 44);
             this.style.Name = "style";
@@ -1021,7 +1021,7 @@
             // 
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox7.Location = new System.Drawing.Point(0, 211);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(176, 82);
             this.pictureBox7.TabIndex = 3;
@@ -1032,7 +1032,7 @@
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox6.Image = global::CrossxZeros.Properties.Resources.star_wars_style3;
             this.pictureBox6.Location = new System.Drawing.Point(0, 129);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(176, 82);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1045,7 +1045,7 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox5.Image = global::CrossxZeros.Properties.Resources.Normal_Style;
             this.pictureBox5.Location = new System.Drawing.Point(0, 47);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(176, 82);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1098,7 +1098,7 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel4.Controls.Add(this.congratulation);
             this.panel4.Location = new System.Drawing.Point(352, 264);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.MinimumSize = new System.Drawing.Size(375, 244);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(375, 244);
@@ -1125,7 +1125,7 @@
             this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 49);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1077, 664);
@@ -1141,8 +1141,8 @@
             this.ClientSize = new System.Drawing.Size(1077, 713);
             this.Controls.Add(this.style);
             this.Controls.Add(this.sound);
-            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.startMenu);
+            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);

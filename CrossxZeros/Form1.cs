@@ -101,7 +101,570 @@ namespace CrossxZeros
 
         void bot_v2()
         {
-            p11_Click(sender, e);
+     
+            for(int i = 0; i<8; i++)
+            {
+                if (P[PW[i, 0].X, PW[i, 0].Y] + P[PW[i, 1].X, PW[i, 1].Y] + P[PW[i, 2].X, PW[i, 2].Y] == turn * 2)
+                {
+                    if(P[PW[i, 0].X, PW[i, 0].Y] == 0)
+                    {
+                        if(i == 0)
+                        {
+                            p11_Click(sender, e);
+                            return;
+                        }
+                        else if(i == 1)
+                        {
+                            p12_Click(sender, e);
+                            return;
+                        }
+                            else
+                        {
+                            p13_Click(sender, e);
+                            return;
+                        }
+                    }
+                    else if(P[PW[i, 1].X, PW[i, 1].Y] == 0)
+                    {
+                        if (i == 0)
+                        {
+                            p21_Click(sender, e);
+                            return;
+                        }
+                        else if (i == 1)
+                        {
+                            p22_Click(sender, e);
+                            return;
+                        }
+                        else
+                        {
+                            p23_Click(sender, e);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        if (i == 0)
+                        {
+                            p31_Click(sender, e);
+                            return;
+                        }
+                        else if (i == 1)
+                        {
+                            p32_Click(sender, e);
+                            return;
+                        }
+                        else
+                        {
+                            p33_Click(sender, e);
+                            return;
+                        }
+                    }
+               }
+                else if (P[PW[i, 0].X, PW[i, 0].Y] + P[PW[i, 1].X, PW[i, 1].Y] + P[PW[i, 2].X, PW[i, 2].Y] == turn * (-2))
+                {
+                    if (P[PW[i, 0].X, PW[i, 0].Y] == 0)
+                    {
+                        if (i == 0)
+                        {
+                            p11_Click(sender, e);
+                            return;
+                        }
+                        else if (i == 1)
+                        {
+                            p12_Click(sender, e);
+                            return;
+                        }
+                        else
+                        {
+                            p13_Click(sender, e);
+                            return;
+                        }
+                    }
+                    else if (P[PW[i, 1].X, PW[i, 1].Y] == 0)
+                    {
+                        if (i == 0)
+                        {
+                            p21_Click(sender, e);
+                            return;
+                        }
+                        else if (i == 1)
+                        {
+                            p22_Click(sender, e);
+                            return;
+                        }
+                        else
+                        {
+                            p23_Click(sender, e);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        if (i == 0)
+                        {
+                            p31_Click(sender, e);
+                            return;
+                        }
+                        else if (i == 1)
+                        {
+                            p32_Click(sender, e);
+                            return;
+                        }
+                        else
+                        {
+                            p33_Click(sender, e);
+                            return;
+                        }
+                    }
+                }
+            }
+            if (turn == 1)
+            {
+                int Bot;
+                int hod, hod1;
+                String lane1;
+                if ((p11.Enabled == true) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
+                    && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
+                    && (p33.Enabled == true))
+                {
+                    if (side == 2) // если бот ходит первым
+                    {
+                        Random random = new Random();
+                        hod = random.Next(3) + 1;
+                        hod1 = random.Next(3) + 1;
+
+                        lane1 = hod.ToString() + hod1.ToString();
+                        checkpoint = true;
+
+                        if (Convert.ToInt32(lane1) == 11)
+                        {
+                            checkpoint = false;
+                            p11_Click(sender, e);
+                            one = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 12)
+                        {
+                            checkpoint = false;
+                            p12_Click(sender, e);
+                            two = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 13)
+                        {
+                            checkpoint = false;
+                            p13_Click(sender, e);
+                            three = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 21)
+                        {
+                            checkpoint = false;
+                            p21_Click(sender, e);
+                            four = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 22)
+                        {
+                            checkpoint = false;
+                            p22_Click(sender, e);
+                            five = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 23)
+                        {
+                            checkpoint = false;
+                            p23_Click(sender, e);
+                            eight = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 31)
+                        {
+                            checkpoint = false;
+                            p31_Click(sender, e);
+                            seven = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 32)
+                        {
+                            checkpoint = false;
+                            p32_Click(sender, e);
+                            eight = 1;
+                        }
+                        else if (Convert.ToInt32(lane1) == 33)
+                        {
+                            checkpoint = false;
+                            p33_Click(sender, e);
+                            nine = 1;
+                        }
+                    }
+                }
+                // 2 ход
+                else if ((one == 1) && (two == 2) && (three == 2) && (four == 2) && (five == 0) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if (((one == 1) && (two == 0) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2)))
+                {
+                    p22_Click(sender, e);
+                }
+                else if (((one == 1) && (two == 2) && (three == 0) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2)) || ((one == 1) &&
+                    (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2)) ||
+                    ((one == 1) && (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2)) ||
+                    ((one == 1) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 0) && (seven == 2) && (eight == 2) && (nine == 2)) ||
+                    ((one == 1) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 0) && (eight == 2) && (nine == 2)) ||
+                    ((one == 1) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 0) && (nine == 2)) ||
+                    ((one == 1) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 0)))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 1) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 0) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 2) && (four == 0) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 2) && (four == 2) && (five == 0) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 2) && (four == 2) && (five == 2) &&
+                      (six == 0) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 0) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((p11.Enabled == true) && (two == 1) && (eight == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
+           && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == false)
+           && (p33.Enabled == true))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 1) && (three == 2) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 1) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 1) && (four == 2) && (five == 2) &&
+                    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 0) && (five == 2) &&
+        (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    Random random = new Random();
+                    Bot = random.Next(2) + 1;
+                    if (Bot == 1)
+                    {
+                        p22_Click(sender, e);
+                    }
+                    else
+                    {
+                        p31_Click(sender, e);
+                    }
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 2) && (five == 0) &&
+                   (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p31_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 2) && (five == 2) &&
+                   (six == 0) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 2) && (five == 2) &&
+                   (six == 2) && (seven == 0) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 2) && (five == 2) &&
+                   (six == 2) && (seven == 2) && (eight == 0) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 1) && (four == 2) && (five == 2) &&
+                   (six == 2) && (seven == 2) && (eight == 2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 1) && (five == 2) &&
+                   (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 1) && (five == 2) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 1) && (five == 2) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 1) && (five == 0) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p31_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 1) && (five == 2) &&
+                 (six == 0) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 1) && (five == 2) &&
+                 (six == 2) && (seven == 0) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 1) && (five == 2) &&
+                 (six == 2) && (seven == 2) && (eight == 0) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 1) && (five == 2) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 2) && (five == 1) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 2) && (five == 1) &&
+                 (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 2) && (five == 1) &&
+                (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 0) && (five == 1) &&
+                (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 1) &&
+                (six == 0) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 1) &&
+                (six == 2) && (seven == 0) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 1) &&
+                (six == 2) && (seven == 2) && (eight == 0) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 1) &&
+                (six == 2) && (seven == 2) && (eight == 2) && (nine == 0))
+                {
+                    p11_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+                (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 2) && (five == 2) &&
+               (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 2) && (five == 2) &&
+              (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+              (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 0) &&
+             (six == 1) && (seven == 2) && (eight == 2) && (nine == 2))
+                {
+                    Random random = new Random();
+                    Bot = random.Next(2) + 1;
+                    if (Bot == 1)
+                    {
+                        p31_Click(sender, e);
+                    }
+                    else
+                    {
+                        p33_Click(sender, e);
+                    }
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+             (six == 1) && (seven == 0) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+             (six == 1) && (seven == 2) && (eight == 0) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+           (six == 1) && (seven == 2) && (eight == 2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+           (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 2) && (five == 2) &&
+           (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 2) && (five == 2) &&
+         (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+        (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 0) &&
+        (six == 2) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+        (six == 0) && (seven == 1) && (eight == 2) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+        (six == 2) && (seven == 1) && (eight == 0) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+        (six == 2) && (seven == 1) && (eight == 2) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+        (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 2) && (five == 2) &&
+       (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 0) &&
+      (six == 2) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p33_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 0) && (seven == 2) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 0) && (eight == 1) && (nine == 2))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 1) && (nine == 0))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 0) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 0) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 0) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 0) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 0) &&
+      (six == 2) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p11_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 0) && (seven == 2) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 0) && (eight == 2) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+                else if ((one == 2) && (two == 2) && (three == 2) && (four == 2) && (five == 2) &&
+      (six == 2) && (seven == 2) && (eight == 0) && (nine == 1))
+                {
+                    p22_Click(sender, e);
+                }
+            }
+            else if (turn == -1)
+            {
+                p12_Click(sender, e);
+            }
         }
 
         void start_battle_menu()
@@ -193,7 +756,7 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            if(human == false)
+            if(human == false )
             {
                 bot_v2();
             }
@@ -240,6 +803,10 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
+            if (human == false && turn == 1)
+            {
+                bot_v2();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -283,6 +850,10 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
+            if (human == false && turn == 1)
+            {
+                bot_v2();
+            }
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -294,6 +865,13 @@ namespace CrossxZeros
             timer = 0;
             label3.Text = "";
             start_battle_menu();
+            for(int i = 0; i<3; i++)
+            {
+                for(int j =0; j< 3; j++)
+                {
+                    P[i, j] = 0;
+                }
+            }
             if (!SoundSt)
             {
                 timer3.Start();
@@ -1498,6 +2076,13 @@ namespace CrossxZeros
                 panel4.BringToFront();
                 timer6.Start(); ;
             }
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    P[i, j] = 0;
+                }
+            }
         }
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
@@ -1522,7 +2107,7 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1551,7 +2136,7 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1579,7 +2164,7 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1607,7 +2192,7 @@ namespace CrossxZeros
                 p21.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1635,7 +2220,7 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1663,7 +2248,7 @@ namespace CrossxZeros
                 p23.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (human == false && turn == 1)
             {
                 bot_v2();
             }
@@ -1691,7 +2276,7 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1719,7 +2304,7 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if ( turn == 1)
             {
                 bot_v2();
             }
@@ -1747,7 +2332,7 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
-            if (turn == 1 && human == false)
+            if (turn == 1)
             {
                 bot_v2();
             }
@@ -1937,6 +2522,13 @@ namespace CrossxZeros
 
         private void timer6_Tick(object sender, EventArgs e)
         {
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    P[i, j] = 0;
+                }
+            }
             another_timer = another_timer + 1;
             if (another_timer == 4 && check_win_or_not == false)
             {
@@ -1952,6 +2544,7 @@ namespace CrossxZeros
             }
             else if(another_timer == 4 && check_win_or_not == true)
             {
+
                 another_timer = 0;
                 timer = 0;
                 timer4.Start();
