@@ -1142,8 +1142,8 @@
             this.Controls.Add(this.style);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.gameScreen);
-            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.startMenu);
+            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);

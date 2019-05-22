@@ -1522,7 +1522,7 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1551,7 +1551,7 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1579,7 +1579,7 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1607,6 +1607,10 @@ namespace CrossxZeros
                 p21.Enabled = false;
             }
             wins();
+            if (turn == 1 && human == false)
+            {
+                bot_v2();
+            }
         }
 
         private void p22_Click(object sender, EventArgs e)
@@ -1631,7 +1635,7 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1659,7 +1663,7 @@ namespace CrossxZeros
                 p23.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1687,7 +1691,7 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1715,7 +1719,7 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
@@ -1743,7 +1747,7 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && human == false)
             {
                 bot_v2();
             }
