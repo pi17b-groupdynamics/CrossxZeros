@@ -35,6 +35,7 @@ namespace CrossxZeros
         int first_numb = 1;
         int second_numb = 1;
         int another_timer = 0;
+        bool normal_style = true;
         bool jedi_style = false;
         bool border_check = false;
         bool check_win_or_not = false;
@@ -1758,7 +1759,10 @@ namespace CrossxZeros
 
             if (language == 0)
             {
-                pictureBox3.Image = Resources.eng_ru;
+                if (normal_style == true)
+                    pictureBox3.Image = Resources.eng_ru;
+                else if (jedi_style == true)
+                    pictureBox3.Image = Resources.eng_ru_jedi_style;
                 button1.Text = "Play";
                 button11.Text = "Exit";
                 button7.Text = "Multiplayer stats";
@@ -1787,7 +1791,10 @@ namespace CrossxZeros
             }
             else if(language == 1)
             {
-                pictureBox3.Image = Resources.ru_eng;
+                if(normal_style == true)
+                    pictureBox3.Image = Resources.ru_eng;
+                else if(jedi_style == true)
+                    pictureBox3.Image = Resources.ru_eng;
                 button1.Text = "Играть";
                 button11.Text = "Выход";
                 button7.Text = "Статистика многопользовательской игры";
@@ -1971,11 +1978,14 @@ namespace CrossxZeros
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            normal_style = true;
+            jedi_style = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             jedi_style = true;
+            normal_style = false;
             axWindowsMediaPlayer1.BringToFront();
             axWindowsMediaPlayer1.Ctlcontrols.play();
             axWindowsMediaPlayer1.Visible = true;
@@ -1983,20 +1993,26 @@ namespace CrossxZeros
             sound.BringToFront();
             button3_Click_1(sender, e);
             timer1.Stop();
-            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = Resources.Туман;
+            this.button1.BackgroundImageLayout = ImageLayout.Stretch;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
-            this.button1.ForeColor = Color.DarkRed;
+            this.button1.ForeColor = Color.Black;
             this.button11.ForeColor = Color.DarkRed;
             this.button6.ForeColor = Color.DarkRed;
             this.button7.ForeColor = Color.DarkRed;
             pictureBox13.Image = Resources.multifandom_ru_1597;
             pictureBox4.BackColor = Color.White;
-            pictureBox3.BackColor = Color.White;
             pictureBox2.BackColor = Color.White;
             pictureBox1.BackColor = Color.White;
             button3.ForeColor = Color.DarkRed;
+            if (language == 1)
+            {
+                pictureBox3.Image = Resources.ru_eng_jedi_style;
+            }
+            else
+                pictureBox3.Image = Resources.eng_ru_jedi_style;
             pictureBox12.Hide();
             style.BringToFront();
             sound.BringToFront();
@@ -2021,6 +2037,16 @@ namespace CrossxZeros
                     startMenu.BringToFront();
                 }
             }
+        }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(jedi_style == true)
+            {
+                this.button1.BackgroundImage = Resources._7Z6Q;
+                this.button1.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+
         }
 
         private void Form1_Click(object sender, EventArgs e)

@@ -215,5 +215,17 @@
   <ItemGroup>
     <None Include="Resources\tumblr_m5f4plMRsw1qgnplio1_500.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ru_eng_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng_ru_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Туман.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7Z6Q.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
