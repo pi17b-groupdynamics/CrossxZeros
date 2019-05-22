@@ -35,6 +35,7 @@ namespace CrossxZeros
         int first_numb = 1;
         int second_numb = 1;
         int another_timer = 0;
+        bool normal_style = true;
         bool jedi_style = false;
         bool border_check = false;
         bool check_win_or_not = false;
@@ -2343,7 +2344,10 @@ namespace CrossxZeros
 
             if (language == 0)
             {
-                pictureBox3.Image = Resources.eng_ru;
+                if (normal_style == true)
+                    pictureBox3.Image = Resources.eng_ru;
+                else if (jedi_style == true)
+                    pictureBox3.Image = Resources.eng_ru_jedi_style;
                 button1.Text = "Play";
                 button11.Text = "Exit";
                 button7.Text = "Multiplayer stats";
@@ -2372,7 +2376,10 @@ namespace CrossxZeros
             }
             else if(language == 1)
             {
-                pictureBox3.Image = Resources.ru_eng;
+                if(normal_style == true)
+                    pictureBox3.Image = Resources.ru_eng;
+                else if(jedi_style == true)
+                    pictureBox3.Image = Resources.ru_eng_jedi_style;
                 button1.Text = "Играть";
                 button11.Text = "Выход";
                 button7.Text = "Статистика многопользовательской игры";
@@ -2410,7 +2417,10 @@ namespace CrossxZeros
         {
             if (isCollapsed)
             {
-                button3.Image = Resources.Collapse_Arrow_20px;
+                if (normal_style == true)
+                    button3.Image = Resources.Collapse_Arrow_20px;
+                else if (jedi_style == true)
+                    button3.Image = Resources.Collapse_Arrow_20px_jedi_style;
                 style.Height += 20;
                 if (style.Size == style.MaximumSize)
                 {
@@ -2420,7 +2430,10 @@ namespace CrossxZeros
             }
             else
             {
-                button3.Image = Resources.Expand_Arrow_20px;
+                if (normal_style == true)
+                    button3.Image = Resources.Expand_Arrow_20px;
+                else if (jedi_style == true)
+                    button3.Image = Resources.Expand_Arrow_20px_jedi_style;
                 style.Height -= 20;
                 if (style.Size == style.MinimumSize)
                 {
@@ -2564,27 +2577,65 @@ namespace CrossxZeros
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             timer1.Start();
+            normal_style = true;
+            jedi_style = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             jedi_style = true;
+            normal_style = false;
             axWindowsMediaPlayer1.BringToFront();
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            axWindowsMediaPlayer1.Visible = true;
             style.BringToFront();
             sound.BringToFront();
-            axWindowsMediaPlayer1.Visible = true;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-            button3_Click_1(sender, e);
             timer1.Stop();
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.BackgroundImage = Resources.Туман;
+            this.button1.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button11.BackgroundImage = Resources.Туман;
+            this.button11.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button6.BackgroundImage = Resources.Туман;
+            this.button6.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button7.BackgroundImage = Resources.Туман;
+            this.button7.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button3.BackColor = Color.White;
             this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
-            this.button1.ForeColor = Color.DarkRed;
-            this.button11.ForeColor = Color.DarkRed;
-            this.button6.ForeColor = Color.DarkRed;
-            this.button7.ForeColor = Color.DarkRed;
-            startMenu.BackgroundImage = Resources.multifandom_ru_1597;
+            this.button1.ForeColor = Color.Black;
+            this.button11.ForeColor = Color.Black;
+            this.button6.ForeColor = Color.Black;
+            this.button7.ForeColor = Color.Black;
+            this.button3.ForeColor = Color.Black;
+            this.button3.Image = Resources.Expand_Arrow_20px_jedi_style;
+            this.button8.ForeColor = Color.White;
+            this.button9.ForeColor = Color.White;
+            this.button4.ForeColor = Color.White;
+            this.button2.ForeColor = Color.White;
+            this.groupBox2.ForeColor = Color.White;
+            this.groupBox1.ForeColor = Color.White;
+            this.groupBox3.ForeColor = Color.White;
+            this.radioButton1.ForeColor = Color.White;
+            this.radioButton2.ForeColor = Color.White;
+            this.radioButton3.ForeColor = Color.White;
+            this.People.ForeColor = Color.White;
+            this.Bot.ForeColor = Color.White;
+            this.pictureBox14.Image = Resources._28Ih;
+            this.pictureBox15.Image = Resources._12193865426;
+            button3_Click_1(sender, e);
+            pictureBox13.Image = Resources.multifandom_ru_1597;
+            pictureBox4.Image = Resources.Справка_jedi_style;
+            pictureBox2.Image = Resources.volume_jedi_style;
+            pictureBox1.Image = Resources.fullscreen_jedi_style;
+            if (language == 1)
+            {
+                pictureBox3.Image = Resources.ru_eng_jedi_style;
+            }
+            else
+                pictureBox3.Image = Resources.eng_ru_jedi_style;
+            pictureBox12.Hide();
+            style.BringToFront();
+            sound.BringToFront();
         }
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
@@ -2606,6 +2657,25 @@ namespace CrossxZeros
                     startMenu.BringToFront();
                 }
             }
+        }
+
+        private void button1_MouseMove(object sender, MouseEventArgs e)
+        {
+            /*if(jedi_style == true)
+            {
+                this.button1.BackgroundImage = Resources._7Z6Q;
+                this.button1.BackgroundImageLayout = ImageLayout.Stretch;
+            }*/
+
+        }
+
+        private void button11_MouseMove(object sender, MouseEventArgs e)
+        {
+            /*if (jedi_style == true)
+            {
+                this.button11.BackgroundImage = Resources._7Z6Q;
+                this.button11.BackgroundImageLayout = ImageLayout.Stretch;
+            }*/
         }
 
         private void Form1_Click(object sender, EventArgs e)

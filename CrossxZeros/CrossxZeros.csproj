@@ -215,5 +215,80 @@
   <ItemGroup>
     <None Include="Resources\tumblr_m5f4plMRsw1qgnplio1_500.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ru_eng_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng_ru_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Туман.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7Z6Q.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volume_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Справка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Справка_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse Arrow_20px_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_20px_jedi_style.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bjs71.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HtJS.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wo7h.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FZJr.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slx.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28Ih.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5628.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RhNK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bjs72.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12193865426.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
