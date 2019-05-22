@@ -10,6 +10,7 @@ using System.Globalization;
 using System.Windows.Forms;
 using System.Threading;
 using CrossxZeros.Properties;
+using System.IO;
 
 namespace CrossxZeros
 {
@@ -2659,6 +2660,8 @@ namespace CrossxZeros
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            string sPath = Path.GetFileName("[v-s.mobi]Вступительные+Титры+к+Звездным+войнам+(with+English+subtitles)+HD+1080p.mp4");
+            axWindowsMediaPlayer1.URL = sPath;
             jedi_style = true;
             normal_style = false;
             axWindowsMediaPlayer1.BringToFront();
