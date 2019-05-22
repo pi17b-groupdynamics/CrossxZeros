@@ -1119,15 +1119,19 @@ namespace CrossxZeros
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            }
-            else
-            {
-                FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-                WindowState = FormWindowState.Normal;
-            }
+        { 
+            WindowState = FormWindowState.Maximized;
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            pictureBox14.Width = gameScreen.Width / 2;
+            pictureBox15.Width = gameScreen.Width / 2;
+        } 
+            else 
+        { 
+             WindowState = FormWindowState.Normal; 
+             FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow; 
+             pictureBox14.Width = gameScreen.Width / 2; 
+             pictureBox15.Width = gameScreen.Width / 2; 
+        }
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
@@ -2692,14 +2696,14 @@ namespace CrossxZeros
             this.radioButton3.ForeColor = Color.White;
             this.People.ForeColor = Color.White;
             this.Bot.ForeColor = Color.White;
-            this.pictureBox14.Image = Resources._28Ih;
-            this.pictureBox15.Image = Resources._12193865426;
+            this.pictureBox15.Image = Resources._28Ih;
+            this.pictureBox14.Image = Resources._12193865426;
             button3_Click_1(sender, e);
             pictureBox13.Image = Resources.multifandom_ru_1597;
             pictureBox4.Image = Resources.Справка_jedi_style;
             pictureBox2.Image = Resources.volume_jedi_style;
             pictureBox1.Image = Resources.fullscreen_jedi_style;
-            if (language == 1)
+            if (language == 0)
             {
                 pictureBox3.Image = Resources.ru_eng_jedi_style;
             }
@@ -2712,7 +2716,7 @@ namespace CrossxZeros
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            if(e.newState == 8)
+            if (e.newState == 8)
             {
                 this.axWindowsMediaPlayer1.close();
                 startMenu.BringToFront();
@@ -2732,23 +2736,10 @@ namespace CrossxZeros
         }
 
         private void button1_MouseMove(object sender, MouseEventArgs e)
-        {
-            /*if(jedi_style == true)
-            {
-                this.button1.BackgroundImage = Resources._7Z6Q;
-                this.button1.BackgroundImageLayout = ImageLayout.Stretch;
-            }*/
-
-        }
+        { }
 
         private void button11_MouseMove(object sender, MouseEventArgs e)
-        {
-            /*if (jedi_style == true)
-            {
-                this.button11.BackgroundImage = Resources._7Z6Q;
-                this.button11.BackgroundImageLayout = ImageLayout.Stretch;
-            }*/
-        }
+        { }
 
         private void Form1_Click(object sender, EventArgs e)
         {
