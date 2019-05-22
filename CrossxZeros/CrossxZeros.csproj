@@ -188,5 +188,32 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a633ee5d7450e76c2da4c85f090895d5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bjs7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cc88662e412700c0eba8e2887dd60a54.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multifandom.ru_1597.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUpm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmb_53084_1405.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TTbz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_m5f4plMRsw1qgnplio1_500.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

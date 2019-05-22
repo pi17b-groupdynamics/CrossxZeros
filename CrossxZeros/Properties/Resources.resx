@@ -133,17 +133,17 @@
   <data name="LTK5AdoTa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LTK5AdoTa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="letter-o-png-letter-o-icon-068645-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\letter-o-png-letter-o-icon-068645-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Expand Arrow_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Expand Arrow_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Collapse Arrow_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Collapse Arrow_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star_wars_style2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star_wars_style2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="letter-o-png-letter-o-icon-068645-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\letter-o-png-letter-o-icon-068645-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="star_wars_style3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_wars_style3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star_wars_style1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_wars_style1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +151,11 @@
   <data name="zero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ru_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ru_eng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Xr5p7Hg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xr5p7Hg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_wars_style2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_wars_style2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WS2k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WS2k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,10 +172,34 @@
   <data name="star_wars_style" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_wars_style.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Xr5p7Hg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Xr5p7Hg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ru_eng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ru_eng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star_wars_style3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star_wars_style3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a633ee5d7450e76c2da4c85f090895d5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a633ee5d7450e76c2da4c85f090895d5.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bjs7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bjs7.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cc88662e412700c0eba8e2887dd60a54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cc88662e412700c0eba8e2887dd60a54.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="multifandom.ru_1597" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\multifandom.ru_1597.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SUpm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SUpm.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tmb_53084_1405" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tmb_53084_1405.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TTbz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TTbz.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tumblr_m5f4plMRsw1qgnplio1_500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tumblr_m5f4plMRsw1qgnplio1_500.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

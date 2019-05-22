@@ -113,174 +113,6 @@ namespace CrossxZeros
             p33.Enabled = true;
             p33.Image = null;
         }
-        void Bot_Den()
-        {
-            int hod, hod1;
-            String lane1;
-            if ((p11.Enabled == true) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-                && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-                && (p33.Enabled == true))
-            {
-                if (side == 2) // если бот ходит первым
-                {
-                    Random random = new Random();
-                    hod = random.Next(3) + 1;
-                    hod1 = random.Next(3) + 1;
-
-                    lane1 = hod.ToString() + hod1.ToString();
-                    checkpoint = true;
-
-                    if (Convert.ToInt32(lane1) == 11)
-                    {
-                        checkpoint = false;
-                        p11_Click(sender, e);
-                        one = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 12)
-                    {
-                        checkpoint = false;
-                        p12_Click(sender, e);
-                        two = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 13)
-                    {
-                        checkpoint = false;
-                        p13_Click(sender, e);
-                        three = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 21)
-                    {
-                        checkpoint = false;
-                        p21_Click(sender, e);
-                        four = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 22)
-                    {
-                        checkpoint = false;
-                        p22_Click(sender, e);
-                        five = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 23)
-                    {
-                        checkpoint = false;
-                        p23_Click(sender, e);
-                        eight = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 31)
-                    {
-                        checkpoint = false;
-                        p31_Click(sender, e);
-                        seven = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 32)
-                    {
-                        checkpoint = false;
-                        p32_Click(sender, e);
-                        eight = 1;
-                    }
-                    else if (Convert.ToInt32(lane1) == 33)
-                    {
-                        checkpoint = false;
-                        p33_Click(sender, e);
-                        nine = 1;
-                    }
-                }
-            }
-            // 2 ход
-            else if ((p11.Enabled == false) && (five == 0) && (one == 1) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-                 && (p22.Enabled == false) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-                 && (p33.Enabled == true))
-            {
-                p33_Click(sender, e);
-            }
-            else if ((p11.Enabled == false) && (one == 1) && (two == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-                && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-                && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if (((p11.Enabled == false) && (one == 1) && (three == 0) && (p12.Enabled == true) && (p13.Enabled == false) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-             && (p33.Enabled == true)) || ((p11.Enabled == false) && (one == 1) && (four == 0) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == false)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-             && (p33.Enabled == true)) || ((p11.Enabled == false) && (one == 1) && (six == 0) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == false) && (p31.Enabled == true) && (p32.Enabled == true)
-             && (p33.Enabled == true)) || ((p11.Enabled == false) && (one == 1) && (seven == 0) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == false) && (p32.Enabled == true)
-             && (p33.Enabled == true))
-             || ((p11.Enabled == false) && (one == 1) && (eight == 0) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == false)
-             && (p33.Enabled == true)) || ((p11.Enabled == false) && (one == 1) && (nine == 0) && (p12.Enabled == true) && (p13.Enabled == true) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-             && (p33.Enabled == false)))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == false) && (two == 1) && (one == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-             && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-             && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (three == 0) && (p12.Enabled == false) && (p13.Enabled == false) && (p21.Enabled == true)
-            && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-            && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (four == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == false)
-         && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-         && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (five == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-         && (p22.Enabled == false) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-         && (p33.Enabled == true))
-            {
-                p33_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (six == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-       && (p22.Enabled == true) && (p23.Enabled == false) && (p31.Enabled == true) && (p32.Enabled == true)
-       && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (seven == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-       && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == false) && (p32.Enabled == true)
-       && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (eight == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-       && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == false)
-       && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == true) && (two == 1) && (nine == 0) && (p12.Enabled == false) && (p13.Enabled == true) && (p21.Enabled == true)
-       && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-       && (p33.Enabled == false))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((p11.Enabled == false) && (three == 1) && (one == 0) && (p12.Enabled == true) && (p13.Enabled == false) && (p21.Enabled == true)
-      && (p22.Enabled == true) && (p23.Enabled == true) && (p31.Enabled == true) && (p32.Enabled == true)
-      && (p33.Enabled == true))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((one == 2) && (two == 0) && (three == 1) && (four == 2) && (five == 2) &&
-                (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
-            {
-                p22_Click(sender, e);
-            }
-            else if ((one == 2) && (two == 2) && (three == 1) && (four == 0) && (five == 2) &&
-    (six == 2) && (seven == 2) && (eight == 2) && (nine == 2))
-            {
-                p22_Click(sender, e);
-            }
-        }
 
         private void startMenu1_Load(object sender, EventArgs e)
         { 
@@ -346,11 +178,6 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            if (human == false)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -394,10 +221,6 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            if (human == false)
-            {
-                Bot_Den();
-            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -440,10 +263,6 @@ namespace CrossxZeros
             if (!SoundSt)
             {
                 timer3.Start();
-            }
-            if (human == false)
-            {
-                Bot_Den();
             }
         }
         private void button10_Click(object sender, EventArgs e)
@@ -663,9 +482,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -681,13 +500,15 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    panel4.BringToFront();
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
@@ -695,13 +516,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -715,9 +536,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -769,9 +590,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -787,13 +608,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -803,13 +624,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -823,9 +644,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -877,9 +698,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -895,15 +716,15 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
-                    timer6.Enabled = true;
+                    timer6.Start();
                 }
                 else if (check_on_wins == count_of_wins && (winner_zero > winner_cross))
                 {
@@ -911,13 +732,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -931,9 +752,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -985,9 +806,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1003,13 +824,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1019,13 +840,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1039,9 +860,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1093,9 +914,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1111,13 +932,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1127,13 +948,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1147,9 +968,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1201,9 +1022,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1219,13 +1040,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1235,13 +1056,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1255,9 +1076,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1309,9 +1130,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1327,13 +1148,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1343,13 +1164,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1363,9 +1184,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1417,9 +1238,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1435,13 +1256,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1451,13 +1272,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1471,9 +1292,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1525,9 +1346,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player1.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player1.Text + " won this match!";
+                        congratulation.Text = player2.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player1.Text + " выиграл этот матч!";
+                        congratulation.Text = player2.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1543,13 +1364,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1559,13 +1380,13 @@ namespace CrossxZeros
                     check_win_or_not = false;
                     timer4.Stop();
                     if (language == 1 && side == 1)
-                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
-                    else if (language == 0 && side == 1)
-                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
-                    else if (language == 1 && side == 2)
                         congratulation.Text = "Congratulation!\n" + player2.Text + " won this game!";
-                    else if (language == 0 && side == 2)
+                    else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player2.Text + " выиграл игру!";
+                    else if (language == 1 && side == 2)
+                        congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    else if (language == 0 && side == 2)
+                        congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     panel4.BringToFront();
                     timer6.Start();
                 }
@@ -1579,9 +1400,9 @@ namespace CrossxZeros
                     else if (language == 0 && side == 1)
                         congratulation.Text = player2.Text + " выиграл этот матч!";
                     else if (language == 1 && side == 2)
-                        congratulation.Text = player2.Text + " won this match!";
+                        congratulation.Text = player1.Text + " won this match!";
                     else if (language == 0 && side == 2)
-                        congratulation.Text = player2.Text + " выиграл этот матч!";
+                        congratulation.Text = player1.Text + " выиграл этот матч!";
                     panel4.BringToFront();
                     start_battle_menu();
                     timer6.Start();
@@ -1625,11 +1446,6 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p12_Click(object sender, EventArgs e)
@@ -1653,12 +1469,6 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
-
         }
 
         private void p13_Click(object sender, EventArgs e)
@@ -1682,11 +1492,6 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p21_Click(object sender, EventArgs e)
@@ -1710,11 +1515,6 @@ namespace CrossxZeros
                 p21.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p22_Click(object sender, EventArgs e)
@@ -1738,11 +1538,6 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p23_Click(object sender, EventArgs e)
@@ -1766,11 +1561,6 @@ namespace CrossxZeros
                 p23.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p31_Click(object sender, EventArgs e)
@@ -1794,11 +1584,6 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p32_Click(object sender, EventArgs e)
@@ -1822,11 +1607,6 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void p33_Click(object sender, EventArgs e)
@@ -1850,11 +1630,6 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
-            if (turn == 1)
-            {
-                Bot_Den();
-            }
-
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -2086,6 +1861,16 @@ namespace CrossxZeros
             axWindowsMediaPlayer1.Visible = true;
             axWindowsMediaPlayer1.Ctlcontrols.play();
             button3_Click_1(sender, e);
+            timer1.Stop();
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startMenu.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = Color.Black;
+            this.button1.ForeColor = Color.DarkRed;
+            this.button11.ForeColor = Color.DarkRed;
+            this.button6.ForeColor = Color.DarkRed;
+            this.button7.ForeColor = Color.DarkRed;
+            startMenu.BackgroundImage = Resources.multifandom_ru_1597;
         }
 
         private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)

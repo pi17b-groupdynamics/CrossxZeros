@@ -63,9 +63,39 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap a633ee5d7450e76c2da4c85f090895d5 {
+            get {
+                object obj = ResourceManager.GetObject("a633ee5d7450e76c2da4c85f090895d5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_thin_down_512 {
             get {
                 object obj = ResourceManager.GetObject("arrow-thin-down-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bjs7 {
+            get {
+                object obj = ResourceManager.GetObject("Bjs7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cc88662e412700c0eba8e2887dd60a54 {
+            get {
+                object obj = ResourceManager.GetObject("cc88662e412700c0eba8e2887dd60a54", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +163,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap letter_o_png_letter_o_icon_068645_512 {
             get {
                 object obj = ResourceManager.GetObject("letter-o-png-letter-o-icon-068645-512", resourceCulture);
@@ -146,6 +186,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap LTK5AdoTa {
             get {
                 object obj = ResourceManager.GetObject("LTK5AdoTa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap multifandom_ru_1597 {
+            get {
+                object obj = ResourceManager.GetObject("multifandom.ru_1597", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +256,46 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap star_wars_style3 {
             get {
                 object obj = ResourceManager.GetObject("star_wars_style3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SUpm {
+            get {
+                object obj = ResourceManager.GetObject("SUpm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tmb_53084_1405 {
+            get {
+                object obj = ResourceManager.GetObject("tmb_53084_1405", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TTbz {
+            get {
+                object obj = ResourceManager.GetObject("TTbz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tumblr_m5f4plMRsw1qgnplio1_500 {
+            get {
+                object obj = ResourceManager.GetObject("tumblr_m5f4plMRsw1qgnplio1_500", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
