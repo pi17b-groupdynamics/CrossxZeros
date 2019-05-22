@@ -96,6 +96,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.p11 = new System.Windows.Forms.PictureBox();
@@ -138,6 +140,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).BeginInit();
@@ -387,6 +391,8 @@
             this.gameSettings.Controls.Add(this.button4);
             this.gameSettings.Controls.Add(this.button8);
             this.gameSettings.Controls.Add(this.button9);
+            this.gameSettings.Controls.Add(this.pictureBox15);
+            this.gameSettings.Controls.Add(this.pictureBox14);
             this.gameSettings.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gameSettings.Location = new System.Drawing.Point(0, 60);
             this.gameSettings.Margin = new System.Windows.Forms.Padding(4);
@@ -951,6 +957,26 @@
             this.pictureBox9.TabIndex = 42;
             this.pictureBox9.TabStop = false;
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(717, 818);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 39;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBox14.Location = new System.Drawing.Point(716, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(720, 818);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 38;
+            this.pictureBox14.TabStop = false;
+            // 
             // pictureBox12
             // 
             this.pictureBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1178,9 +1204,9 @@
             this.ClientSize = new System.Drawing.Size(1436, 878);
             this.Controls.Add(this.style);
             this.Controls.Add(this.sound);
+            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.startMenu);
             this.Controls.Add(this.gameScreen);
-            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);
@@ -1225,6 +1251,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.p11)).EndInit();
@@ -1332,6 +1360,8 @@
         private System.Windows.Forms.PictureBox pictureBox12;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox14;
     }
 }
 
