@@ -1,4 +1,4 @@
-SolaVirum 5 3
-eldercs 3 5
-Volker477 100 0
-ZetsubouBilly -300 0
+SolaVirum -549 572
+eldercs -547 570
+Volker477 -582 575
+ZetsubouBilly 778 575

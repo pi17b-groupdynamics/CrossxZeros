@@ -1154,7 +1154,7 @@ namespace CrossxZeros
                 {
                     s = read1.ReadLine();
                     words = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    GV1.Rows.Add(new object[] { words[0], words[1], words[2] });
+                    GV1.Rows.Add(new object[] { words[0], ((~(514 ^ int.Parse(words[1]))) ^ 35), ((~(541 ^ int.Parse(words[2]))) ^ -35) });
                     player1.Items.Add(words[0]);
                     player2.Items.Add(words[0]);
                 }
@@ -1165,7 +1165,7 @@ namespace CrossxZeros
                 {
                     s = read2.ReadLine();
                     words = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    GV2.Rows.Add(new object[] { words[0], words[1], words[2] });
+                    GV2.Rows.Add(new object[] { words[0], ((~(314 ^ int.Parse(words[1]))) ^ 35), ((~(341 ^ int.Parse(words[2]))) ^ -35) });
                     if(!player1.Items.Contains(words[0]))
                     {
                         player1.Items.Add(words[0]);
@@ -2999,11 +2999,11 @@ namespace CrossxZeros
             StreamWriter w1=new StreamWriter(f1), w2=new StreamWriter(f2);
             for(int i=0;i<GV1.RowCount;i++)
             {
-                w1.WriteLine(GV1[0,i].Value + " "+GV1[1,i].Value + " "+GV1[2,i].Value);
+                w1.WriteLine(GV1[0,i].Value + " "+((~(514 ^ int.Parse(GV1[1, i].Value.ToString() ))) ^ 35) + " " + ((~(541 ^ int.Parse(GV1[2, i].Value.ToString() ))) ^ -35) );
             }
             for (int i = 0; i < GV2.RowCount; i++)
             {
-                w2.WriteLine(GV2[0, i].Value + " " + GV2[1, i].Value + " " + GV2[2, i].Value);
+                w2.WriteLine(GV2[0, i].Value + " " + ((~(314 ^ int.Parse(GV2[1, i].Value.ToString() ))) ^ 35) + " " + ((~(341^int.Parse(GV2[2, i].Value.ToString() ))) ^ -35) );
             }
             w1.Close();
             w2.Close();
