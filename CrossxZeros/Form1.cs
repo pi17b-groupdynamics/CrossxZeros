@@ -2974,8 +2974,7 @@ namespace CrossxZeros
             style.BringToFront();
             sound.BringToFront();
             timer1.Stop();
-            this.button1.BackgroundImage = Resources.Туман;
-            this.button1.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button1.Image = Resources.Туман;
             this.button11.BackgroundImage = Resources.Туман;
             this.button11.BackgroundImageLayout = ImageLayout.Stretch;
             this.BGV1.BackgroundImage = Resources.Туман;
@@ -3111,7 +3110,8 @@ namespace CrossxZeros
 
         private void p11_MouseEnter(object sender, EventArgs e)
         {
-            p11.BorderStyle = BorderStyle.Fixed3D;
+            if (p11.Enabled)
+                p11.BorderStyle = BorderStyle.Fixed3D;
         }
 
         private void p11_MouseLeave(object sender, EventArgs e)
@@ -3240,6 +3240,54 @@ namespace CrossxZeros
                     p13_Click(sender, e);
                 }
             }
+        }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button1.Image = Resources._7Z6Q;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button1.Image = Resources.Туман;
+        }
+
+        private void button11_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button11.Image = Resources._7Z6Q;
+        }
+
+        private void button11_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button11.Image = Resources.Туман;
+        }
+
+        private void BGV1_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+               BGV1.Image = Resources._7Z6Q;
+        }
+
+        private void BGV1_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                BGV1.Image = Resources.Туман;
+        }
+
+        private void BGV2_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                BGV2.Image = Resources._7Z6Q;
+        }
+
+        private void BGV2_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                BGV2.Image = Resources.Туман;
         }
 
         private void player1_TextUpdate(object sender, EventArgs e)
