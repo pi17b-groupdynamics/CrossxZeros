@@ -782,6 +782,8 @@ namespace CrossxZeros
             gameSettings.BringToFront();
             style.Hide();
             sound.Hide();
+            GV1.Hide();
+            GV2.Hide();
             if (!isCollapsed)
             {
                 timer2.Start();
@@ -1068,6 +1070,25 @@ namespace CrossxZeros
             }
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
+
+            GV1.Top = startMenu.Height*2/5+4;
+            GV1.Width = startMenu.Width / 2 - 8 - startMenu.Width/5;
+            GV1.Height = startMenu.Height - startMenu.Height * 2 / 5 - 8 - 30;
+            BGV1.Width = GV1.Width;
+            Ник1.Width = GV1.Width / 2-2;
+            Побед1.Width = GV1.Width / 4;
+            Поражений1.Width = GV1.Width / 4;
+
+            GV2.Top = GV1.Top;
+            GV2.Width = GV1.Width;
+            GV2.Height = GV1.Height;
+            GV2.Left = startMenu.Width - 8 - GV2.Width;
+            BGV2.Left = GV2.Left;
+            BGV2.Width = GV2.Width;
+            BGV2.Top = BGV1.Top;
+            Ник2.Width = Ник1.Width;
+            Побед2.Width = Побед1.Width;
+            Поражений2.Width = Поражений1.Width;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -1084,6 +1105,26 @@ namespace CrossxZeros
             }
             Battlefield.Left = (gameScreen.Width - Battlefield.Width) / 2;
             Battlefield.Top = (gameScreen.Height - Battlefield.Height) / 2;
+
+            GV1.Top = startMenu.Height * 2 / 5 + 4;
+            GV1.Width = startMenu.Width / 2 - 8 - startMenu.Width / 5;
+            GV1.Height = startMenu.Height - startMenu.Height * 2 / 5 - 8 - 30;
+            BGV1.Width = GV1.Width;
+            Ник1.Width = GV1.Width / 2 - 2;
+            Побед1.Width = GV1.Width / 4;
+            Поражений1.Width = GV1.Width / 4;
+
+            GV2.Top = GV1.Top;
+            GV2.Width = GV1.Width;
+            GV2.Height = GV1.Height;
+            GV2.Left = startMenu.Width - 8 - GV2.Width;
+            BGV2.Left = GV2.Left;
+            BGV2.Width = GV2.Width;
+            BGV2.Top = BGV1.Top;
+            Ник2.Width = Ник1.Width;
+            Побед2.Width = Побед1.Width;
+            Поражений2.Width = Поражений1.Width;
+
             timer2.Start();
             timer3.Start();
             PW[0, 0].X = 0;
@@ -1257,20 +1298,28 @@ namespace CrossxZeros
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
             if (WindowState == FormWindowState.Normal)
-        { 
-            WindowState = FormWindowState.Maximized;
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            pictureBox14.Width = gameScreen.Width / 2;
-            pictureBox15.Width = gameScreen.Width / 2;
-        } 
-            else 
-        { 
-             WindowState = FormWindowState.Normal; 
-             FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow; 
-             pictureBox14.Width = gameScreen.Width / 2; 
-             pictureBox15.Width = gameScreen.Width / 2; 
-        }
+            { 
+                WindowState = FormWindowState.Maximized;
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                pictureBox14.Width = gameScreen.Width / 2;
+                pictureBox15.Width = gameScreen.Width / 2;
+            } 
+                else 
+            { 
+                WindowState = FormWindowState.Normal; 
+                FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow; 
+                pictureBox14.Width = gameScreen.Width / 2; 
+                pictureBox15.Width = gameScreen.Width / 2; 
+            }
+
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
+            GV2.Hide();
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
@@ -2569,14 +2618,14 @@ namespace CrossxZeros
                     pictureBox3.Image = Resources.eng_ru_jedi_style;
                 button1.Text = "Play";
                 button11.Text = "Exit";
-                button7.Text = "Multiplayer stats";
-                dataGridViewTextBoxColumn1.HeaderText = "Nick";
-                dataGridViewTextBoxColumn2.HeaderText = "Wins";
-                dataGridViewTextBoxColumn3.HeaderText = "Loses";
-                Побед.HeaderText = "Wins";
-                Ник.HeaderText = "Nick";
-                Поражений.HeaderText = "Loses";
-                button6.Text = "Solo game stats";
+                BGV2.Text = "Multiplayer stats";
+                Ник2.HeaderText = "Nick";
+                Побед2.HeaderText = "Wins";
+                Поражений2.HeaderText = "Loses";
+                Побед1.HeaderText = "Wins";
+                Ник1.HeaderText = "Nick";
+                Поражений1.HeaderText = "Loses";
+                BGV1.Text = "Solo game stats";
                 groupBox2.Text = "Player 1";
                 groupBox3.Text = "Player 2";
                 People.Text = "Human";
@@ -2601,14 +2650,14 @@ namespace CrossxZeros
                     pictureBox3.Image = Resources.ru_eng_jedi_style;
                 button1.Text = "Играть";
                 button11.Text = "Выход";
-                button7.Text = "Статистика многопользовательской игры";
-                dataGridViewTextBoxColumn1.HeaderText = "Ник";
-                dataGridViewTextBoxColumn2.HeaderText = "Побед";
-                dataGridViewTextBoxColumn3.HeaderText = "Поражений";
-                Побед.HeaderText = "Побед";
-                Ник.HeaderText = "Ник";
-                Поражений.HeaderText = "Поражений";
-                button6.Text = "Статистика одиночной игры";
+                BGV2.Text = "Статистика многопользовательской игры";
+                Ник2.HeaderText = "Ник";
+                Побед2.HeaderText = "Побед";
+                Поражений2.HeaderText = "Поражений";
+                Побед1.HeaderText = "Побед";
+                Ник1.HeaderText = "Ник";
+                Поражений1.HeaderText = "Поражений";
+                BGV1.Text = "Статистика одиночной игры";
                 groupBox2.Text = "Игрок 1";
                 groupBox3.Text = "Игрок 2";
                 People.Text = "Человек";
@@ -2640,7 +2689,7 @@ namespace CrossxZeros
                     button3.Image = Resources.Collapse_Arrow_20px;
                 else if (jedi_style == true)
                     button3.Image = Resources.Collapse_Arrow_20px_jedi_style;
-                style.Height += 20;
+                style.Height += 12;
                 if (style.Size == style.MaximumSize)
                 {
                     timer2.Stop();
@@ -2653,7 +2702,7 @@ namespace CrossxZeros
                     button3.Image = Resources.Expand_Arrow_20px;
                 else if (jedi_style == true)
                     button3.Image = Resources.Expand_Arrow_20px_jedi_style;
-                style.Height -= 20;
+                style.Height -= 12;
                 if (style.Size == style.MinimumSize)
                 {
                     timer2.Stop();
@@ -2666,6 +2715,13 @@ namespace CrossxZeros
         {
             style.BringToFront();
             timer2.Start();
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
+            GV2.Hide();
+
         }
 
         private void startMenu_Click(object sender, EventArgs e)
@@ -2683,6 +2739,10 @@ namespace CrossxZeros
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             sound.BringToFront();
+            if (!isCollapsed)
+                timer2.Start();
+            GV1.Hide();
+            GV2.Hide();
             timer3.Start();
             if (border_check == false)
             {
@@ -2703,7 +2763,7 @@ namespace CrossxZeros
             if (SoundSt)
             {
                 
-                sound.Height += 20;
+                sound.Height += 15;
                 if (sound.Size == sound.MaximumSize)
                 {
                     timer3.Stop();
@@ -2712,7 +2772,7 @@ namespace CrossxZeros
             }
             else
             {
-                sound.Height -= 20;
+                sound.Height -= 15;
                 if (sound.Size == sound.MinimumSize)
                 {
                     timer3.Stop();
@@ -2918,17 +2978,17 @@ namespace CrossxZeros
             this.button1.BackgroundImageLayout = ImageLayout.Stretch;
             this.button11.BackgroundImage = Resources.Туман;
             this.button11.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button6.BackgroundImage = Resources.Туман;
-            this.button6.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button7.BackgroundImage = Resources.Туман;
-            this.button7.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BGV1.BackgroundImage = Resources.Туман;
+            this.BGV1.BackgroundImageLayout = ImageLayout.Stretch;
+            this.BGV2.BackgroundImage = Resources.Туман;
+            this.BGV2.BackgroundImageLayout = ImageLayout.Stretch;
             this.button3.BackColor = Color.White;
             this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
             this.button1.ForeColor = Color.Black;
             this.button11.ForeColor = Color.Black;
-            this.button6.ForeColor = Color.Black;
-            this.button7.ForeColor = Color.Black;
+            this.BGV1.ForeColor = Color.Black;
+            this.BGV2.ForeColor = Color.Black;
             this.button3.ForeColor = Color.Black;
             this.button3.Image = Resources.Expand_Arrow_20px_jedi_style;
             this.button8.ForeColor = Color.White;
@@ -3017,6 +3077,38 @@ namespace CrossxZeros
                 e.Handled = true;
         }
 
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
+            GV2.Hide();
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
+            GV2.Hide();
+        }
+
+        private void topPanel_Click(object sender, EventArgs e)
+        {
+
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
+            GV2.Hide();
+        }
+
         private void player1_TextUpdate(object sender, EventArgs e)
         {
         }
@@ -3036,6 +3128,11 @@ namespace CrossxZeros
             {
                 GV2.Show();
             }
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV1.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -3049,6 +3146,12 @@ namespace CrossxZeros
             {
                 GV1.Show();
             }
+
+            if (!isCollapsed)
+                timer2.Start();
+            if (!SoundSt)
+                timer3.Start();
+            GV2.Hide();
         }
 
         private void button11_Click(object sender, EventArgs e)
