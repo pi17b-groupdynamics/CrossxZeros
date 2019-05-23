@@ -103,7 +103,7 @@ namespace CrossxZeros
             
         }
 
-        void bot_v2()
+     /*   void bot_v2()
         {
      
             for(int i = 0; i<8; i++)
@@ -223,7 +223,7 @@ namespace CrossxZeros
                     }
                 }
             }
-            if (turn == 1)
+            if (turn == 1 && bot_go == 0 )
             {
                 int Bot;
                 int hod, hod1;
@@ -737,9 +737,45 @@ namespace CrossxZeros
                     p33_Click(sender, e);
                 }
             }
-            else if (turn == -1)
+            else if(turn == -1 && bot_go == 0) 
             {
                 p12_Click(sender, e);
+            }
+        }*/
+        void bot_v2()
+        {
+
+            if(bot_go == 1 && turn == -1)
+            {
+                if (five == 2)
+                {
+                    p22_Click(sender, e);
+                }
+                else
+                {
+                    Random r = new Random();
+                    int hod = r.Next(4) + 1;
+                    switch (hod)
+                    {
+                        case 1:
+                            p11_Click(sender, e);
+                            break;
+                        case 2:
+                            p13_Click(sender, e);
+                            break;
+                        case 3:
+                            p31_Click(sender, e);
+                            break;
+                        case 4:
+                            p33_Click(sender, e);
+                            break;
+                    }
+                }
+            }
+            else if(bot_go == 0 && turn == 1)
+            {
+                if(five == 2)
+                p22_Click(sender, e);
             }
         }
 
@@ -2376,7 +2412,7 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if (!human)
             {
                 bot_v2();
             }
@@ -2405,7 +2441,7 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if (!human)
             {
                 bot_v2();
             }
@@ -2433,7 +2469,7 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if ( !human)
             {
                 bot_v2();
             }
@@ -2461,7 +2497,7 @@ namespace CrossxZeros
                 p21.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if (!human)
             {
                 bot_v2();
             }
@@ -2489,7 +2525,7 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
-            if (turn == 1&&!human)
+            if (!human)
             {
                 bot_v2();
             }
@@ -2517,7 +2553,7 @@ namespace CrossxZeros
                 p23.Enabled = false;
             }
             wins();
-            if (human == false && turn == 1)
+            if (!human)
             {
                 bot_v2();
             }
@@ -2545,7 +2581,7 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if ( !human)
             {
                 bot_v2();
             }
@@ -2573,7 +2609,7 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
-            if ( turn == 1 && !human)
+            if ( !human)
             {
                 bot_v2();
             }
@@ -2601,7 +2637,7 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
-            if (turn == 1 && !human)
+            if (!human)
             {
                 bot_v2();
             }
@@ -3340,10 +3376,11 @@ namespace CrossxZeros
             this.Close();
         }
 
-       
+        int bot_go = 0;
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            bot_go = 1;
             side = 1;
             if (!SoundSt)
             {
@@ -3352,6 +3389,7 @@ namespace CrossxZeros
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            bot_go = 0;
             side = 2;
             if (!SoundSt)
             {
