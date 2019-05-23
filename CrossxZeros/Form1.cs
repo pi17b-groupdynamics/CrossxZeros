@@ -26,6 +26,7 @@ namespace CrossxZeros
         int check_on_wins = 0;
         int winner_cross = 0;
         int winner_zero = 0;
+        int p1_id=-1, p2_id=-1;
         bool human = true;
         int side = 1;
         int timer = 0;
@@ -42,6 +43,7 @@ namespace CrossxZeros
         bool check_win_or_not = false;
         object sender = null;
         EventArgs e = null;
+        bool updated = true;
         string lane = "11";
         int[,] P = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
         struct Puti_Win
@@ -778,6 +780,8 @@ namespace CrossxZeros
         private void button1_Click(object sender, EventArgs e)
         {
             gameSettings.BringToFront();
+            style.Hide();
+            sound.Hide();
             if (!isCollapsed)
             {
                 timer2.Start();
@@ -790,7 +794,8 @@ namespace CrossxZeros
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(side == 1)
+            updated = false;
+            if (side == 1)
             {
                 pictureBox10.Image = Resources.LTK5AdoTa;
                 pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
@@ -809,19 +814,37 @@ namespace CrossxZeros
             {
                 player1.Text = "Player_1";
                 label1.Text = player1.Text;
+                p1_id = -1;
             }
             else
             {
                 label1.Text = player1.Text;
+                if (human)
+                {
+                    p1_id = SearchInGV(player1.Text, GV1);
+                }
+                else
+                {
+                    p1_id = SearchInGV(player1.Text, GV2);
+                }
             }
-            if (player2.Text == "" && human == true)
+            if ((player2.Text == "" ||player2.Text==player1.Text)&& human == true)
             {
                 player2.Text = "Player_2";
                 label2.Text = player2.Text;
+                p2_id = -1;
             }
             else
             {
                 label2.Text = player2.Text;
+                if (human)
+                {
+                    p2_id= SearchInGV(player2.Text, GV1);
+                }
+                else
+                {
+                    p2_id = -1;
+                }
             }
             count_of_wins = 1;
             gameScreen.BringToFront();
@@ -838,6 +861,7 @@ namespace CrossxZeros
 
         private void button8_Click(object sender, EventArgs e)
         {
+            updated = false;
             if (side == 1)
             {
                 pictureBox10.Image = Resources.LTK5AdoTa;
@@ -852,23 +876,42 @@ namespace CrossxZeros
             {
                 timer4.Enabled = true;
             }
+
             if (player1.Text == "")
             {
                 player1.Text = "Player_1";
                 label1.Text = player1.Text;
+                p1_id = -1;
             }
             else
             {
                 label1.Text = player1.Text;
+                if (human)
+                {
+                    p1_id = SearchInGV(player1.Text, GV1);
+                }
+                else
+                {
+                    p1_id = SearchInGV(player1.Text, GV2);
+                }
             }
-            if (player2.Text == "")
+            if ((player2.Text == "" || player2.Text == player1.Text) && human == true)
             {
                 player2.Text = "Player_2";
                 label2.Text = player2.Text;
+                p2_id = -1;
             }
             else
             {
                 label2.Text = player2.Text;
+                if (human)
+                {
+                    p2_id = SearchInGV(player2.Text, GV1);
+                }
+                else
+                {
+                    p2_id = -1;
+                }
             }
             count_of_wins = 3;
             gameScreen.BringToFront();
@@ -885,6 +928,7 @@ namespace CrossxZeros
 
         private void button4_Click(object sender, EventArgs e)
         {
+            updated = false;
             if (side == 1)
             {
                 pictureBox10.Image = Resources.LTK5AdoTa;
@@ -899,23 +943,42 @@ namespace CrossxZeros
             {
                 timer4.Enabled = true;
             }
+
             if (player1.Text == "")
             {
                 player1.Text = "Player_1";
                 label1.Text = player1.Text;
+                p1_id = -1;
             }
             else
             {
                 label1.Text = player1.Text;
+                if (human)
+                {
+                    p1_id = SearchInGV(player1.Text, GV1);
+                }
+                else
+                {
+                    p1_id = SearchInGV(player1.Text, GV2);
+                }
             }
-            if (player2.Text == "")
+            if ((player2.Text == "" || player2.Text == player1.Text) && human == true)
             {
                 player2.Text = "Player_2";
                 label2.Text = player2.Text;
+                p2_id = -1;
             }
             else
             {
                 label2.Text = player2.Text;
+                if (human)
+                {
+                    p2_id = SearchInGV(player2.Text, GV1);
+                }
+                else
+                {
+                    p2_id = -1;
+                }
             }
             count_of_wins = 5;
             gameScreen.BringToFront();
@@ -946,9 +1009,36 @@ namespace CrossxZeros
                     P[i, j] = 0;
                 }
             }
+            sound.BringToFront();
             if (!SoundSt)
             {
                 timer3.Start();
+            }
+            if (!updated)
+            {
+                if (!(winner_cross == count_of_wins || winner_zero == count_of_wins))
+                {
+                    int h=0;
+                    for(int i=0;i<3;i++)
+                    {
+                        for (int j=0;j<3;j++)
+                        {
+                            if (P[i, j] != 0)
+                                h++;
+                        }
+                    }
+                    if (h%2==0)
+                    {
+                        winner_zero = count_of_wins;                        
+                    }
+                    else
+                    {
+                        winner_cross = count_of_wins;
+                    }
+                }
+                Update_Statistic();
+                winner_zero = 0;
+                winner_cross = 0;
             }
         }
 
@@ -1052,8 +1142,56 @@ namespace CrossxZeros
             PW[7, 1].Y = 1;
             PW[7, 2].Y = 2;
 
-        }
+            String s;
+            String[] words;
+            FileStream f1 = new FileStream("MultiPlayerMode.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            StreamReader read1 = new StreamReader(f1);
+            FileStream f2 = new FileStream("FirstPlayerMode.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            StreamReader read2 = new StreamReader(f2);
+            if (!read1.EndOfStream)
+            {
+                while (!read1.EndOfStream)
+                {
+                    s = read1.ReadLine();
+                    words = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    GV1.Rows.Add(new object[] { words[0], words[1], words[2] });
+                    player1.Items.Add(words[0]);
+                    player2.Items.Add(words[0]);
+                }
+            }
+            if (!read2.EndOfStream)
+            {
+                while (!read2.EndOfStream)
+                {
+                    s = read2.ReadLine();
+                    words = s.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    GV2.Rows.Add(new object[] { words[0], words[1], words[2] });
+                    if(!player1.Items.Contains(words[0]))
+                    {
+                        player1.Items.Add(words[0]);
+                        player2.Items.Add(words[0]);
+                    }
+                }
+            }
+            read1.Close();
+            read2.Close();
+            f1.Close();
+            f2.Close();
 
+        }
+        private int SearchInGV(String name,DataGridView GV)
+        {
+            if (name == "Player_1" || name == "Player_2")
+                return -1;
+            for(int i=0;i<GV.RowCount;i++)
+            {
+                if(GV[0,i].Value.ToString()==name)
+                {
+                    return i;
+                }
+            }
+            return -2;
+        }
         private void Battlefield_SizeChanged(object sender, EventArgs e)
         {
             int w = (Battlefield.Width - 10) / 3;
@@ -2161,6 +2299,10 @@ namespace CrossxZeros
                     P[i, j] = 0;
                 }
             }
+            if(!check_win_or_not)
+            {
+
+            }
         }
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
@@ -2185,7 +2327,7 @@ namespace CrossxZeros
                 p11.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2214,7 +2356,7 @@ namespace CrossxZeros
                 p12.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2242,7 +2384,7 @@ namespace CrossxZeros
                 p13.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2270,7 +2412,7 @@ namespace CrossxZeros
                 p21.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2298,7 +2440,7 @@ namespace CrossxZeros
                 p22.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1&&!human)
             {
                 bot_v2();
             }
@@ -2354,7 +2496,7 @@ namespace CrossxZeros
                 p31.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2382,7 +2524,7 @@ namespace CrossxZeros
                 p32.Enabled = false;
             }
             wins();
-            if ( turn == 1)
+            if ( turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2410,7 +2552,7 @@ namespace CrossxZeros
                 p33.Enabled = false;
             }
             wins();
-            if (turn == 1)
+            if (turn == 1 && !human)
             {
                 bot_v2();
             }
@@ -2522,6 +2664,7 @@ namespace CrossxZeros
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            style.BringToFront();
             timer2.Start();
         }
 
@@ -2538,7 +2681,8 @@ namespace CrossxZeros
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
-        { 
+        {
+            sound.BringToFront();
             timer3.Start();
             if (border_check == false)
             {
@@ -2622,6 +2766,8 @@ namespace CrossxZeros
             another_timer = another_timer + 1;
             if (another_timer == 4 && check_win_or_not == false)
             {
+                if((winner_cross==count_of_wins||winner_zero==count_of_wins)&&!updated)
+                    Update_Statistic();
                 winner_zero = 0;
                 winner_cross = 0;
                 check_on_wins = 0;
@@ -2643,9 +2789,107 @@ namespace CrossxZeros
                 timer6.Stop();
                 check_win_or_not = false;
                 Battlefield.Show();
+                //if(winner_cross==count_of_wins||winner_zero==count_of_wins)
+                    //Update_Statistic();
             }
         }
 
+        private void Update_Statistic()
+        {
+            updated = true;
+            if (winner_cross > winner_zero&&side==1|| winner_cross < winner_zero && side == 2)
+            {
+                if (human)
+                {
+                    if (p1_id != -1)
+                    {
+                        if (p1_id == -2)
+                        {
+                            GV1.Rows.Add(new object[] { player1.Text, 1, 0 });
+                            player1.Items.Add(player1.Text);
+                            player2.Items.Add(player1.Text);
+                        }
+                        else
+                        {
+                            GV1[1, p1_id].Value = int.Parse(GV1[1, p1_id].Value.ToString()) + 1;
+                        }
+                    }
+                    if (p2_id != -1)
+                    {
+                        if (p2_id == -2)
+                        {
+                            GV1.Rows.Add(new object[] { player2.Text, 0, 1 });
+                            player1.Items.Add(player2.Text);
+                            player2.Items.Add(player2.Text);
+                        }
+                        else
+                        {
+                            GV1[2, p2_id].Value = int.Parse(GV1[2, p2_id].Value.ToString()) + 1;
+                        }
+                    }
+                }
+                else
+                {
+                    if (p1_id != -1)
+                    {
+                        if (p1_id == -2)
+                        {
+                            GV2.Rows.Add(new object[] { player1.Text, 1, 0 });
+                        }
+                        else
+                        {
+                            GV2[1, p1_id].Value = int.Parse(GV2[1, p1_id].Value.ToString()) + 1;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (human)
+                {
+                    if (p1_id != -1)
+                    {
+                        if (p1_id == -2)
+                        {
+                            GV1.Rows.Add(new object[] { player1.Text, 0, 1 });
+                            player1.Items.Add(player1.Text);
+                            player2.Items.Add(player1.Text);
+                        }
+                        else
+                        {
+                            GV1[2, p1_id].Value = int.Parse(GV1[2, p1_id].Value.ToString()) + 1;
+                        }
+                    }
+                    if (p2_id != -1)
+                    {
+                        if (p2_id == -2)
+                        {
+                            GV1.Rows.Add(new object[] { player2.Text, 1, 0 });
+                            player1.Items.Add(player2.Text);
+                            player2.Items.Add(player2.Text);
+                        }
+                        else
+                        {
+                            GV1[1, p2_id].Value = int.Parse(GV1[1, p2_id].Value.ToString()) + 1;
+                        }
+                    }
+                }
+                else
+                {
+                    if (p1_id != -1)
+                    {
+                        if (p1_id == -2)
+                        {
+                            GV2.Rows.Add(new object[] { player1.Text, 0, 1 });
+                        }
+                        else
+                        {
+                            GV2[2, p1_id].Value = int.Parse(GV2[2, p1_id].Value.ToString()) + 1;
+                        }
+                    }
+                }
+            }
+        }
         private void player1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -2743,6 +2987,33 @@ namespace CrossxZeros
 
         private void button11_MouseMove(object sender, MouseEventArgs e)
         { }
+
+        private void player2_TextUpdate(object sender, EventArgs e)
+        {
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FileStream f1 = new FileStream("MultiPlayerMode.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            FileStream f2 = new FileStream("FirstPlayerMode.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            StreamWriter w1=new StreamWriter(f1), w2=new StreamWriter(f2);
+            for(int i=0;i<GV1.RowCount;i++)
+            {
+                w1.WriteLine(GV1[0,i].Value + " "+GV1[1,i].Value + " "+GV1[2,i].Value);
+            }
+            for (int i = 0; i < GV2.RowCount; i++)
+            {
+                w2.WriteLine(GV2[0, i].Value + " " + GV2[1, i].Value + " " + GV2[2, i].Value);
+            }
+            w1.Close();
+            w2.Close();
+            f1.Close();
+            f2.Close();
+        }
+
+        private void player1_TextUpdate(object sender, EventArgs e)
+        {
+        }
 
         private void Form1_Click(object sender, EventArgs e)
         {
