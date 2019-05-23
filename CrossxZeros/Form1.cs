@@ -3109,6 +3109,139 @@ namespace CrossxZeros
             GV2.Hide();
         }
 
+        private void p11_MouseEnter(object sender, EventArgs e)
+        {
+            p11.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p11_MouseLeave(object sender, EventArgs e)
+        {
+            p11.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p12_MouseEnter(object sender, EventArgs e)
+        {
+            p12.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p12_MouseLeave(object sender, EventArgs e)
+        {
+            p12.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p13_MouseEnter(object sender, EventArgs e)
+        {
+            p13.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p13_MouseLeave(object sender, EventArgs e)
+        {
+            p13.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p21_MouseEnter(object sender, EventArgs e)
+        {
+            p21.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p21_MouseLeave(object sender, EventArgs e)
+        {
+            p21.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p22_MouseEnter(object sender, EventArgs e)
+        {
+            p22.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p22_MouseLeave(object sender, EventArgs e)
+        {
+            p22.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p23_MouseEnter(object sender, EventArgs e)
+        {
+            p23.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p23_MouseLeave(object sender, EventArgs e)
+        {
+            p23.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p31_MouseEnter(object sender, EventArgs e)
+        {
+            p31.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p31_MouseLeave(object sender, EventArgs e)
+        {
+            p31.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p32_MouseEnter(object sender, EventArgs e)
+        {
+            p32.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p32_MouseLeave(object sender, EventArgs e)
+        {
+            p32.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void p33_MouseEnter(object sender, EventArgs e)
+        {
+            p33.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void p33_MouseLeave(object sender, EventArgs e)
+        {
+            p33.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (label3.Text!="")
+            {
+                if (e.KeyChar == '1' && p31.Image == null)
+                {
+                    p31_Click(sender, e);
+                }
+                else if (e.KeyChar == '2' && p32.Image == null)
+                {
+                    p32_Click(sender, e);
+                }
+                else if (e.KeyChar == '3' && p33.Image == null)
+                {
+                    p33_Click(sender, e);
+                }
+                else if (e.KeyChar == '4' && p21.Image == null)
+                {
+                    p21_Click(sender, e);
+                }
+                else if (e.KeyChar == '5' && p22.Image == null)
+                {
+                    p22_Click(sender, e);
+                }
+                else if (e.KeyChar == '6' && p23.Image == null)
+                {
+                    p23_Click(sender, e);
+                }
+                else if (e.KeyChar == '7' && p11.Image == null)
+                {
+                    p11_Click(sender, e);
+                }
+                else if (e.KeyChar == '8'&& p12.Image == null)
+                {
+                    p12_Click(sender, e);
+                }
+                else if (e.KeyChar == '9' && p13.Image == null)
+                {
+                    p13_Click(sender, e);
+                }
+            }
+        }
+
         private void player1_TextUpdate(object sender, EventArgs e)
         {
         }

@@ -362,9 +362,9 @@
             this.sound.Location = new System.Drawing.Point(885, 49);
             this.sound.Margin = new System.Windows.Forms.Padding(2);
             this.sound.MaximumSize = new System.Drawing.Size(180, 74);
-            this.sound.MinimumSize = new System.Drawing.Size(180, 0);
+            this.sound.MinimumSize = new System.Drawing.Size(180, 2);
             this.sound.Name = "sound";
-            this.sound.Size = new System.Drawing.Size(180, 0);
+            this.sound.Size = new System.Drawing.Size(180, 2);
             this.sound.TabIndex = 28;
             // 
             // panel12
@@ -766,6 +766,8 @@
             this.p11.TabIndex = 0;
             this.p11.TabStop = false;
             this.p11.Click += new System.EventHandler(this.p11_Click);
+            this.p11.MouseEnter += new System.EventHandler(this.p11_MouseEnter);
+            this.p11.MouseLeave += new System.EventHandler(this.p11_MouseLeave);
             // 
             // p12
             // 
@@ -777,6 +779,8 @@
             this.p12.TabIndex = 1;
             this.p12.TabStop = false;
             this.p12.Click += new System.EventHandler(this.p12_Click);
+            this.p12.MouseEnter += new System.EventHandler(this.p12_MouseEnter);
+            this.p12.MouseLeave += new System.EventHandler(this.p12_MouseLeave);
             // 
             // p13
             // 
@@ -788,6 +792,8 @@
             this.p13.TabIndex = 2;
             this.p13.TabStop = false;
             this.p13.Click += new System.EventHandler(this.p13_Click);
+            this.p13.MouseEnter += new System.EventHandler(this.p13_MouseEnter);
+            this.p13.MouseLeave += new System.EventHandler(this.p13_MouseLeave);
             // 
             // p21
             // 
@@ -799,6 +805,8 @@
             this.p21.TabIndex = 4;
             this.p21.TabStop = false;
             this.p21.Click += new System.EventHandler(this.p21_Click);
+            this.p21.MouseEnter += new System.EventHandler(this.p21_MouseEnter);
+            this.p21.MouseLeave += new System.EventHandler(this.p21_MouseLeave);
             // 
             // p22
             // 
@@ -810,6 +818,8 @@
             this.p22.TabIndex = 8;
             this.p22.TabStop = false;
             this.p22.Click += new System.EventHandler(this.p22_Click);
+            this.p22.MouseEnter += new System.EventHandler(this.p22_MouseEnter);
+            this.p22.MouseLeave += new System.EventHandler(this.p22_MouseLeave);
             // 
             // p23
             // 
@@ -821,6 +831,8 @@
             this.p23.TabIndex = 5;
             this.p23.TabStop = false;
             this.p23.Click += new System.EventHandler(this.p23_Click);
+            this.p23.MouseEnter += new System.EventHandler(this.p23_MouseEnter);
+            this.p23.MouseLeave += new System.EventHandler(this.p23_MouseLeave);
             // 
             // p31
             // 
@@ -832,6 +844,8 @@
             this.p31.TabIndex = 7;
             this.p31.TabStop = false;
             this.p31.Click += new System.EventHandler(this.p31_Click);
+            this.p31.MouseEnter += new System.EventHandler(this.p31_MouseEnter);
+            this.p31.MouseLeave += new System.EventHandler(this.p31_MouseLeave);
             // 
             // p32
             // 
@@ -843,6 +857,8 @@
             this.p32.TabIndex = 3;
             this.p32.TabStop = false;
             this.p32.Click += new System.EventHandler(this.p32_Click);
+            this.p32.MouseEnter += new System.EventHandler(this.p32_MouseEnter);
+            this.p32.MouseLeave += new System.EventHandler(this.p32_MouseLeave);
             // 
             // p33
             // 
@@ -854,6 +870,8 @@
             this.p33.TabIndex = 6;
             this.p33.TabStop = false;
             this.p33.Click += new System.EventHandler(this.p33_Click);
+            this.p33.MouseEnter += new System.EventHandler(this.p33_MouseEnter);
+            this.p33.MouseLeave += new System.EventHandler(this.p33_MouseLeave);
             // 
             // pictureBox11
             // 
@@ -1204,6 +1222,7 @@
             this.SizeChanged += new System.EventHandler(this.Form1_SizeChanged);
             this.Click += new System.EventHandler(this.Form1_Click);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.startMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).EndInit();
