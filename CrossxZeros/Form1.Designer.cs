@@ -470,6 +470,7 @@
             this.player2.Size = new System.Drawing.Size(165, 28);
             this.player2.TabIndex = 24;
             this.player2.TextUpdate += new System.EventHandler(this.player2_TextUpdate);
+            this.player2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.player2_KeyPress);
             // 
             // People
             // 
@@ -516,6 +517,7 @@
             this.player1.TabIndex = 23;
             this.player1.SelectedIndexChanged += new System.EventHandler(this.player1_SelectedIndexChanged);
             this.player1.TextUpdate += new System.EventHandler(this.player1_TextUpdate);
+            this.player1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.player2_KeyPress);
             // 
             // groupBox1
             // 

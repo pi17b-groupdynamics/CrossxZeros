@@ -3011,6 +3011,12 @@ namespace CrossxZeros
             f2.Close();
         }
 
+        private void player2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar==(char)Keys.Space)
+                e.Handled = true;
+        }
+
         private void player1_TextUpdate(object sender, EventArgs e)
         {
         }
