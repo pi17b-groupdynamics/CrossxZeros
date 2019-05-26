@@ -2790,10 +2790,14 @@ namespace CrossxZeros
                 Battlefield.Hide();
                 check_win_or_not = true;
                 timer4.Stop();
-                if(language == 0)
+                if (language == 1)
+                {
                     congratulation.Text = "Dead hit!";
-                else
+                }
+                else if (language == 0)
+                {
                     congratulation.Text = "Ничья!";
+                }
                 panel4.BringToFront();
                 timer6.Start(); ;
             }
