@@ -748,7 +748,7 @@ namespace CrossxZeros
 
             if(bot_go == 1 && turn == -1)
             {
-             
+
                 if (five == 2)
                 {
                     p22_Click(sender, e);
@@ -809,12 +809,12 @@ namespace CrossxZeros
                 {
                     p13_Click(sender, e);
                 }
-             
+
                 else if ((one == 1) && (five == 1) && (nine == 2))
                 {
                     p33_Click(sender, e);
                 }
-                
+
                 else if ((one == 2) && (five == 1) && (nine == 1))
                 {
                     p11_Click(sender, e);
@@ -835,7 +835,10 @@ namespace CrossxZeros
                 {
                     p21_Click(sender, e);
                 }
-                else
+           
+                else if (p11.Enabled == true || p12.Enabled == true || p13.Enabled == true || p21.Enabled == true ||
+                    p22.Enabled == true || p23.Enabled == true || p31.Enabled == true || p32.Enabled == true ||
+                    p33.Enabled == true)
                 {
                     Random r = new Random();
                     int hod = r.Next(8) + 1;
@@ -933,7 +936,9 @@ namespace CrossxZeros
                         default:
                             break;
                     }
+
                 }
+                else xod = 1;
             }
             else if(bot_go == 0 && turn == 1)
             {
@@ -1022,6 +1027,60 @@ namespace CrossxZeros
                 else if ((four == 2) && (five == 0) && (six == 0))
                 {
                     p21_Click(sender, e);
+                }
+                else if (p11.Enabled == true && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                   p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                   p33.Enabled == false)
+                {
+                    p11_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == true && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p12_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == true && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p13_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == true &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p21_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == true && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p22_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == true && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p23_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == true && p32.Enabled == false &&
+                  p33.Enabled == false)
+                {
+                    p31_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == true &&
+                  p33.Enabled == false)
+                {
+                    p32_Click(sender, e);
+                }
+                else if (p11.Enabled == false && p12.Enabled == false && p13.Enabled == false && p21.Enabled == false &&
+                  p22.Enabled == false && p23.Enabled == false && p31.Enabled == false && p32.Enabled == false &&
+                  p33.Enabled == true)
+                {
+                    p33_Click(sender, e);
                 }
                 else
                 {
@@ -1178,6 +1237,12 @@ namespace CrossxZeros
 
         private void button9_Click(object sender, EventArgs e)
         {
+            if(bot_go == 1) { 
+            xod = 1;
+                }
+                else {
+                    xod = 0;
+                }
             updated = false;
             if (side == 1)
             {
@@ -1378,7 +1443,15 @@ namespace CrossxZeros
         }
         private void button10_Click(object sender, EventArgs e)
         {
-            xod = 0;
+            if (bot_go == 0)
+            {
+
+                xod = 0;
+            }
+            else
+            {
+                xod = 1;
+            }
             startMenu.BringToFront();
             style.BringToFront();
             sound.BringToFront();
