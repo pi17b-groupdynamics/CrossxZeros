@@ -1815,6 +1815,7 @@ namespace CrossxZeros
 
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -1859,6 +1860,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -1903,6 +1905,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -1947,6 +1950,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -1991,6 +1995,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2035,6 +2040,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2079,6 +2085,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2123,6 +2130,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2167,6 +2175,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2211,6 +2220,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2255,6 +2265,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2299,6 +2310,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2343,6 +2355,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2387,6 +2400,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2431,6 +2445,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2475,6 +2490,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2519,6 +2535,7 @@ namespace CrossxZeros
             {
                 winner_cross = winner_cross + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2563,6 +2580,7 @@ namespace CrossxZeros
             {
                 winner_zero = winner_zero + 1;
                 check_on_wins = check_on_wins + 1;
+                Battlefield.Enabled = false;
                 if (check_on_wins == count_of_wins && (winner_cross > winner_zero))
                 {
                     check_win_or_not = false;
@@ -2609,6 +2627,7 @@ namespace CrossxZeros
                 && (p33.Enabled == false))
             {
                 check_win_or_not = true;
+                Battlefield.Enabled = false;
                 if (language == 1)
                 {
                     congratulation.Text = "Dead hit!";
