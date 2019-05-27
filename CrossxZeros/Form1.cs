@@ -1246,13 +1246,30 @@ namespace CrossxZeros
             updated = false;
             if (side == 1)
             {
-                pictureBox10.Image = Resources.LTK5AdoTa;
-                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                if(normal_style == true)
+                {
+                    pictureBox10.Image = Resources.LTK5AdoTa;
+                    pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                }
+                else if(jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.zeroes;
+                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                }
+               
             }
             else
             {
-                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
-                pictureBox11.Image = Resources.LTK5AdoTa;
+                if(normal_style == true)
+                {
+                    pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                    pictureBox11.Image = Resources.LTK5AdoTa;
+                }
+                else if (jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.simvol_orden_djedaev;
+                    pictureBox11.Image = Resources.zeroes;
+                }
             }
             if (human == true)
             {
@@ -1313,13 +1330,29 @@ namespace CrossxZeros
             updated = false;
             if (side == 1)
             {
-                pictureBox10.Image = Resources.LTK5AdoTa;
-                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                if (normal_style == true)
+                {
+                    pictureBox10.Image = Resources.LTK5AdoTa;
+                    pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                }
+                else if (jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.zeroes;
+                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                }
             }
             else
             {
-                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
-                pictureBox11.Image = Resources.LTK5AdoTa;
+                if (normal_style == true)
+                {
+                    pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                    pictureBox11.Image = Resources.LTK5AdoTa;
+                }
+                else if (jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.simvol_orden_djedaev;
+                    pictureBox11.Image = Resources.zeroes;
+                }
             }
             if (human == true)
             {
@@ -1380,13 +1413,29 @@ namespace CrossxZeros
             updated = false;
             if (side == 1)
             {
-                pictureBox10.Image = Resources.LTK5AdoTa;
-                pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                if (normal_style == true)
+                {
+                    pictureBox10.Image = Resources.LTK5AdoTa;
+                    pictureBox11.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                }
+                else if (jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.zeroes;
+                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                }
             }
             else
             {
-                pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
-                pictureBox11.Image = Resources.LTK5AdoTa;
+                if (normal_style == true)
+                {
+                    pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
+                    pictureBox11.Image = Resources.LTK5AdoTa;
+                }
+                else if (jedi_style == true)
+                {
+                    pictureBox10.Image = Resources.simvol_orden_djedaev;
+                    pictureBox11.Image = Resources.zeroes;
+                }
             }
             if (human == true)
             {
@@ -3166,7 +3215,6 @@ namespace CrossxZeros
             p32.Image = null;
             p33.Enabled = true;
             p33.Image = null;
-                label4.Text = "";
                 timer_2 = 0;
                 timer5.Enabled = false;
             }
@@ -3357,9 +3405,6 @@ namespace CrossxZeros
             this.button8.BackgroundImageLayout = ImageLayout.Stretch;
             this.button4.BackgroundImageLayout = ImageLayout.Stretch;
             this.button2.BackgroundImageLayout = ImageLayout.Stretch;
-            this.groupBox1.BackgroundImage = Resources.Туман;
-            this.groupBox2.BackgroundImage = Resources.Туман;
-            this.groupBox3.BackgroundImage = Resources.Туман;
             this.button3.BackColor = Color.White;
             this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
@@ -3382,20 +3427,15 @@ namespace CrossxZeros
             this.People.ForeColor = Color.White;
             this.Bot.ForeColor = Color.White;
             this.pictureBox15.Image = Resources._28Ih;
-            this.pictureBox14.Image = Resources._12193865426;
+            this.pictureBox14.Image = Resources.tumblr_inline_p36ku32bXB1ux1ct3_640;
             this.label1.ForeColor = Color.White;
             this.label2.ForeColor = Color.White;
-            this.p11.BackColor = Color.White;
-            this.p12.BackColor = Color.White;
-            this.p13.BackColor = Color.White;
-            this.p21.BackColor = Color.White;
-            this.p22.BackColor = Color.White;
-            this.p23.BackColor = Color.White;
-            this.p31.BackColor = Color.White;
-            this.p32.BackColor = Color.White;
-            this.p33.BackColor = Color.White;
             this.panel4.BorderStyle =BorderStyle.Fixed3D;
             this.congratulation.ForeColor = Color.White;
+            this.pictureBox8.BackgroundImage = Resources._16637;
+            this.pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button10.BackgroundImage = Resources.Туман;
+            this.label3.ForeColor = Color.White;
             button3_Click_1(sender, e);
             pictureBox13.Image = Resources.Desftop_1;
             pictureBox4.Image = Resources.Справка_jedi_style;
@@ -3762,6 +3802,21 @@ namespace CrossxZeros
         {
             if (jedi_style == true)
                 groupBox1.BackgroundImage = Resources._7Z6Q;
+        }
+
+        private void button10_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button2.Image = Resources._7Z6Q;
+        }
+
+        private void button10_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                button2.BackgroundImage = Resources.Туман;
+                button2.Image = null;
+            }
         }
 
         private void Form1_Click(object sender, EventArgs e)

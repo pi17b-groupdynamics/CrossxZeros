@@ -248,5 +248,11 @@
   <ItemGroup>
     <None Include="Resources\Desftop_1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_inline_p36ku32bXB1ux1ct3_640.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16637.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

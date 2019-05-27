@@ -83,6 +83,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16637 {
+            get {
+                object obj = ResourceManager.GetObject("16637", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _28Ih {
             get {
                 object obj = ResourceManager.GetObject("28Ih", resourceCulture);
@@ -526,6 +536,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap TTbz {
             get {
                 object obj = ResourceManager.GetObject("TTbz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tumblr_inline_p36ku32bXB1ux1ct3_640 {
+            get {
+                object obj = ResourceManager.GetObject("tumblr_inline_p36ku32bXB1ux1ct3_640", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
