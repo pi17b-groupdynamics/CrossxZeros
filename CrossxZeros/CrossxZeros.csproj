@@ -290,5 +290,23 @@
   <ItemGroup>
     <None Include="Resources\12193865426.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imperskiy-gerb-iz-filma-zvezdnye-voyny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\simvol-orden-djedaev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zeroes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desftop_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_1390-1144.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9558b95660d31cdbfb19167da2a707f4.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

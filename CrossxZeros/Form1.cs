@@ -2659,7 +2659,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if(turn == 1)
             {
-                p11.Image = Resources.cross;
+                if(normal_style == true)
+                {p11.Image = Resources.cross; }
+                else if(jedi_style == true)
+                {p11.Image = Resources.simvol_orden_djedaev; }
                 p11.Enabled = false;
                 turn = -1;
                 one = 1;
@@ -2667,7 +2670,10 @@ namespace CrossxZeros
             }
             else
             {
-                p11.Image = Resources.zero;
+                if(normal_style == true)
+                {p11.Image = Resources.zero; }
+                else if(jedi_style == true)
+                { p11.Image = Resources.zeroes; }
                 turn = 1;
                 timer = 0;
                 one = 0;
@@ -2689,7 +2695,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p12.Image = Resources.cross;
+                if (normal_style == true)
+                { p12.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p12.Image = Resources.simvol_orden_djedaev; }
                 p12.Enabled = false;
                 timer = 0;
                 two = 1;
@@ -2697,7 +2706,10 @@ namespace CrossxZeros
             }
             else
             {
-                p12.Image = Resources.zero;
+                if (normal_style == true)
+                { p12.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p12.Image = Resources.zeroes; }
                 turn = 1;
                 timer = 0;
                 two = 0;
@@ -2718,7 +2730,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p13.Image = Resources.cross;
+                if (normal_style == true)
+                { p13.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p13.Image = Resources.simvol_orden_djedaev; }
                 p13.Enabled = false;
                 turn = -1;
                 three = 1;
@@ -2726,7 +2741,10 @@ namespace CrossxZeros
             }
             else
             {
-                p13.Image = Resources.zero;
+                if (normal_style == true)
+                { p13.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p13.Image = Resources.zeroes; }
                 turn = 1;
                 timer = 0;
                 three = 0;
@@ -2747,7 +2765,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p21.Image = Resources.cross;
+                if (normal_style == true)
+                { p21.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p21.Image = Resources.simvol_orden_djedaev; }
                 p21.Enabled = false;
                 timer = 0;
                 four = 1;
@@ -2755,7 +2776,10 @@ namespace CrossxZeros
             }
             else
             {
-                p21.Image = Resources.zero;
+                if (normal_style == true)
+                { p21.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p21.Image = Resources.zeroes; }
                 turn = 1;
                 four = 0;
                 timer = 0;
@@ -2776,7 +2800,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p22.Image = Resources.cross;
+                if (normal_style == true)
+                { p22.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p22.Image = Resources.simvol_orden_djedaev; }
                 p22.Enabled = false;
                 five = 1;
                 timer = 0;
@@ -2784,7 +2811,10 @@ namespace CrossxZeros
             }
             else
             {
-                p22.Image = Resources.zero;
+                if (normal_style == true)
+                { p22.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p22.Image = Resources.zeroes; }
                 turn = 1;
                 five = 0;
                 timer = 0;
@@ -2805,7 +2835,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p23.Image = Resources.cross;
+                if (normal_style == true)
+                { p23.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p23.Image = Resources.simvol_orden_djedaev; }
                 p23.Enabled = false;
                 six = 1;
                 timer = 0;
@@ -2813,7 +2846,10 @@ namespace CrossxZeros
             }
             else
             {
-                p23.Image = Resources.zero;
+                if (normal_style == true)
+                { p23.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p23.Image = Resources.zeroes; }
                 turn = 1;
                 six = 0;
                 timer = 0;
@@ -2834,7 +2870,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p31.Image = Resources.cross;
+                if (normal_style == true)
+                { p31.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p31.Image = Resources.simvol_orden_djedaev; }
                 p31.Enabled = false;
                 timer = 0;
                 seven = 1;
@@ -2842,7 +2881,10 @@ namespace CrossxZeros
             }
             else
             {
-                p31.Image = Resources.zero;
+                if (normal_style == true)
+                { p31.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p31.Image = Resources.zeroes; }
                 turn = 1;
                 seven = 0;
                 timer = 0;
@@ -2863,7 +2905,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p32.Image = Resources.cross;
+                if (normal_style == true)
+                { p32.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p32.Image = Resources.simvol_orden_djedaev; }
                 p32.Enabled = false;
                 eight = 1;
                 timer = 0;
@@ -2871,7 +2916,10 @@ namespace CrossxZeros
             }
             else if (turn == -1)
             {
-                p32.Image = Resources.zero;
+                if (normal_style == true)
+                { p32.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p32.Image = Resources.zeroes; }
                 turn = 1;
                 eight = 0;
                 timer = 0;
@@ -2892,7 +2940,10 @@ namespace CrossxZeros
             pictureBox11.BorderStyle = BorderStyle.None;
             if (turn == 1)
             {
-                p33.Image = Resources.cross;
+                if (normal_style == true)
+                { p33.Image = Resources.cross; }
+                else if (jedi_style == true)
+                { p33.Image = Resources.simvol_orden_djedaev; }
                 p33.Enabled = false;
                 timer = 0;
                 nine = 1;
@@ -2900,7 +2951,10 @@ namespace CrossxZeros
             }
             else
             {
-                p33.Image = Resources.zero;
+                if (normal_style == true)
+                { p33.Image = Resources.zero; }
+                else if (jedi_style == true)
+                { p33.Image = Resources.zeroes; }
                 turn = 1;
                 nine = 0;
                 timer = 0;
@@ -3144,6 +3198,7 @@ namespace CrossxZeros
                 winner_cross = 0;
                 check_on_wins = 0;
                 another_timer = 0;
+                Battlefield.Enabled = true;
                 timer = 0;
                 congratulation.Text = "";
                 Battlefield.Show();
@@ -3154,6 +3209,7 @@ namespace CrossxZeros
             {
 
                 another_timer = 0;
+                Battlefield.Enabled = true;
                 timer = 0;
                 timer4.Start();
                 start_battle_menu();
@@ -3286,13 +3342,24 @@ namespace CrossxZeros
             style.BringToFront();
             sound.BringToFront();
             timer1.Stop();
-            this.button1.Image = Resources.Туман;
+            this.button1.BackgroundImage = Resources.Туман;
             this.button11.BackgroundImage = Resources.Туман;
             this.button11.BackgroundImageLayout = ImageLayout.Stretch;
             this.BGV1.BackgroundImage = Resources.Туман;
             this.BGV1.BackgroundImageLayout = ImageLayout.Stretch;
             this.BGV2.BackgroundImage = Resources.Туман;
             this.BGV2.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button9.BackgroundImage = Resources.Туман;
+            this.button8.BackgroundImage = Resources.Туман;
+            this.button4.BackgroundImage = Resources.Туман;
+            this.button2.BackgroundImage = Resources.Туман;
+            this.button9.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button8.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button4.BackgroundImageLayout = ImageLayout.Stretch;
+            this.button2.BackgroundImageLayout = ImageLayout.Stretch;
+            this.groupBox1.BackgroundImage = Resources.Туман;
+            this.groupBox2.BackgroundImage = Resources.Туман;
+            this.groupBox3.BackgroundImage = Resources.Туман;
             this.button3.BackColor = Color.White;
             this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
@@ -3316,8 +3383,21 @@ namespace CrossxZeros
             this.Bot.ForeColor = Color.White;
             this.pictureBox15.Image = Resources._28Ih;
             this.pictureBox14.Image = Resources._12193865426;
+            this.label1.ForeColor = Color.White;
+            this.label2.ForeColor = Color.White;
+            this.p11.BackColor = Color.White;
+            this.p12.BackColor = Color.White;
+            this.p13.BackColor = Color.White;
+            this.p21.BackColor = Color.White;
+            this.p22.BackColor = Color.White;
+            this.p23.BackColor = Color.White;
+            this.p31.BackColor = Color.White;
+            this.p32.BackColor = Color.White;
+            this.p33.BackColor = Color.White;
+            this.panel4.BorderStyle =BorderStyle.Fixed3D;
+            this.congratulation.ForeColor = Color.White;
             button3_Click_1(sender, e);
-            pictureBox13.Image = Resources.multifandom_ru_1597;
+            pictureBox13.Image = Resources.Desftop_1;
             pictureBox4.Image = Resources.Справка_jedi_style;
             pictureBox2.Image = Resources.volume_jedi_style;
             pictureBox1.Image = Resources.fullscreen_jedi_style;
@@ -3563,7 +3643,10 @@ namespace CrossxZeros
         private void button1_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button1.Image = Resources.Туман;
+            {
+                button1.BackgroundImage = Resources.Туман;
+                button1.Image = null;
+            }
         }
 
         private void button11_MouseEnter(object sender, EventArgs e)
@@ -3575,7 +3658,10 @@ namespace CrossxZeros
         private void button11_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button11.Image = Resources.Туман;
+            {
+                button11.BackgroundImage = Resources.Туман;
+                button11.Image = null;
+            }
         }
 
         private void BGV1_MouseEnter(object sender, EventArgs e)
@@ -3587,7 +3673,10 @@ namespace CrossxZeros
         private void BGV1_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                BGV1.Image = Resources.Туман;
+            {
+                BGV1.BackgroundImage = Resources.Туман;
+                BGV1.Image = null;
+            }
         }
 
         private void BGV2_MouseEnter(object sender, EventArgs e)
@@ -3599,11 +3688,80 @@ namespace CrossxZeros
         private void BGV2_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                BGV2.Image = Resources.Туман;
+            {
+                BGV2.BackgroundImage = Resources.Туман;
+                BGV2.Image = null;
+            }
         }
 
         private void player1_TextUpdate(object sender, EventArgs e)
         {
+        }
+
+        private void button9_MouseEnter(object sender, EventArgs e)
+        {
+            if(jedi_style == true)
+                button9.Image = Resources._7Z6Q;
+        }
+
+        private void button9_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                button9.BackgroundImage = Resources.Туман;
+                button9.Image = null;
+            }
+        }
+
+        private void button8_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button8.Image = Resources._7Z6Q;
+        }
+
+        private void button8_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                button8.BackgroundImage = Resources.Туман;
+                button8.Image = null;
+            }
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button4.Image = Resources._7Z6Q;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                button4.BackgroundImage = Resources.Туман;
+                button4.Image = null;
+            }
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                button2.Image = Resources._7Z6Q;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+            {
+                button2.BackgroundImage = Resources.Туман;
+                button2.Image = null;
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+            if (jedi_style == true)
+                groupBox1.BackgroundImage = Resources._7Z6Q;
         }
 
         private void Form1_Click(object sender, EventArgs e)

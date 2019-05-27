@@ -73,6 +73,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1390_1144 {
+            get {
+                object obj = ResourceManager.GetObject("_1390-1144", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _28Ih {
             get {
                 object obj = ResourceManager.GetObject("28Ih", resourceCulture);
@@ -96,6 +106,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap _7Z6Q {
             get {
                 object obj = ResourceManager.GetObject("7Z6Q", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9558b95660d31cdbfb19167da2a707f4 {
+            get {
+                object obj = ResourceManager.GetObject("9558b95660d31cdbfb19167da2a707f4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -206,6 +226,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap crossXzeroes1 {
             get {
                 object obj = ResourceManager.GetObject("crossXzeroes1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Desftop_1 {
+            get {
+                object obj = ResourceManager.GetObject("Desftop_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,6 +363,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imperskiy_gerb_iz_filma_zvezdnye_voyny {
+            get {
+                object obj = ResourceManager.GetObject("imperskiy-gerb-iz-filma-zvezdnye-voyny", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap letter_o_png_letter_o_icon_068645_512 {
             get {
                 object obj = ResourceManager.GetObject("letter-o-png-letter-o-icon-068645-512", resourceCulture);
@@ -396,6 +436,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap ru_eng_jedi_style {
             get {
                 object obj = ResourceManager.GetObject("ru_eng_jedi_style", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap simvol_orden_djedaev {
+            get {
+                object obj = ResourceManager.GetObject("simvol-orden-djedaev", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,6 +606,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap zero {
             get {
                 object obj = ResourceManager.GetObject("zero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zeroes {
+            get {
+                object obj = ResourceManager.GetObject("zeroes", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
