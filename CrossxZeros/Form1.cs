@@ -3103,6 +3103,7 @@ namespace CrossxZeros
                 {
                     timer2.Stop();
                     isCollapsed = false;
+                    style.Enabled = true;
                 }
             }
             else
@@ -3116,6 +3117,7 @@ namespace CrossxZeros
                 {
                     timer2.Stop();
                     isCollapsed = true;
+                    style.Enabled = true;
                 }
             }
         }
@@ -3123,6 +3125,7 @@ namespace CrossxZeros
         private void button3_Click_1(object sender, EventArgs e)
         {
             style.BringToFront();
+            style.Enabled = false;
             timer2.Start();
             if (!isCollapsed)
                 timer2.Start();
