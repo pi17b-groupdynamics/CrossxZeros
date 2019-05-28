@@ -103,6 +103,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1JBz {
+            get {
+                object obj = ResourceManager.GetObject("1JBz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _28Ih {
             get {
                 object obj = ResourceManager.GetObject("28Ih", resourceCulture);
@@ -353,6 +363,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gif__1_ {
+            get {
+                object obj = ResourceManager.GetObject("gif (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap giphy {
             get {
                 object obj = ResourceManager.GetObject("giphy", resourceCulture);
@@ -413,6 +433,26 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kk {
+            get {
+                object obj = ResourceManager.GetObject("kk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kk_2 {
+            get {
+                object obj = ResourceManager.GetObject("kk_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap letter_o_png_letter_o_icon_068645_512 {
             get {
                 object obj = ResourceManager.GetObject("letter-o-png-letter-o-icon-068645-512", resourceCulture);
@@ -446,6 +486,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap Normal_Style {
             get {
                 object obj = ResourceManager.GetObject("Normal_Style", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ops {
+            get {
+                object obj = ResourceManager.GetObject("ops", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

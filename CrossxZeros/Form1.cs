@@ -1824,15 +1824,11 @@ namespace CrossxZeros
             { 
                 WindowState = FormWindowState.Maximized;
                 FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-                pictureBox14.Width = gameScreen.Width / 2;
-                pictureBox15.Width = gameScreen.Width / 2;
             } 
                 else 
             { 
                 WindowState = FormWindowState.Normal; 
                 FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow; 
-                pictureBox14.Width = gameScreen.Width / 2; 
-                pictureBox15.Width = gameScreen.Width / 2; 
             }
 
             if (!isCollapsed)
@@ -3417,10 +3413,10 @@ namespace CrossxZeros
             this.BGV1.BackgroundImageLayout = ImageLayout.Stretch;
             this.BGV2.BackgroundImage = Resources.Туман;
             this.BGV2.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button9.BackgroundImage = Resources.Туман;
-            this.button8.BackgroundImage = Resources.Туман;
-            this.button4.BackgroundImage = Resources.Туман;
-            this.button2.BackgroundImage = Resources.Туман;
+            this.button9.BackgroundImage = Resources.ops;
+            this.button8.BackgroundImage = Resources.ops;
+            this.button4.BackgroundImage = Resources.ops;
+            this.button2.BackgroundImage = Resources.ops;
             this.button9.BackgroundImageLayout = ImageLayout.Stretch;
             this.button8.BackgroundImageLayout = ImageLayout.Stretch;
             this.button4.BackgroundImageLayout = ImageLayout.Stretch;
@@ -3448,13 +3444,11 @@ namespace CrossxZeros
             this.Bot.ForeColor = Color.White;
             if(side == 1)
             {
-                this.pictureBox15.Image = Resources.zeros_1;
-                this.pictureBox14.Image = Resources.cross_1;
+                this.pictureBox14.Image = Resources.kk;
             }  
             else if(side == 2)
             {
-                this.pictureBox15.Image = Resources.cross_2;
-                this.pictureBox14.Image = Resources.zeros_2;
+                this.pictureBox14.Image = Resources.kk_2;
             }
             this.label1.ForeColor = Color.White;
             this.label2.ForeColor = Color.White;
@@ -3769,14 +3763,14 @@ namespace CrossxZeros
         private void button9_MouseEnter(object sender, EventArgs e)
         {
             if(jedi_style == true)
-                button9.Image = Resources._7Z6Q;
+                button9.Image = Resources._1JBz;
         }
 
         private void button9_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button9.BackgroundImage = Resources.Туман;
+                button9.BackgroundImage = Resources.ops;
                 button9.Image = null;
             }
         }
@@ -3784,14 +3778,14 @@ namespace CrossxZeros
         private void button8_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button8.Image = Resources._7Z6Q;
+                button8.Image = Resources._1JBz;
         }
 
         private void button8_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button8.BackgroundImage = Resources.Туман;
+                button8.BackgroundImage = Resources.ops;
                 button8.Image = null;
             }
         }
@@ -3799,14 +3793,14 @@ namespace CrossxZeros
         private void button4_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button4.Image = Resources._7Z6Q;
+                button4.Image = Resources._1JBz;
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button4.BackgroundImage = Resources.Туман;
+                button4.BackgroundImage = Resources.ops;
                 button4.Image = null;
             }
         }
@@ -3814,14 +3808,14 @@ namespace CrossxZeros
         private void button2_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button2.Image = Resources._7Z6Q;
+                button2.Image = Resources._1JBz;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button2.BackgroundImage = Resources.Туман;
+                button2.BackgroundImage = Resources.ops;
                 button2.Image = null;
             }
         }
@@ -3903,8 +3897,7 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            this.pictureBox15.Image = Resources.zeros_1;
-            this.pictureBox14.Image = Resources.cross_1;
+            this.pictureBox14.Image = Resources.kk;
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -3915,8 +3908,7 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            this.pictureBox15.Image = Resources.cross_2;
-            this.pictureBox14.Image = Resources.zeros_2;
+            this.pictureBox14.Image = Resources.kk_2;
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
@@ -3928,13 +3920,12 @@ namespace CrossxZeros
             }
             if (side == 1)
             {
-                this.pictureBox15.Image = Resources.zeros_1;
-                this.pictureBox14.Image = Resources.cross_1;
+                this.pictureBox14.Image = Resources.kk;
             }
             else if (side == 2)
             {
-                this.pictureBox15.Image = Resources.cross_2;
-                this.pictureBox14.Image = Resources.zeros_2;
+
+                this.pictureBox14.Image = Resources.kk_2;
             }
         }
 
