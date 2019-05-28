@@ -3855,7 +3855,6 @@ namespace CrossxZeros
                     axWindowsMediaPlayer1.URL = sPath;
                     axWindowsMediaPlayer1.Ctlcontrols.play();
                     axWindowsMediaPlayer1.Hide();
-                    this.groupBox2.Text = "it's working";
                 }
                 
             }
