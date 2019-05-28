@@ -3463,6 +3463,8 @@ namespace CrossxZeros
             this.button10.BackgroundImage = Resources.Туман;
             this.button10.BackgroundImageLayout = ImageLayout.Stretch;
             this.label3.ForeColor = Color.White;
+            this.MusicB.Image = Resources.volume_jedi_style;
+            this.SoundB.Image = Resources.sound_button_jedi_style;
             button3_Click_1(sender, e);
             pictureBox13.Image = Resources.Desftop_1;
             pictureBox4.Image = Resources.Справка_jedi_style;

@@ -573,6 +573,26 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sound_button {
+            get {
+                object obj = ResourceManager.GetObject("sound_button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sound_button_jedi_style {
+            get {
+                object obj = ResourceManager.GetObject("sound_button_jedi_style", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap star_wars_style {
             get {
                 object obj = ResourceManager.GetObject("star_wars_style", resourceCulture);

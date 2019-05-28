@@ -290,5 +290,11 @@
   <ItemGroup>
     <None Include="Resources\Screenshot_1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound_button_jedi_style.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
