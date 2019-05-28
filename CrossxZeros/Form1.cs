@@ -1328,6 +1328,7 @@ namespace CrossxZeros
                 bot_v2();
             }
             Battlefield.Enabled = true;
+            Battlefield.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -1416,6 +1417,7 @@ namespace CrossxZeros
                 bot_v2();
             }
             Battlefield.Enabled = true;
+            Battlefield.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -1504,6 +1506,7 @@ namespace CrossxZeros
                 bot_v2();
             }
             Battlefield.Enabled = true;
+            Battlefield.Show();
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -1521,7 +1524,7 @@ namespace CrossxZeros
             style.BringToFront();
             sound.BringToFront();
             style.Show();
-            timer4.Enabled = false;
+            timer4.Stop();
             timer = 0;
             label3.Text = "";
             start_battle_menu();
@@ -3413,10 +3416,10 @@ namespace CrossxZeros
             this.BGV1.BackgroundImageLayout = ImageLayout.Stretch;
             this.BGV2.BackgroundImage = Resources.Туман;
             this.BGV2.BackgroundImageLayout = ImageLayout.Stretch;
-            this.button9.BackgroundImage = Resources.ops;
-            this.button8.BackgroundImage = Resources.ops;
-            this.button4.BackgroundImage = Resources.ops;
-            this.button2.BackgroundImage = Resources.ops;
+            this.button9.BackgroundImage = Resources.Screenshot_1;
+            this.button8.BackgroundImage = Resources.Screenshot_1;
+            this.button4.BackgroundImage = Resources.Screenshot_1;
+            this.button2.BackgroundImage = Resources.Screenshot_1;
             this.button9.BackgroundImageLayout = ImageLayout.Stretch;
             this.button8.BackgroundImageLayout = ImageLayout.Stretch;
             this.button4.BackgroundImageLayout = ImageLayout.Stretch;
@@ -3457,6 +3460,7 @@ namespace CrossxZeros
             this.pictureBox8.BackgroundImage = Resources._16637;
             this.pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
             this.button10.BackgroundImage = Resources.Туман;
+            this.button10.BackgroundImageLayout = ImageLayout.Stretch;
             this.label3.ForeColor = Color.White;
             button3_Click_1(sender, e);
             pictureBox13.Image = Resources.Desftop_1;
@@ -3763,14 +3767,14 @@ namespace CrossxZeros
         private void button9_MouseEnter(object sender, EventArgs e)
         {
             if(jedi_style == true)
-                button9.Image = Resources._1JBz;
+                button9.Image = Resources.CSj;
         }
 
         private void button9_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button9.BackgroundImage = Resources.ops;
+                button9.BackgroundImage = Resources.Screenshot_1;
                 button9.Image = null;
             }
         }
@@ -3778,14 +3782,14 @@ namespace CrossxZeros
         private void button8_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button8.Image = Resources._1JBz;
+                button8.Image = Resources.CSj;
         }
 
         private void button8_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button8.BackgroundImage = Resources.ops;
+                button8.BackgroundImage = Resources.Screenshot_1;
                 button8.Image = null;
             }
         }
@@ -3793,14 +3797,14 @@ namespace CrossxZeros
         private void button4_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button4.Image = Resources._1JBz;
+                button4.Image = Resources.CSj;
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button4.BackgroundImage = Resources.ops;
+                button4.BackgroundImage = Resources.Screenshot_1;
                 button4.Image = null;
             }
         }
@@ -3808,14 +3812,14 @@ namespace CrossxZeros
         private void button2_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button2.Image = Resources._1JBz;
+                button2.Image = Resources.CSj;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button2.BackgroundImage = Resources.ops;
+                button2.BackgroundImage = Resources.Screenshot_1;
                 button2.Image = null;
             }
         }
@@ -3828,15 +3832,15 @@ namespace CrossxZeros
         private void button10_MouseEnter(object sender, EventArgs e)
         {
             if (jedi_style == true)
-                button2.Image = Resources._7Z6Q;
+                button10.Image = Resources._7Z6Q;
         }
 
         private void button10_MouseLeave(object sender, EventArgs e)
         {
             if (jedi_style == true)
             {
-                button2.BackgroundImage = Resources.Туман;
-                button2.Image = null;
+                button10.BackgroundImage = Resources.Туман;
+                button10.Image = null;
             }
         }
 

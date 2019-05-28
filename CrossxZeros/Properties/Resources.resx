@@ -133,8 +133,8 @@
   <data name="giphy (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="simvol-orden-djedaev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\simvol-orden-djedaev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Collapse Arrow_20px_jedi_style" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Collapse Arrow_20px_jedi_style.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="giphy (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -156,6 +156,9 @@
   </data>
   <data name="SUpm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SUpm.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simvol-orden-djedaev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simvol-orden-djedaev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="9558b95660d31cdbfb19167da2a707f4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\9558b95660d31cdbfb19167da2a707f4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +229,8 @@
   <data name="7Z6Q" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\7Z6Q.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="slx" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\slx.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LTK5AdoTa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LTK5AdoTa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="28Ih" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\28Ih.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,14 +247,17 @@
   <data name="cross_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cross_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HtJS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HtJS.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="slx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slx.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tmb_53084_1405" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tmb_53084_1405.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Desftop_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Desftop_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ops" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ops.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Normal_Style" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Normal_Style.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -265,12 +271,6 @@
   <data name="WS2k" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WS2k.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Collapse Arrow_20px_jedi_style" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Collapse Arrow_20px_jedi_style.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LTK5AdoTa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LTK5AdoTa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Collapse Arrow_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Collapse Arrow_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -279,6 +279,9 @@
   </data>
   <data name="16637_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\16637_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HtJS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HtJS.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Справка" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Справка.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,6 +304,12 @@
   <data name="zeroes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zeroes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1JBz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1JBz.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_wars_style" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_wars_style.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="zeros_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zeros_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -322,13 +331,10 @@
   <data name="crossXzeroes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crossXzeroes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="star_wars_style" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star_wars_style.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CSj" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CSj.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ops" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ops.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1JBz" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1JBz.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Screenshot_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Screenshot_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

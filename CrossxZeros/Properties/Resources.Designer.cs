@@ -283,6 +283,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CSj {
+            get {
+                object obj = ResourceManager.GetObject("CSj", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Desftop_1 {
             get {
                 object obj = ResourceManager.GetObject("Desftop_1", resourceCulture);
@@ -526,6 +536,16 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap ru_eng_jedi_style {
             get {
                 object obj = ResourceManager.GetObject("ru_eng_jedi_style", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_1 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
