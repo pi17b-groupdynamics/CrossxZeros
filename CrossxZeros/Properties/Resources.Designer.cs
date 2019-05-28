@@ -93,6 +93,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16637_2 {
+            get {
+                object obj = ResourceManager.GetObject("16637_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _28Ih {
             get {
                 object obj = ResourceManager.GetObject("28Ih", resourceCulture);
@@ -216,6 +226,26 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap cross {
             get {
                 object obj = ResourceManager.GetObject("cross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cross_1 {
+            get {
+                object obj = ResourceManager.GetObject("cross_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cross_2 {
+            get {
+                object obj = ResourceManager.GetObject("cross_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -636,6 +666,26 @@ namespace CrossxZeros.Properties {
         internal static System.Drawing.Bitmap zeroes {
             get {
                 object obj = ResourceManager.GetObject("zeroes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zeros_1 {
+            get {
+                object obj = ResourceManager.GetObject("zeros_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zeros_2 {
+            get {
+                object obj = ResourceManager.GetObject("zeros_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

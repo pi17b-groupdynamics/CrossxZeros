@@ -1246,6 +1246,7 @@ namespace CrossxZeros
             updated = false;
             if (side == 1)
             {
+                
                 if(normal_style == true)
                 {
                     pictureBox10.Image = Resources.LTK5AdoTa;
@@ -1253,23 +1254,26 @@ namespace CrossxZeros
                 }
                 else if(jedi_style == true)
                 {
-                    pictureBox10.Image = Resources.zeroes;
-                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                    pictureBox10.Image = Resources.simvol_orden_djedaev;
+                    pictureBox11.Image = Resources.zeroes;
+                    pictureBox8.Image = Resources._16637;                 
                 }
-               
+               turn = 1;
             }
             else
-            {
-                if(normal_style == true)
+            {           
+                if (normal_style == true)
                 {
                     pictureBox10.Image = Resources.letter_o_png_letter_o_icon_068645_512;
                     pictureBox11.Image = Resources.LTK5AdoTa;
                 }
                 else if (jedi_style == true)
                 {
-                    pictureBox10.Image = Resources.simvol_orden_djedaev;
-                    pictureBox11.Image = Resources.zeroes;
+                    pictureBox10.Image = Resources.zeroes;
+                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                    pictureBox8.Image = Resources._16637_2;
                 }
+                turn = -1;
             }
             if (human == true)
             {
@@ -1323,6 +1327,7 @@ namespace CrossxZeros
             {
                 bot_v2();
             }
+            Battlefield.Enabled = true;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -1337,9 +1342,11 @@ namespace CrossxZeros
                 }
                 else if (jedi_style == true)
                 {
-                    pictureBox10.Image = Resources.zeroes;
-                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                    pictureBox10.Image = Resources.simvol_orden_djedaev;
+                    pictureBox11.Image = Resources.zeroes;
+                    pictureBox8.Image = Resources._16637;
                 }
+                turn = 1;
             }
             else
             {
@@ -1350,9 +1357,11 @@ namespace CrossxZeros
                 }
                 else if (jedi_style == true)
                 {
-                    pictureBox10.Image = Resources.simvol_orden_djedaev;
-                    pictureBox11.Image = Resources.zeroes;
+                    pictureBox10.Image = Resources.zeroes;
+                    pictureBox11.Image = Resources.simvol_orden_djedaev;
+                    pictureBox8.Image = Resources._16637_2;
                 }
+                turn = -1;
             }
             if (human == true)
             {
@@ -1406,6 +1415,7 @@ namespace CrossxZeros
             {
                 bot_v2();
             }
+            Battlefield.Enabled = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -1422,6 +1432,8 @@ namespace CrossxZeros
                 {
                     pictureBox10.Image = Resources.zeroes;
                     pictureBox11.Image = Resources.simvol_orden_djedaev;
+                    pictureBox8.Image = Resources._16637;
+                    turn = 1;
                 }
             }
             else
@@ -1435,7 +1447,9 @@ namespace CrossxZeros
                 {
                     pictureBox10.Image = Resources.simvol_orden_djedaev;
                     pictureBox11.Image = Resources.zeroes;
+                    pictureBox8.Image = Resources._16637_2;        
                 }
+                turn = -1;
             }
             if (human == true)
             {
@@ -1489,6 +1503,7 @@ namespace CrossxZeros
             {
                 bot_v2();
             }
+            Battlefield.Enabled = true;
         }
         private void button10_Click(object sender, EventArgs e)
         {
@@ -3228,6 +3243,8 @@ namespace CrossxZeros
         private void timer6_Tick(object sender, EventArgs e)
         {
             timer4.Stop();
+            this.pictureBox10.BorderStyle = BorderStyle.None;
+            this.pictureBox11.BorderStyle = BorderStyle.None;
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -3429,8 +3446,16 @@ namespace CrossxZeros
             this.radioButton3.ForeColor = Color.White;
             this.People.ForeColor = Color.White;
             this.Bot.ForeColor = Color.White;
-            this.pictureBox15.Image = Resources._28Ih;
-            this.pictureBox14.Image = Resources.tumblr_inline_p36ku32bXB1ux1ct3_640;
+            if(side == 1)
+            {
+                this.pictureBox15.Image = Resources.zeros_1;
+                this.pictureBox14.Image = Resources.cross_1;
+            }  
+            else if(side == 2)
+            {
+                this.pictureBox15.Image = Resources.cross_2;
+                this.pictureBox14.Image = Resources.zeros_2;
+            }
             this.label1.ForeColor = Color.White;
             this.label2.ForeColor = Color.White;
             this.panel4.BorderStyle =BorderStyle.Fixed3D;
@@ -3803,8 +3828,7 @@ namespace CrossxZeros
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            if (jedi_style == true)
-                groupBox1.BackgroundImage = Resources._7Z6Q;
+
         }
 
         private void button10_MouseEnter(object sender, EventArgs e)
@@ -3879,6 +3903,8 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
+            this.pictureBox15.Image = Resources.zeros_1;
+            this.pictureBox14.Image = Resources.cross_1;
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -3889,6 +3915,8 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
+            this.pictureBox15.Image = Resources.cross_2;
+            this.pictureBox14.Image = Resources.zeros_2;
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
@@ -3897,6 +3925,16 @@ namespace CrossxZeros
             if (!SoundSt)
             {
                 timer3.Start();
+            }
+            if (side == 1)
+            {
+                this.pictureBox15.Image = Resources.zeros_1;
+                this.pictureBox14.Image = Resources.cross_1;
+            }
+            else if (side == 2)
+            {
+                this.pictureBox15.Image = Resources.cross_2;
+                this.pictureBox14.Image = Resources.zeros_2;
             }
         }
 
