@@ -115,6 +115,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer7 = new System.Windows.Forms.Timer(this.components);
             this.startMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).BeginInit();
@@ -375,7 +376,7 @@
             this.MusicBar.Maximum = 100;
             this.MusicBar.MaximumSize = new System.Drawing.Size(0, 44);
             this.MusicBar.Name = "MusicBar";
-            this.MusicBar.Size = new System.Drawing.Size(0, 44);
+            this.MusicBar.Size = new System.Drawing.Size(189, 44);
             this.MusicBar.SmallChange = 5;
             this.MusicBar.TabIndex = 44;
             this.MusicBar.TickFrequency = 10;
@@ -401,7 +402,7 @@
             this.SoundBar.Maximum = 100;
             this.SoundBar.MaximumSize = new System.Drawing.Size(0, 44);
             this.SoundBar.Name = "SoundBar";
-            this.SoundBar.Size = new System.Drawing.Size(0, 44);
+            this.SoundBar.Size = new System.Drawing.Size(189, 44);
             this.SoundBar.SmallChange = 5;
             this.SoundBar.TabIndex = 44;
             this.SoundBar.TickFrequency = 10;
@@ -776,7 +777,7 @@
             this.panel6.MaximumSize = new System.Drawing.Size(0, 44);
             this.panel6.MinimumSize = new System.Drawing.Size(233, 44);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 44);
+            this.panel6.Size = new System.Drawing.Size(267, 44);
             this.panel6.TabIndex = 0;
             // 
             // panel9
@@ -1263,6 +1264,11 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // timer7
+            // 
+            this.timer7.Interval = 1000;
+            this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1431,6 +1437,7 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Timer timer7;
     }
 }
 

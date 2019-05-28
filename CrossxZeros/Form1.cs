@@ -1651,6 +1651,7 @@ namespace CrossxZeros
 
             timer2.Start();
             timer3.Start();
+            timer7.Start();
             PW[0, 0].X = 0;
             PW[0, 1].X = 0;
             PW[0, 2].X = 0;
@@ -3482,7 +3483,7 @@ namespace CrossxZeros
         {
             if (e.newState == 8)
             {
-                this.axWindowsMediaPlayer1.close();
+                this.axWindowsMediaPlayer1.Ctlcontrols.stop();
                 startMenu.BringToFront();
             }
         }
@@ -3493,7 +3494,7 @@ namespace CrossxZeros
             {
                 if (e.KeyData == Keys.Escape)
                 {
-                    this.axWindowsMediaPlayer1.close();
+                    this.axWindowsMediaPlayer1.Ctlcontrols.stop();
                     startMenu.BringToFront();
                 }
             }
@@ -3841,6 +3842,22 @@ namespace CrossxZeros
             {
                 button10.BackgroundImage = Resources.Туман;
                 button10.Image = null;
+            }
+        }
+
+        private void timer7_Tick(object sender, EventArgs e)
+        {
+            if(axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsStopped || axWindowsMediaPlayer1.playState == WMPLib.WMPPlayState.wmppsMediaEnded)
+            {
+                if(jedi_style == true)
+                {
+                    string sPath = Path.GetFileName("zvezdnie_vojni_-_imperskij_marsh_(zvukoff.ru).mp3");
+                    axWindowsMediaPlayer1.URL = sPath;
+                    axWindowsMediaPlayer1.Ctlcontrols.play();
+                    axWindowsMediaPlayer1.Hide();
+                    this.groupBox2.Text = "it's working";
+                }
+                
             }
         }
 
