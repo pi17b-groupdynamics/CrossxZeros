@@ -3401,7 +3401,54 @@ namespace CrossxZeros
             axWindowsMediaPlayer1.Ctlcontrols.stop();
             style.BringToFront();
             sound.BringToFront();
-
+            this.button1.BackgroundImage = null;
+            this.button11.BackgroundImage = null;
+            this.BGV1.BackgroundImage = null;
+            this.BGV2.BackgroundImage = null;
+            this.button9.BackgroundImage = null;
+            this.button8.BackgroundImage = null;
+            this.button4.BackgroundImage = null;
+            this.button2.BackgroundImage = null;
+            this.button3.BackColor = Color.Black;
+            this.button3.Image = Resources.Expand_Arrow_20px;
+            this.button8.ForeColor = Color.Black;
+            this.button9.ForeColor = Color.Black;
+            this.button4.ForeColor = Color.Black;
+            this.button2.ForeColor = Color.Black;
+            this.groupBox1.ForeColor = Color.Black;
+            this.groupBox2.ForeColor = Color.Black;
+            this.groupBox3.ForeColor = Color.Black;
+            this.radioButton1.ForeColor = Color.Black;
+            this.radioButton2.ForeColor = Color.Black;
+            this.radioButton3.ForeColor = Color.Black;
+            this.People.ForeColor = Color.Black;
+            this.Bot.ForeColor = Color.Black;
+            this.pictureBox14.Image = null;
+            this.label1.ForeColor = Color.Black;
+            this.label2.ForeColor = Color.Black;
+            this.panel4.BorderStyle = BorderStyle.None;
+            this.congratulation.ForeColor = Color.Black;
+            this.pictureBox8.BackgroundImage = null;
+            this.button10.BackgroundImage = null;
+            this.label3.ForeColor = Color.Black;
+            this.MusicB.Image = Resources.volume;
+            this.SoundB.Image = Resources.sound_button;
+            button3_Click_1(sender, e);
+            this.pictureBox13.Image = null;
+            this.pictureBox4.Image = Resources.Справка;
+            this.pictureBox2.Image = Resources.volume;
+            this.pictureBox1.Image = Resources.fullscreen;
+            if (language == 0)
+            {
+                pictureBox3.Image = Resources.ru_eng;
+            }
+            else
+                pictureBox3.Image = Resources.eng_ru;
+            pictureBox12.Show();
+            style.BringToFront();
+            sound.BringToFront();
+            this.button3.ForeColor = Color.White;
+            this.pictureBox8.Image = null;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -3925,7 +3972,10 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            this.pictureBox14.Image = Resources.kk;
+            if(jedi_style == true)
+            {
+                this.pictureBox14.Image = Resources.kk;
+            }          
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
@@ -3936,7 +3986,10 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            this.pictureBox14.Image = Resources.kk_2;
+            if(jedi_style == true)
+            {
+                this.pictureBox14.Image = Resources.kk_2;
+            }          
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
@@ -3946,11 +3999,11 @@ namespace CrossxZeros
             {
                 timer3.Start();
             }
-            if (side == 1)
+            if (side == 1 && jedi_style == true)
             {
                 this.pictureBox14.Image = Resources.kk;
             }
-            else if (side == 2)
+            else if (side == 2 && jedi_style == true)
             {
 
                 this.pictureBox14.Image = Resources.kk_2;
