@@ -553,6 +553,16 @@ namespace CrossxZeros.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_389230123_760x400 {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_389230123-760x400", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap simvol_orden_djedaev {
             get {
                 object obj = ResourceManager.GetObject("simvol-orden-djedaev", resourceCulture);
