@@ -1245,8 +1245,7 @@ namespace CrossxZeros
                 }
             updated = false;
             if (side == 1)
-            {
-                
+            { 
                 if(normal_style == true)
                 {
                     pictureBox10.Image = Resources.LTK5AdoTa;
@@ -3247,13 +3246,16 @@ namespace CrossxZeros
             timer4.Stop();
             this.pictureBox10.BorderStyle = BorderStyle.None;
             this.pictureBox11.BorderStyle = BorderStyle.None;
-            for (int i = 0; i < 3; i++)
+            if(human == false)
             {
-                for (int j = 0; j < 3; j++)
+                for (int i = 0; i < 3; i++)
                 {
-                    P[i, j] = 0;
+                    for (int j = 0; j < 3; j++)
+                    {
+                        P[i, j] = 0;
+                    }
                 }
-            }
+            }       
             another_timer = another_timer + 1;
             if(another_timer == 2)
             {
@@ -3399,6 +3401,7 @@ namespace CrossxZeros
             normal_style = true;
             jedi_style = false;
             axWindowsMediaPlayer1.Ctlcontrols.stop();
+            axWindowsMediaPlayer1.Hide();
             style.BringToFront();
             sound.BringToFront();
             this.button1.BackgroundImage = null;
@@ -3447,7 +3450,7 @@ namespace CrossxZeros
             pictureBox12.Show();
             style.BringToFront();
             sound.BringToFront();
-            this.button3.ForeColor = Color.White;
+            this.button3.BackColor = Color.Transparent;
             this.pictureBox8.Image = null;
         }
 
