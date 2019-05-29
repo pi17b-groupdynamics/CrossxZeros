@@ -3412,7 +3412,6 @@ namespace CrossxZeros
             this.button8.BackgroundImage = null;
             this.button4.BackgroundImage = null;
             this.button2.BackgroundImage = null;
-            this.button3.BackColor = Color.Black;
             this.button3.Image = Resources.Expand_Arrow_20px;
             this.button8.ForeColor = Color.Black;
             this.button9.ForeColor = Color.Black;
@@ -3450,7 +3449,6 @@ namespace CrossxZeros
             pictureBox12.Show();
             style.BringToFront();
             sound.BringToFront();
-            this.button3.BackColor = Color.Transparent;
             this.pictureBox8.Image = null;
         }
 
@@ -3482,12 +3480,7 @@ namespace CrossxZeros
             this.button4.BackgroundImageLayout = ImageLayout.Stretch;
             this.button2.BackgroundImageLayout = ImageLayout.Stretch;
             this.button3.BackColor = Color.White;
-            this.startMenu.BackColor = System.Drawing.Color.Transparent;
             this.BackColor = Color.Black;
-            this.button1.ForeColor = Color.Black;
-            this.button11.ForeColor = Color.Black;
-            this.BGV1.ForeColor = Color.Black;
-            this.BGV2.ForeColor = Color.Black;
             this.button3.ForeColor = Color.Black;
             this.button3.Image = Resources.Expand_Arrow_20px_jedi_style;
             this.button8.ForeColor = Color.White;
