@@ -1884,7 +1884,9 @@ namespace CrossxZeros
                 {
                     check_win_or_not = false;
                     if (language == 1 && side == 1)
+                    {
                         congratulation.Text = "Congratulation!\n" + player1.Text + " won this game!";
+                    }
                     else if (language == 0 && side == 1)
                         congratulation.Text = "Поздравляем!\n" + player1.Text + " выиграл игру!";
                     else if (language == 1 && side == 2)
@@ -3396,6 +3398,10 @@ namespace CrossxZeros
             timer1.Start();
             normal_style = true;
             jedi_style = false;
+            axWindowsMediaPlayer1.Ctlcontrols.stop();
+            style.BringToFront();
+            sound.BringToFront();
+
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
