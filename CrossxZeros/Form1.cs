@@ -1195,6 +1195,8 @@ namespace CrossxZeros
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
 
             if (WindowState == FormWindowState.Normal)
             { 
@@ -2407,7 +2409,8 @@ namespace CrossxZeros
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             if (language == 0)
             {
                 if (normal_style == true)
@@ -2541,6 +2544,9 @@ namespace CrossxZeros
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.settings.volume = 100;
+            WMP.controls.play();
             sound.BringToFront();
             if (!isCollapsed)
                 timer2.Start();
