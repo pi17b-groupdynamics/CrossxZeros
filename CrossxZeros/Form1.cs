@@ -3316,7 +3316,9 @@ namespace CrossxZeros
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if(GV2.Visible)
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+            if (GV2.Visible)
             {
                 GV2.Hide();
             }
