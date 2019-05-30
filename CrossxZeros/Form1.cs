@@ -2513,6 +2513,8 @@ namespace CrossxZeros
 
         private void button3_Click_1(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3"); 
+            WMP.controls.play();
             style.BringToFront();
             style.Enabled = false;
             timer2.Start();
