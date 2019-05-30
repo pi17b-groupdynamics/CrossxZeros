@@ -1209,8 +1209,11 @@ namespace CrossxZeros
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+           // WMP.URL = (@"F:\лабы\Touch.mp3");
+           // WMP.controls.play();
 
             if (WindowState == FormWindowState.Normal)
             { 
@@ -2448,8 +2451,11 @@ namespace CrossxZeros
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+          //  WMP.URL = (@"F:\лабы\Touch.mp3");
+          //  WMP.controls.play();
             if (language == 0)
             {
                 if (normal_style == true)
@@ -2555,8 +2561,11 @@ namespace CrossxZeros
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3"); 
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+         //   WMP.URL = (@"F:\лабы\Touch.mp3"); 
+         //   WMP.controls.play();
             style.BringToFront();
             style.Enabled = false;
             timer2.Start();
@@ -2583,10 +2592,12 @@ namespace CrossxZeros
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-           
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.settings.volume = 100;
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+          //  WMP.URL = (@"F:\лабы\Touch.mp3");
+           // WMP.settings.volume = 100;
+           // WMP.controls.play();
             sound.BringToFront();
             if (!isCollapsed)
                 timer2.Start();
@@ -3345,8 +3356,11 @@ namespace CrossxZeros
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+        //    WMP.URL = (@"F:\лабы\Touch.mp3");
+          //  WMP.controls.play();
         }
 
         private void MusicBar_Scroll(object sender, EventArgs e)
@@ -3410,8 +3424,11 @@ namespace CrossxZeros
 
         private void button7_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+          //  WMP.URL = (@"F:\лабы\Touch.mp3");
+          //  WMP.controls.play();
             if (GV2.Visible)
             {
                 GV2.Hide();
@@ -3429,8 +3446,11 @@ namespace CrossxZeros
 
         private void button6_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+          //  WMP.URL = (@"F:\лабы\Touch.mp3");
+          //  WMP.controls.play();
             if (GV1.Visible)
             {
                 GV1.Hide();
