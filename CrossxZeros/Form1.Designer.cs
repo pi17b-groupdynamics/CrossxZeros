@@ -530,6 +530,7 @@
             this.Bot.Text = "Компьютер";
             this.Bot.UseVisualStyleBackColor = true;
             this.Bot.CheckedChanged += new System.EventHandler(this.Bot_CheckedChanged);
+            this.Bot.Click += new System.EventHandler(this.Bot_Click);
             // 
             // groupBox2
             // 

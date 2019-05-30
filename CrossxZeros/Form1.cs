@@ -610,7 +610,9 @@ namespace CrossxZeros
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if(bot_go == 1) { 
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+            if (bot_go == 1) { 
             xod = 1;
                 }
                 else {
@@ -706,6 +708,8 @@ namespace CrossxZeros
 
         private void button8_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             updated = false;
             if (side == 1)
             {
@@ -795,6 +799,8 @@ namespace CrossxZeros
 
         private void button4_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             updated = false;
             if (side == 1)
             {
@@ -945,6 +951,8 @@ namespace CrossxZeros
 
         private void button2_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             startMenu.BringToFront();
             style.BringToFront();
             sound.BringToFront();
@@ -3375,6 +3383,12 @@ namespace CrossxZeros
         }
 
         private void radioButton3_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
+        private void Bot_Click(object sender, EventArgs e)
         {
             WMP.URL = (@"F:\лабы\Touch.mp3");
             WMP.controls.play();
