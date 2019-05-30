@@ -400,6 +400,8 @@
             this.MusicBar.TabIndex = 44;
             this.MusicBar.TickFrequency = 10;
             this.MusicBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.MusicBar.Value = 100;
+            this.MusicBar.Scroll += new System.EventHandler(this.MusicBar_Scroll);
             // 
             // MusicB
             // 
@@ -441,6 +443,8 @@
             this.SoundBar.TabIndex = 44;
             this.SoundBar.TickFrequency = 10;
             this.SoundBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.SoundBar.Value = 100;
+            this.SoundBar.Scroll += new System.EventHandler(this.SoundBar_Scroll);
             // 
             // SoundB
             // 

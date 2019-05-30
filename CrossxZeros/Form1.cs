@@ -12,6 +12,7 @@ using System.Threading;
 using CrossxZeros.Properties;
 using System.IO;
 using System.Media;
+using System.Runtime.InteropServices;
 
 namespace CrossxZeros
 {
@@ -3306,6 +3307,20 @@ namespace CrossxZeros
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
+        private void MusicBar_Scroll(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+           
+            WMP.controls.play();
+        }
+
+        private void SoundBar_Scroll(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+           
             WMP.controls.play();
         }
 
