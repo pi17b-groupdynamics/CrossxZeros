@@ -2395,7 +2395,7 @@ namespace CrossxZeros
         private void p33_Click(object sender, EventArgs e)
         {
             WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            WMP.controls.play(); 
             xod++;
             P[2, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
