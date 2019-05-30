@@ -589,8 +589,11 @@ namespace CrossxZeros
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-            WMP.controls.play();
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            //   WMP.URL = (@"F:\лабы\Touch.mp3");
+            //  WMP.controls.play();
             //WMP.settings.volume = 100; // меняя значение можно регулировать громкость
 
             gameSettings.BringToFront();
@@ -2580,6 +2583,7 @@ namespace CrossxZeros
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+           
             WMP.URL = (@"F:\лабы\Touch.mp3");
             WMP.settings.volume = 100;
             WMP.controls.play();
@@ -3347,16 +3351,21 @@ namespace CrossxZeros
 
         private void MusicBar_Scroll(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-           
-            WMP.controls.play();
+          // WMP.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            
+            // WMP.controls.play();
         }
 
         private void SoundBar_Scroll(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3");
-           
-            WMP.controls.play();
+           // WMP.URL = (@"F:\лабы\Touch.mp3");
+           // axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+          //  axWindowsMediaPlayer1.Ctlcontrols.play();
+           // axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+          //  WMP.controls.play();
         }
 
         private void player1_Click(object sender, EventArgs e)

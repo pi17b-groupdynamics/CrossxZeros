@@ -117,6 +117,7 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer7 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.startMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).BeginInit();
@@ -161,6 +162,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
@@ -342,7 +344,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox12.Image = global::CrossxZeros.Properties.Resources.crossXzeroes1;
             this.pictureBox12.Location = new System.Drawing.Point(224, -49);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(625, 505);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -354,7 +356,7 @@
             // 
             this.pictureBox13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox13.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(1071, 663);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -369,7 +371,7 @@
             this.sound.Controls.Add(this.panel12);
             this.sound.Controls.Add(this.panel11);
             this.sound.Location = new System.Drawing.Point(885, 49);
-            this.sound.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sound.Margin = new System.Windows.Forms.Padding(2);
             this.sound.MaximumSize = new System.Drawing.Size(180, 74);
             this.sound.MinimumSize = new System.Drawing.Size(180, 2);
             this.sound.Name = "sound";
@@ -382,7 +384,7 @@
             this.panel12.Controls.Add(this.MusicB);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel12.Location = new System.Drawing.Point(0, -72);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(178, 36);
             this.panel12.TabIndex = 44;
@@ -392,7 +394,7 @@
             this.MusicBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MusicBar.LargeChange = 10;
             this.MusicBar.Location = new System.Drawing.Point(36, 0);
-            this.MusicBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MusicBar.Margin = new System.Windows.Forms.Padding(2);
             this.MusicBar.Maximum = 100;
             this.MusicBar.MaximumSize = new System.Drawing.Size(0, 36);
             this.MusicBar.Name = "MusicBar";
@@ -425,7 +427,7 @@
             this.panel11.Controls.Add(this.SoundB);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel11.Location = new System.Drawing.Point(0, -36);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(178, 36);
             this.panel11.TabIndex = 43;
@@ -435,7 +437,7 @@
             this.SoundBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SoundBar.LargeChange = 10;
             this.SoundBar.Location = new System.Drawing.Point(36, 0);
-            this.SoundBar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SoundBar.Margin = new System.Windows.Forms.Padding(2);
             this.SoundBar.Maximum = 100;
             this.SoundBar.MaximumSize = new System.Drawing.Size(0, 36);
             this.SoundBar.Name = "SoundBar";
@@ -681,7 +683,7 @@
             // 
             this.pictureBox14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox14.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(1071, 663);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -915,7 +917,7 @@
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(1071, 663);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -939,6 +941,7 @@
             // 
             this.topPanel.AutoSize = true;
             this.topPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.topPanel.Controls.Add(this.axWindowsMediaPlayer2);
             this.topPanel.Controls.Add(this.panel5);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
@@ -1100,7 +1103,7 @@
             this.style.Controls.Add(this.pictureBox5);
             this.style.Controls.Add(this.button3);
             this.style.Location = new System.Drawing.Point(8, 4);
-            this.style.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.style.Margin = new System.Windows.Forms.Padding(2);
             this.style.MaximumSize = new System.Drawing.Size(178, 291);
             this.style.MinimumSize = new System.Drawing.Size(178, 46);
             this.style.Name = "style";
@@ -1112,7 +1115,7 @@
             this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox7.Image = global::CrossxZeros.Properties.Resources.shutterstock_389230123_760x400;
             this.pictureBox7.Location = new System.Drawing.Point(0, 210);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(176, 82);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1124,7 +1127,7 @@
             this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox6.Image = global::CrossxZeros.Properties.Resources.star_wars_style3;
             this.pictureBox6.Location = new System.Drawing.Point(0, 128);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(176, 82);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1137,7 +1140,7 @@
             this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox5.Image = global::CrossxZeros.Properties.Resources.Normal_Style;
             this.pictureBox5.Location = new System.Drawing.Point(0, 46);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(176, 82);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1191,7 +1194,7 @@
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel4.Controls.Add(this.congratulation);
             this.panel4.Location = new System.Drawing.Point(352, 264);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.MinimumSize = new System.Drawing.Size(375, 244);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(375, 244);
@@ -1218,7 +1221,7 @@
             this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 50);
-            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.axWindowsMediaPlayer1.Margin = new System.Windows.Forms.Padding(2);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(1071, 663);
@@ -1237,6 +1240,16 @@
             this.timer7.Interval = 1000;
             this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
             // 
+            // axWindowsMediaPlayer2
+            // 
+            this.axWindowsMediaPlayer2.Enabled = true;
+            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(803, 13);
+            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
+            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(31, 30);
+            this.axWindowsMediaPlayer2.TabIndex = 30;
+            this.axWindowsMediaPlayer2.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1244,10 +1257,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1071, 713);
             this.Controls.Add(this.style);
+            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.sound);
-            this.Controls.Add(this.startMenu);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);
@@ -1312,6 +1325,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1406,6 +1420,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Timer timer7;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
     }
 }
 
