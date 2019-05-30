@@ -104,7 +104,105 @@ namespace CrossxZeros
             
         }
 
-    
+    void random()
+        {
+            Random r = new Random();
+            int hod = r.Next(8) + 1;
+            switch (hod)
+            {
+                case 1:
+                    if (p11.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p11_Click(sender, e);
+                        break;
+                    }
+                case 2:
+                    if (p12.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p12_Click(sender, e);
+                        break;
+                    }
+
+                case 3:
+                    if (p13.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p13_Click(sender, e);
+                        break;
+                    }
+                case 4:
+                    if (p21.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p21_Click(sender, e);
+                        break;
+                    }
+                case 5:
+                    if (p23.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p23_Click(sender, e);
+                        break;
+                    }
+                case 6:
+                    if (p31.Enabled == false)
+                    {
+                       random();
+                        break;
+                    }
+                    else
+                    {
+                        p31_Click(sender, e);
+                        break;
+                    }
+                case 7:
+                    if (p32.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p32_Click(sender, e);
+                        break;
+                    }
+                case 8:
+                    if (p33.Enabled == false)
+                    {
+                        random();
+                        break;
+                    }
+                    else
+                    {
+                        p33_Click(sender, e);
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
         void bot_v2()
         {
 
@@ -202,102 +300,7 @@ namespace CrossxZeros
                     p22.Enabled == true || p23.Enabled == true || p31.Enabled == true || p32.Enabled == true ||
                     p33.Enabled == true)
                 {
-                    Random r = new Random();
-                    int hod = r.Next(8) + 1;
-                    switch (hod)
-                    {
-                        case 1:
-                            if (p11.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p11_Click(sender, e);
-                                break;
-                            }
-                        case 2:
-                            if (p12.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p12_Click(sender, e);
-                                break;
-                            }
-
-                        case 3:
-                            if (p13.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p13_Click(sender, e);
-                                break;
-                            }
-                        case 4:
-                            if (p21.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p21_Click(sender, e);
-                                break;
-                            }
-                        case 5:
-                            if (p23.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p23_Click(sender, e);
-                                break;
-                            }
-                        case 6:
-                            if (p31.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p31_Click(sender, e);
-                                break;
-                            }
-                        case 7:
-                            if (p32.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p32_Click(sender, e);
-                                break;
-                            }
-                        case 8:
-                            if (p33.Enabled == false)
-                            {
-                                bot_v2();
-                                break;
-                            }
-                            else
-                            {
-                                p33_Click(sender, e);
-                                break;
-                            }
-                        default:
-                            break;
-                    }
+                    random();
 
                 }
                 else xod = 1;
