@@ -883,6 +883,8 @@ namespace CrossxZeros
         }
         private void button10_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             if (bot_go == 0)
             {
 
@@ -3342,6 +3344,12 @@ namespace CrossxZeros
         {
             WMP.URL = (@"F:\лабы\Touch.mp3");
            
+            WMP.controls.play();
+        }
+
+        private void player1_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
             WMP.controls.play();
         }
 

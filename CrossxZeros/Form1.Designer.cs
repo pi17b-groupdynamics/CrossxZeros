@@ -551,6 +551,7 @@
             this.player1.TabIndex = 23;
             this.player1.SelectedIndexChanged += new System.EventHandler(this.player1_SelectedIndexChanged);
             this.player1.TextUpdate += new System.EventHandler(this.player1_TextUpdate);
+            this.player1.Click += new System.EventHandler(this.player1_Click);
             this.player1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.player2_KeyPress);
             // 
             // groupBox1
@@ -1238,10 +1239,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1071, 713);
             this.Controls.Add(this.style);
+            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.startMenu);
-            this.Controls.Add(this.gameSettings);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);
