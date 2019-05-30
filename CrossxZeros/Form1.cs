@@ -2094,6 +2094,10 @@ namespace CrossxZeros
 
         private void p11_Click(object sender, EventArgs e) //Кнопки для поля первая слева вверху
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+           
+
             xod++;
             P[0, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2130,6 +2134,9 @@ namespace CrossxZeros
 
         private void p12_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        
             xod++;
             P[0, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2165,6 +2172,8 @@ namespace CrossxZeros
 
         private void p13_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[0, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2200,6 +2209,8 @@ namespace CrossxZeros
 
         private void p21_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[1, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2235,6 +2246,8 @@ namespace CrossxZeros
 
         private void p22_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[1, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2270,6 +2283,8 @@ namespace CrossxZeros
 
         private void p23_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[1, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2305,6 +2320,8 @@ namespace CrossxZeros
 
         private void p31_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[2, 0] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2340,6 +2357,8 @@ namespace CrossxZeros
 
         private void p32_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[2, 1] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;
@@ -2375,6 +2394,8 @@ namespace CrossxZeros
 
         private void p33_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
             xod++;
             P[2, 2] = turn;
             pictureBox10.BorderStyle = BorderStyle.None;

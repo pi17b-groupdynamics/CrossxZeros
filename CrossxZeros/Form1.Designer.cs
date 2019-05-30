@@ -116,6 +116,7 @@
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer7 = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.startMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).BeginInit();
@@ -1237,10 +1238,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
             this.ClientSize = new System.Drawing.Size(1071, 713);
             this.Controls.Add(this.style);
+            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.sound);
             this.Controls.Add(this.startMenu);
             this.Controls.Add(this.gameSettings);
-            this.Controls.Add(this.gameScreen);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.topPanel);
@@ -1398,6 +1399,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Timer timer7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 
