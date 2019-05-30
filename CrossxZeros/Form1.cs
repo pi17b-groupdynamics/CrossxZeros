@@ -2606,6 +2606,7 @@ namespace CrossxZeros
 
         private void timer6_Tick(object sender, EventArgs e)
         {
+            button10.Enabled = false;
             if(human == true) { 
             timer4.Stop();
                 }
@@ -2632,6 +2633,7 @@ namespace CrossxZeros
                 Battlefield.Show();
                 timer6.Stop();
                 button10_Click(sender, e);
+                button10.Enabled = true;
             }
             else if(another_timer == 5 && check_win_or_not == true)
             {
@@ -2648,8 +2650,21 @@ namespace CrossxZeros
                 timer6.Stop();
                 check_win_or_not = false;
                 Battlefield.Show();
+                button10.Enabled = true;
+                if (bot_go == 1)
+                {
+                    xod = 1;
+                }
+                else
+                {
+                    xod = 0;
+                }
+                if (!human && xod < 10)
+                {
+                    bot_v2();
+                }
                 //if(winner_cross==count_of_wins||winner_zero==count_of_wins)
-                    //Update_Statistic();
+                //Update_Statistic();
             }
         }
 
@@ -3316,7 +3331,7 @@ namespace CrossxZeros
             this.Close();
         }
 
-        int bot_go = 0;
+        int bot_go = 1;
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
