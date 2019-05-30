@@ -951,7 +951,7 @@ namespace CrossxZeros
 
         private void button2_Click(object sender, EventArgs e)
         {
-            WMP.URL = (@"F:\лабы\Touch.mp3"); 
+            WMP.URL = (@"F:\лабы\Touch.mp3");  
             WMP.controls.play();
             startMenu.BringToFront();
             style.BringToFront();
