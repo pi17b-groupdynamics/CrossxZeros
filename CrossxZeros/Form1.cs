@@ -3297,6 +3297,12 @@ namespace CrossxZeros
             }
         }
 
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
         private void Form1_Click(object sender, EventArgs e)
         {
             timer1.Start();
