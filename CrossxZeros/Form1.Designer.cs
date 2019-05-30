@@ -502,7 +502,9 @@
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(165, 28);
             this.player2.TabIndex = 24;
+            this.player2.SelectedIndexChanged += new System.EventHandler(this.player2_SelectedIndexChanged);
             this.player2.TextUpdate += new System.EventHandler(this.player2_TextUpdate);
+            this.player2.Click += new System.EventHandler(this.player2_Click);
             this.player2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.player2_KeyPress);
             // 
             // People
@@ -580,6 +582,7 @@
             this.radioButton2.Text = "Игрок 2";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
             // 
             // radioButton1
             // 
@@ -607,6 +610,7 @@
             this.radioButton3.Text = "Определить рандомно";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.radioButton3.Click += new System.EventHandler(this.radioButton3_Click);
             // 
             // button2
             // 

@@ -1224,7 +1224,11 @@ namespace CrossxZeros
         {
 
         }
-        private void radioButton1_Click(object sender, EventArgs e) { }
+        private void radioButton1_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
                  
 
         private void Bot_CheckedChanged(object sender, EventArgs e) // компьютер панель справа
@@ -3348,6 +3352,29 @@ namespace CrossxZeros
         }
 
         private void player1_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
+        private void player2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void player2_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
+        private void radioButton2_Click(object sender, EventArgs e)
+        {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+        }
+
+        private void radioButton3_Click(object sender, EventArgs e)
         {
             WMP.URL = (@"F:\лабы\Touch.mp3");
             WMP.controls.play();
