@@ -634,7 +634,7 @@ namespace CrossxZeros
                     pictureBox11.Image = Resources.simvol_orden_djedaev;
                     pictureBox8.Image = Resources._16637_2;
                 }
-                turn = -1;
+                turn = 1;
             }
             if (human == true)
             {
@@ -724,7 +724,7 @@ namespace CrossxZeros
                     pictureBox11.Image = Resources.simvol_orden_djedaev;
                     pictureBox8.Image = Resources._16637_2;
                 }
-                turn = -1;
+                turn = 1;
             }
             if (human == true)
             {
@@ -813,7 +813,7 @@ namespace CrossxZeros
                     pictureBox11.Image = Resources.zeroes;
                     pictureBox8.Image = Resources._16637_2;        
                 }
-                turn = -1;
+                turn = 1;
             }
             if (human == true)
             {
@@ -2096,7 +2096,7 @@ namespace CrossxZeros
                 one = 1;
                 timer = 0;
             }
-            else
+            else 
             {
                 if(normal_style == true)
                 {p11.Image = Resources.zero; }
@@ -3335,7 +3335,7 @@ namespace CrossxZeros
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            xod = 1;
+            xod = 0;
             bot_go = 1;
             side = 1;
             if (!SoundSt)
@@ -3349,7 +3349,7 @@ namespace CrossxZeros
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-           xod = 0;
+            xod = 1;
             bot_go = 0;
             side = 2;
             if (!SoundSt)
