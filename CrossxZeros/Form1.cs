@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Threading;
 using CrossxZeros.Properties;
 using System.IO;
+using System.Media;
 
 namespace CrossxZeros
 {
@@ -583,8 +584,14 @@ namespace CrossxZeros
         {
         }
 
+        WMPLib.WindowsMediaPlayer WMP = new WMPLib.WindowsMediaPlayer();
+
         private void button1_Click(object sender, EventArgs e)
         {
+            WMP.URL = (@"F:\лабы\Touch.mp3");
+            WMP.controls.play();
+            //WMP.settings.volume = 100; // меняя значение можно регулировать громкость
+
             gameSettings.BringToFront();
             style.Hide();
             sound.Hide();
