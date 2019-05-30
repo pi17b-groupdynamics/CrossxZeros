@@ -3340,7 +3340,8 @@ namespace CrossxZeros
 
         private void button11_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
+            this.Close(); 
         }
 
         int bot_go = 1;
