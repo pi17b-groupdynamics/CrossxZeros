@@ -89,6 +89,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.topPanel = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -117,7 +118,6 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.timer7 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
             this.startMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GV2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GV1)).BeginInit();
@@ -150,6 +150,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -162,7 +163,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
             this.SuspendLayout();
             // 
             // startMenu
@@ -952,6 +952,16 @@
             this.topPanel.TabIndex = 43;
             this.topPanel.Click += new System.EventHandler(this.topPanel_Click);
             // 
+            // axWindowsMediaPlayer2
+            // 
+            this.axWindowsMediaPlayer2.Enabled = true;
+            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(803, 13);
+            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
+            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(31, 30);
+            this.axWindowsMediaPlayer2.TabIndex = 30;
+            this.axWindowsMediaPlayer2.Visible = false;
+            // 
             // panel5
             // 
             this.panel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -1241,16 +1251,6 @@
             this.timer7.Interval = 1000;
             this.timer7.Tick += new System.EventHandler(this.timer7_Tick);
             // 
-            // axWindowsMediaPlayer2
-            // 
-            this.axWindowsMediaPlayer2.Enabled = true;
-            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(803, 13);
-            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
-            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
-            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(31, 30);
-            this.axWindowsMediaPlayer2.TabIndex = 30;
-            this.axWindowsMediaPlayer2.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1314,6 +1314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -1326,7 +1327,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

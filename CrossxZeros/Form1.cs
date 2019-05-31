@@ -592,6 +592,9 @@ namespace CrossxZeros
             axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
             axWindowsMediaPlayer1.Ctlcontrols.play();
+           axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
             //   WMP.URL = (@"F:\лабы\Touch.mp3");
             //  WMP.controls.play();
             //WMP.settings.volume = 100; // меняя значение можно регулировать громкость
@@ -1019,13 +1022,15 @@ namespace CrossxZeros
         private void Form1_Load(object sender, EventArgs e)
         {
             //  InitializeComponent();
-           
-          
 
-            axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-           axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
-            axWindowsMediaPlayer1.Ctlcontrols.play();
+              WMP.URL = (@"F:\лабы\BackGround.mp3");
+            WMP.settings.volume = SoundBar.Value;
+              WMP.controls.play();
+
+            // axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+            // axWindowsMediaPlayer1.Ctlcontrols.play();
+            // axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+
 
             if (gameScreen.Height - 200 < gameScreen.Width - 800)
             {
@@ -3417,19 +3422,24 @@ namespace CrossxZeros
           // WMP.URL = (@"F:\лабы\Touch.mp3");
             axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
-           //xWindowsMediaPlayer1.Ctlcontrols.play();
-            
+           axWindowsMediaPlayer1.Ctlcontrols.play();
+           axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+            axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+
             // WMP.controls.play();
         }
 
         private void SoundBar_Scroll(object sender, EventArgs e)
         {
-           // WMP.URL = (@"F:\лабы\BackGround.mp3");
-        //axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
-          
-            axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
-          axWindowsMediaPlayer1.Ctlcontrols.play();
-          // WMP.controls.play();
+            // WMP.URL = (@"F:\лабы\BackGround.mp3");
+            // axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+
+            // axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+            //   axWindowsMediaPlayer1.Ctlcontrols.play();
+            WMP.settings.volume = SoundBar.Value;
+            WMP.controls.play();
+            // WMP.controls.play();
         }
 
         private void player1_Click(object sender, EventArgs e)
