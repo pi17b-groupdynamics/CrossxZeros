@@ -1018,6 +1018,15 @@ namespace CrossxZeros
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //  InitializeComponent();
+           
+          
+
+            axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+           axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+            axWindowsMediaPlayer1.Ctlcontrols.play();
+
             if (gameScreen.Height - 200 < gameScreen.Width - 800)
             {
                 Battlefield.Width = gameScreen.Height - 198;
@@ -2636,8 +2645,8 @@ namespace CrossxZeros
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
+           // axWindowsMediaPlayer1.settings.volume = MusicBar.Value;            
             axWindowsMediaPlayer1.Ctlcontrols.play();
           //  WMP.URL = (@"F:\лабы\Touch.mp3");
            // WMP.settings.volume = 100;
@@ -3017,18 +3026,14 @@ namespace CrossxZeros
             sound.BringToFront();
         }
 
-        private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+     private void axWindowsMediaPlayer1_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
         {
-            if (e.newState == 8)
-            {
-                this.axWindowsMediaPlayer1.Ctlcontrols.stop();
-                startMenu.BringToFront();
-            }
+           
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (jedi_style == true)
+          if (jedi_style == true)
             {
                 if (e.KeyData == Keys.Escape)
                 {
@@ -3412,18 +3417,19 @@ namespace CrossxZeros
           // WMP.URL = (@"F:\лабы\Touch.mp3");
             axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
-            axWindowsMediaPlayer1.Ctlcontrols.play();
+           //xWindowsMediaPlayer1.Ctlcontrols.play();
             
             // WMP.controls.play();
         }
 
         private void SoundBar_Scroll(object sender, EventArgs e)
         {
-           // WMP.URL = (@"F:\лабы\Touch.mp3");
-           // axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
-          //  axWindowsMediaPlayer1.Ctlcontrols.play();
-           // axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
-          //  WMP.controls.play();
+           // WMP.URL = (@"F:\лабы\BackGround.mp3");
+        //axWindowsMediaPlayer1.URL = (@"F:\лабы\BackGround.mp3");
+          
+            axWindowsMediaPlayer1.settings.volume = SoundBar.Value;
+          axWindowsMediaPlayer1.Ctlcontrols.play();
+          // WMP.controls.play();
         }
 
         private void player1_Click(object sender, EventArgs e)
