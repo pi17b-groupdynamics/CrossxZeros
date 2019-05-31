@@ -3413,8 +3413,9 @@ namespace CrossxZeros
             axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
             axWindowsMediaPlayer1.Ctlcontrols.play();
-        //    WMP.URL = (@"F:\лабы\Touch.mp3");
-          //  WMP.controls.play();
+          //  System.Diagnostics.Process.Start(@"F:\лабы\Новая папка\CrossxZeros helper.hnd");
+            //    WMP.URL = (@"F:\лабы\Touch.mp3");
+            //  WMP.controls.play();
         }
 
         private void MusicBar_Scroll(object sender, EventArgs e)
