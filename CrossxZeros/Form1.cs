@@ -3413,7 +3413,9 @@ namespace CrossxZeros
             axWindowsMediaPlayer1.settings.volume = MusicBar.Value;
             axWindowsMediaPlayer1.URL = (@"F:\лабы\Touch.mp3");
             axWindowsMediaPlayer1.Ctlcontrols.play();
-          //  System.Diagnostics.Process.Start(@"F:\лабы\Новая папка\CrossxZeros helper.hnd");
+            string sPath = Path.GetFileName("CrossxZeros helper.hnd");
+            Help.ShowHelp(this, sPath, HelpNavigator.TableOfContents);
+            //  System.Diagnostics.Process.Start(@"F:\лабы\Новая папка\CrossxZeros helper.hnd");
             //    WMP.URL = (@"F:\лабы\Touch.mp3");
             //  WMP.controls.play();
         }
